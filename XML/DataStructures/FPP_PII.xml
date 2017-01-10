@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ICONSOLE>
+
+  <MAINTAB clickid="%TABID%" label="Policy">
+    <LINK clickid="%LINKID%" label="Standard Policy Pack">
+
+<!--Test data: PII -->
+
+<TREE label="Personally Identifiable Information (PII)" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+  <EXTRA_NODE label="National ID Numbers " checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+
+    <SUB_TREE_NODE label="Australian Medicare Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Australian State Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Australian Tax File Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Canadian Social Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Canadian Social Insurance Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Canadian Social Insurance Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_HIGH%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_HIGH%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Chinese Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="German Social Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Hong Kong Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Indian Permanent Account Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Indonesian Identity Card Number  (Nomor Induk Kependudukan)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Irish Personal Public Service Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Italian National Identification Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Macau Permanent Resident Identity Card (BIRP)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Macau Non-Permanent Resident Identity Card (BIRNP)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Malaysian National Registration Identification Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Pakistan National Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Singapore National Registration Identity Card" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Taiwan Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Thailand Population Identification Code" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Social Security Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Social Security Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Social Security Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_HIGH%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_HIGH%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK Drivers License - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK National Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK National Insurance Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK National Insurance Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_HIGH%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_HIGH%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK Tax Identification Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="UK Tax Identification Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Drivers License - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Passport Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Passport Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Taxpayer Identification Number (TIN)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+      <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="US Taxpayer Identification Number (TIN) - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+    <SUB_TREE_NODE label="Vietnam ID Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+      <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_4%" />
+      <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+      <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+      <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+      <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+    </SUB_TREE_NODE>
+
+  </EXTRA_NODE>
+
+  <SUB_TREE_NODE label="Account number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_%38" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Account Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+    <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Account Number and Routing Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="yes" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no" />
+    <COMMON type="EML" defsev="%DEF_NONE%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defAct="%DEF_MON%" defsev="%DEF_LOW%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Account Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_HIGH%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_HIGH%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Background Checks" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Credit Card Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Credit Card Information - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="no" Thresh="yes" ThreshVal="%DEF_THRESHOLD1%" />
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_MED%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_MED%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Credit Report" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Employee Evaluation Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_NONE%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="UK Employee Compensation Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Unecrypted Wire Transfer Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="yes" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_BLK%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_REP%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="US Employee Compensation Information" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_38%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_39%" Action="yes" ExcFiles="yes" FileSize="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_STB%" message="%DEF_40%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" message="%DEF_41%" defsev="%DEF_LOW%" defAct="%DEF_MON%" />
+  </SUB_TREE_NODE>
+</TREE>
+
+    </LINK>
+  </MAINTAB>
+
+</ICONSOLE>

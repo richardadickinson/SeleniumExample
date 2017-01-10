@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document      : cfg_audit.xml
+    Created on    : 02 February 2011, 12:40
+    Author        : dicri02
+    Description   : Tests the iConsole Auditing capabilities:
+				Bulk Audit operations can be tested using the main toolbar single-click audit buttons
+				Single Audit operation can be tested using the QuickView pane New Issue dialog or toolbar single-click buttons
+				Search results can be cycled by page or event (all results or a set amount) 
+				Toolbar configuration may be validated (see the 'verify' parameter)
+
+    Prerequisites : The test user used to log into the iConsole to run this test requires these APM privileges: 
+				'audit: allow audit without viewing the event'
+				'events: allow bulk session management'
+		  	  N.B. A default CMS Reviewer does NOT have these privileges.
+
+    Parameters    : (* = optional)
+
+        <step classname="testcases.Search" name="Run Search">
+    *       <parameter name="searchtimeout" value="60"/>  	 timeout in seconds (defaults to 60)
+    *		<parameter name="pagesize" value="3" />		 	 set the "Search Results page size" value - reduce this for lower maxresults to test paging
+    *		<parameter name="maxresults" value="10" />	 	 set the number of search results returned - limits length of test run (iCon default=100)
+    *		<parameter name="quarantine" value="false" />    defaults to "true". Set this to false to stop quarantined events being returned in search results.
+															 Necessary for the Bulk audit tests to work as quarantined events can't be audited.
+        </step>
+        <step classname="testcases.Audit" name="Audit">
+            <parameter name="verify" value="false"/>		 verify the audit button config against the tools displayed - *** ADMINISTRATOR login only ***
+            <parameter name="bulk" value="true"/>		 	 bulk or single audit operation
+            <parameter name="bulkaudittimeout" value="40"/>  timeout in seconds for audit operation dialog to appear
+            <parameter name="quantity" value="5"/> 		 	 either a number of events to audit, or 'all' (where 'all' equals all on page)
+            <parameter name="page" value="all"/> 		 	 either a number of results pages or 'all' - ignored unless 'quantity' is 'all'
+            <parameter name="usenewissue" value="false"/> 	 if 'true' issues are created via the New Issue dialog and the 'oneclickbutton' is ignored
+            <parameter name="oneclickbutton" value="1"/> 	 integer 1 to 10 (Where 1 is the rubber stamp button)  }
+            <parameter name="auditstatus" value="3"/>		 where value matches a known audit status index        }
+            <parameter name="auditaction" value="4"/>		 where value matches a known audit action index        }   all dependent on CMS audit config
+            <parameter name="auditresolution" value="0"/>    where value matches a known audit resolution index    }   * errors will occur if an index is used 
+            <parameter name="auditcomment" value="1" />      where value matches a known audit comment index       }   * which doesn't equate to an actual value
+        </step>
+
+		N.B. setting quantity="all" + page="0" results in all results being displayed and bulk audited at once.
+
+	The parameters set in the pre-created test cases below work with the audit config provided in policies.msi.
+-->
+
+<root>
+
+
+	<test name="Bulk audit all events at once" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+		</step>
+		<step classname="testcases.Audit" name="Bulk audit all events">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="true"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="1" />
+		</step>
+	</test>
+
+	<test name="Bulk audit, by page" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+		</step>
+		<step classname="testcases.Audit" name="Bulk audit by page">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="true"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="1" />
+		</step>
+	</test>
+
+	<test name="Bulk audit, by event" sso="false" username="admin">
+      	<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Bulk Audit 5 events per page">
+            	<parameter name="verify" value="false"/>
+            	<parameter name="bulk" value="true"/>
+            	<parameter name="bulkaudittimeout" value="40"/>
+            	<parameter name="quantity" value="5"/>
+            	<parameter name="page" value="all"/>
+            	<parameter name="usenewissue" value="false"/>
+            	<parameter name="oneclickbutton" value="2"/>
+            	<parameter name="auditstatus" value="3"/>
+            	<parameter name="auditaction" value="4"/>
+            	<parameter name="auditresolution" value="0"/>
+            	<parameter name="auditcomment" value="0" />
+        	</step>
+    	</test>
+
+	<test name="Single event audit (one-click buttons)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Single event audit">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="3"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+    	</test>
+
+	<test name="Single event audit (one-click buttons) by page (admin logon)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="5" />
+		</step>
+        	<step classname="testcases.Audit" name="Admin One-click audit by page (with button check)">
+			<parameter name="verify" value="true"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>
+	
+	<test name="Single event audit (one-click buttons) by page (RLS logon)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="5" />
+		</step>
+        	<step classname="testcases.Audit" name="RLS One-click audit by page">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="2"/>
+			<parameter name="auditaction" value="3"/>
+			<parameter name="auditresolution" value="1"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>	
+
+	<test name="Single event audit (New Issue button)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Manual Audit">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="2"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="true"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+      </test>
+
+</root>

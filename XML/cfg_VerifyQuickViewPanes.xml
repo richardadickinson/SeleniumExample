@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_VerifyQuickViewPanes.xml
+    Created on : 28 January 2011, 10:37
+    Author     : dicri02
+    Description: Exercises the QuickView Pane in the iConsole by running the std search and then cycling through the results in various ways
+
+    Caveats: if using the pagesize or maxresults parameters you must use a login that can access the iConsole administration tab (priv=Admin: Manage iConsole).
+        
+    Parameters (* = Optional):
+       <step classname="testcases.Search" name="Run Search">	run the std search (name value appears in the log file)
+	*     	<parameter name="searchtimeout" value="30" />  	search timeout in seconds (defaults to 60 if omitted)
+	*     	<parameter name="iterations" value="5" />	how many times will you run the search? (defaults to 1 if omitted)
+	*     	<parameter name="back" value="false" />		true = use "Back to Searches" button or false = use "Refresh" button to re-run search
+	*	<parameter name="pagesize" value="3" />		set the "Search Results page size" value - reduce this if you lower maxresults to ensure paging is tested
+	*	<parameter name="maxresults" value="10" />	set the number of search results returned - limits time length of test run (iCon default=100)
+        </step>
+        <step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (Specified number of events)">
+	*	<parameter name="numevents" value="2" />		set a controlled number of results to cycle through (if omitted then all results are tested)
+           	<parameter name="usenexteventbutton" value="false" /> 	cycle through the results using the "Move to Next Event" button on the QV pane 
+										(else select results from the results table)
+           	<parameter name="closequickviewpanes" value="true" /> 	close the QV panes before selecting the next event (ignored if usenexteventbutton = true)
+           	<parameter name="expandcollapse" value="true" />	tests the results view splitter (maximises the QV panes)
+
+        </step>
+	  <step classname="testcases.Search" name="Search cleanup">	if using maxresults or pagesize add an extra Test Step at the end to reset them
+		<parameter name="cleanup" value="true" />
+	  </step>
+-->
+
+
+<root>
+
+	<test name="Quick View Panes (RLS)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Std Search">
+			<parameter name="back" value="true" />
+			<parameter name="iterations" value="3" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="5" />
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (Specified number of events)">
+			<parameter name="numevents" value="5"/>
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (All pages, cycle using Move Next Event button)">
+			<parameter name="usenexteventbutton" value="true"/>
+			<parameter name="closequickviewpanes" value="false"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (All pages, cycle using results table)">
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>
+
+	<test name="Quick View Panes (Admin)" sso="false" username="admin">
+       		<step classname="testcases.Search" name="Run Search - use 'Refresh' button to iterate">
+			<parameter name="searchtimeout" value="30"/>
+			<parameter name="back" value="false" />
+			<parameter name="iterations" value="5"/>
+        	</step> 
+       		<step classname="testcases.Search" name="Run Search - use 'Back to Searches' button to iterate">
+			<parameter name="searchtimeout" value="30" />
+			<parameter name="back" value="true" />
+			<parameter name="iterations" value="5" />
+			<parameter name="pagesize" value="5" />
+			<parameter name="maxresults" value="10" />
+       		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (Specified number of events)">
+			<parameter name="numevents" value="10"/>
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+	</test>	
+
+</root>

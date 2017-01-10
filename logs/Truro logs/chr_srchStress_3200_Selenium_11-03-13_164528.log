@@ -1,0 +1,41 @@
+16:45:28 Tests started
+16:45:28 iConsole Automation Package Version: 
+16:45:49 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+16:45:49 Platform: Win32
+16:45:55 Login successful as Selenium Reviewer
+16:45:55 iConsole Release: 14.5.3200.2
+16:45:55 Test Case 'Search stress test' started.
+16:45:55     Test step Refresh Std Search started
+16:45:58         PASS: Standard search ran successfully (2 secs)
+16:46:00         PASS: Standard search refreshed successfully (2 secs)
+16:46:03         PASS: Standard search refreshed successfully (2 secs)
+16:46:05         PASS: Standard search refreshed successfully (2 secs)
+16:46:07         PASS: Standard search refreshed successfully (2 secs)
+16:46:09         PASS: Standard search refreshed successfully (2 secs)
+16:46:12         PASS: Standard search refreshed successfully (2 secs)
+16:46:14         PASS: Standard search refreshed successfully (2 secs)
+16:46:16         PASS: Standard search refreshed successfully (2 secs)
+16:46:18         PASS: Standard search refreshed successfully (2 secs)
+16:46:21         PASS: Standard search refreshed successfully (2 secs)
+16:46:23         PASS: Standard search refreshed successfully (2 secs)
+16:46:25         PASS: Standard search refreshed successfully (2 secs)
+16:46:28         PASS: Standard search refreshed successfully (2 secs)
+16:46:29         PASS: Standard search refreshed successfully (1 secs)
+16:46:32         PASS: Standard search refreshed successfully (2 secs)
+16:46:34         PASS: Standard search refreshed successfully (2 secs)
+16:46:36         PASS: Standard search refreshed successfully (2 secs)
+16:46:38         PASS: Standard search refreshed successfully (2 secs)
+16:46:41         PASS: Standard search refreshed successfully (2 secs)
+16:46:43         PASS: Standard search refreshed successfully (2 secs)
+16:46:45         PASS: Standard search refreshed successfully (2 secs)
+16:46:47         PASS: Standard search refreshed successfully (2 secs)
+16:46:50         PASS: Standard search refreshed successfully (2 secs)
+16:46:52         PASS: Standard search refreshed successfully (2 secs)
+16:46:54         PASS: Standard search refreshed successfully (2 secs)
+16:46:54         Average search runtime = 1 secs (iterations=25)
+16:46:54     Test step Refresh Std Search finished
+16:46:57     Logout successful
+16:46:57 Test Case 'Search stress test' completed execution (see Summary for individual test details)
+16:48:20  
+16:48:20 Tests finished
+16:48:20 Summary: Test cases: 1, Tests: 25, Fails: 0, Known Fails: 0

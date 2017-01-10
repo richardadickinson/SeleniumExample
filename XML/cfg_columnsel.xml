@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_columnsel.xml
+    Created on : 02 February 2011, 12:30
+    Author     : dicri02
+    Description: Test the Column Selector dialog
+    Parameters : the test uses the search test step to run the Standard Search first.
+				 noColumns is the localisable error text that appears when you try to select no columns
+		     The test case may be run as an admin or reviewer user.   
+
+-->
+
+
+<root>
+	<test name="Column Selector" sso="false" username="rls1" >
+      	<step classname="testcases.Search" name="Run Standard Search">
+        </step>
+      	<step classname="testcases.ColumnSelector" name="Test Column Selector">
+			<parameter name="noColumns" value="You must select at least one visible column" />
+        </step>
+	</test>
+
+</root>

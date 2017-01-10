@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ICONSOLE>
+
+  <MAINTAB clickid="%TABID%" label="Policy">
+    <LINK clickid="%LINKID%" label="Standard Policy Pack">
+
+<!--Test data User DEF_ined policy -->
+
+<TREE label="User DEF_ined" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+  <SUB_TREE_NODE label="User DEF_ined 1" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="no" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_47%" addr="%DEF_EXADD%" incaddr="yes" incaddr="%DEF_INCADDR%" extrecip="no" excaddr="no" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_49%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_50%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_51%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="User DEF_ined 2" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="no" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_47%" addr="%DEF_EXADD%" incaddr="no" incaddr="%DEF_INCADDR%" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_49%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_50%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_51%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="User DEF_ined 3" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="no" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_47%" addr="%DEF_EXADD%" incaddr="no" incaddr="%DEF_INCADDR%" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_49%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_50%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_51%" />
+  </SUB_TREE_NODE>
+
+</TREE>
+
+    </LINK>
+  </MAINTAB>
+
+</ICONSOLE>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+<PARAMS>
+	<!-- GUI Ids for the test -->
+	<TAB_SEARCHES>tab_searches</TAB_SEARCHES>
+	<BTN_PASSWORD>btn_Prefs.Change Password</BTN_PASSWORD>
+    <TXT_CURRENTPW>txtCurrent</TXT_CURRENTPW>
+	<TXT_NEWPW>txtPassword</TXT_NEWPW>
+	<TXT_CONFIRMPW>txtConfirm</TXT_CONFIRMPW>
+	<BTN_PW_OK>btn_Password.OK</BTN_PW_OK>
+	<DLG_MESSAGE>Message</DLG_MESSAGE>
+	<BTN_MESSAGE_CLOSE>btn_Message.Close</BTN_MESSAGE_CLOSE>
+	<BTN_MESSAGE_YES>btn_Message.Yes</BTN_MESSAGE_YES>
+	<BTN_PREFS_OK>btn_Prefs.OK</BTN_PREFS_OK>
+	<BTN_PREFS_RESET>btn_Prefs.Reset</BTN_PREFS_RESET>
+	<BTN_PREFS_XCLOSE>btn_Prefs.smlClose</BTN_PREFS_XCLOSE>
+	<BTN_PREFS_APPLY>btn_Prefs.Apply</BTN_PREFS_APPLY>
+	<BTN_PREFS_CANCEL>btn_Prefs.Cancel</BTN_PREFS_CANCEL>
+	<!-- for session prefs validation -->
+	<HIVIS>hiVis</HIVIS>
+	<STDVIS>standard</STDVIS>
+	
+</PARAMS>
+
+<PREFS clickid="lnk_profile" checkid="Prefs" >
+	<TAB clickid="tab_audit" label="Audit">
+		<CHECKBOX clickid="MoveAfterAuditEvent" label="Move To Next Event After Auditing" default="on" />
+		<CHECKBOX clickid="RemoveAuditedEvents" label="Remove Events After Auditing" default="on" />
+		<CHECKBOX clickid="QuickViewScroll" label="Scroll Past Headers in E-Mail Pane" default="on" />
+		<CHECKBOX clickid="ShowIncidents" label="Show Incidents" default="on" />
+		<CHECKBOX clickid="ShowIssues" label="Show Issues" default="on" />
+		<CHECKBOX clickid="ShowAuditHistory" label="Show Event History" default="on" />
+		<SELECT clickid="DisplayIncidents" label="Incidents Display" default="Show Names" value="1" testval="Collapsed" />
+		<SELECT clickid="DisplayIssues" label="Issues Display" default="Show Names" value="1" testval="Collapsed" />
+		<SELECT clickid="DisplayAuditHistory" label="Event History Display" default="Show Details" value="1" testval="Collapsed" />
+	</TAB>
+	<TAB clickid="tab_print" label="Printing">
+		<CHECKBOX clickid="PrintMailSummary" label="Print Content" default="on" />
+		<CHECKBOX clickid="PrintEventSummary" label="Print Event Summary" default="on" />
+		<CHECKBOX clickid="PrintAuditSummary" label="Print Audit Summary" default="on" />
+	</TAB>
+	<TAB clickid="tab_search" label="Search">
+		<INTEGERBOX clickid="SearchResultsPageSize" label="Search Results Page Size" dp="0:3" min="0" max="999" default="25" testval="30" errortext="Number must be a positive integer" maxerrortext="" minerrortext="" noentryerrortext="Value cannot be blank" />
+		<CHECKBOX clickid="MultiLineRow" label="Multi-line Row" default="on" />
+		<CHECKBOX clickid="ShowViewedRows" label="Show results in bold until viewed" default="on" />
+		<SELECT clickid="ContentProxy" label="Content Server" default="[None Available]" value=":" testval="[None Available]" />
+	</TAB>
+	<TAB clickid="tab_general" label="General">
+		<CHECKBOX clickid="HighVis" label="High Visibility (requires page refresh)" default="off" />
+		<CHECKBOX clickid="ShowHomePage" label="Show Home Page" default="on" />
+	</TAB>
+</PREFS>
+</ICONSOLE>
+
+<!-- building blocks
+<MULTI clickid="" label="" default="" options="$ref" />
+<SELECT clickid="" label="" default="" value="" testval="" />
+<TEXTBOX clickid="" label="" default="" testval="" />
+<INTEGERBOX clickid="" label="" dp="0" min="0" max="" default="" testval="" errortext="" maxerrortext="" minerrortext="" noentryerrortext="" />
+<CHECKBOX clickid="" label="" default="" />
+<RADIO clickid="" label="" selected="0" label="" testval="" >
+	<OPTION clickid="" label="" value="0" />
+	<OPTION clickid="" label="" value="1" />
+</RADIO>
+<BUTTON clickid="" label="" testval="" disabled="false" />
+<TAB clickid="" label="" />
+<SUBTAB name="" clickid="" label="" expanded="no" >
+</SUBTAB>
+<CONTEXT clickid="" >
+	<OPTION clickid="" label="" />
+	<OPTION clickid="" label="" />
+</CONTEXT>
+<TABLE clickid="" name="" prefix="" col1="" col2="" col3="" />
+-->

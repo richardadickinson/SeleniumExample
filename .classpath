@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/selenium/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rdickin1/workspace/Truro/lib/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rdickin1/workspace/Truro/lib/mail-1.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rdickin1/workspace/Truro/lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rdickin1/workspace/Truro/lib/wgnoracle.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rdickin1/workspace/Truro/lib/common-lang3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

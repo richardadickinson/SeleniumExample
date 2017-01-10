@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_prefs.xml
+    Created on : 02 February 2011, 12:17
+    Author     : dicri02
+    Description: Test the Global and Local Preference & Resource dialogs and parameters
+    Parameters : No special parameters for the test steps other than the location of the XML Data Structure.
+
+   	<test name="MyPrefs_rls" 
+		sso="false" 
+		username="Selenium Reviewer"        // primary login
+		rlsusername="Selenium Reviewer"     // secondary login
+	>
+-->
+
+<root>
+
+	<test name="Global Prefs" sso="false" username="admin" >
+		<step classname="testcases.GPrefs" name="Global Preferences">			
+			<parameter name="dataStructure" value="XML\DataStructures\ResourcesForRoles.xml" />
+			<parameter name="localPrefsData" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test>
+
+   	<test name="Local Prefs (rls)" sso="false" username="rls1">
+		<step classname="testcases.MyPrefs" name="Local Preferences" >
+			<parameter name="dataStructure" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test>
+
+	<test name="Local Prefs (admin)" sso="false" username="admin">
+		<step classname="testcases.MyPrefs" name="Local Preferences" >
+			<parameter name="dataStructure" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test>
+
+</root>

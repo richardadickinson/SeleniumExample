@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ICONSOLE>
+
+  <MAINTAB clickid="%TABID%" label="Policy">
+    <LINK clickid="%LINKID%" label="Standard Policy Pack">
+
+<!--Test data for Legal -->
+
+<TREE label="Legal" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+  <SUB_TREE_NODE label="Attorney Client Privilege" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="yes" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_HIGHX%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_MED%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_26%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_27%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_REP%" message="%DEF_28%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_29%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Discussion of Legal Proceedings" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_26%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_27%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_MED%" defAct="%DEF_STB%" message="%DEF_28%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_29%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Potential Ethical Issues" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="yes" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_26%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_27%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_HIGH%" defAct="%DEF_DEL%" message="%DEF_28%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_29%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Potential Legal Issues" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="yes" PosInd="yes" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_LOW%" defAct="%DEF_MON%" Action_Message="yes" message="%DEF_26%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_27%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_NONE%" defAct="%DEF_STB%" message="%DEF_28%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_29%" />
+  </SUB_TREE_NODE>
+
+  <SUB_TREE_NODE label="Threats of Litigation" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+    <COMMON type="COM" NegInd="no" PosInd="no" ImdDisq="yes" Sens="yes" SensVal="%DEF_MED%" Thresh="no"/>
+    <COMMON type="EML" defsev="%DEF_HIGH%" defAct="%DEF_WARN%" Action_Message="yes" message="%DEF_26%" addr="%DEF_EXADD%" incaddr="no" extrecip="no" excaddr="yes" excText="yes"  PosInd="no" MinEmailSize="no" Attachnum="no" sampl="no"/>
+    <COMMON type="DIM" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_27%" Action="yes" FileSize="yes" ExcFiles="yes" PrintJob="no" defFileSize="%DEF_10%" />
+    <COMMON type="DAR" defsev="%DEF_LOW%" defAct="%DEF_DEL%" message="%DEF_28%" ExcFiles="yes" defFileSize="%DEF_10%" />
+    <COMMON type="WEB" defsev="%DEF_LOW%" defAct="%DEF_MON%" message="%DEF_29%" />
+  </SUB_TREE_NODE>
+
+</TREE>
+
+    </LINK>
+  </MAINTAB>
+
+</ICONSOLE>

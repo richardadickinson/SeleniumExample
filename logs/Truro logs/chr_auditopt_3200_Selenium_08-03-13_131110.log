@@ -1,0 +1,161 @@
+13:11:10 Tests started
+13:11:10 iConsole Automation Package Version: 
+13:11:28 ERROR running AutoIT exe for Domain login: org.openqa.selenium.WebDriverException: Navigation failed with error code=2. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.13 seconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: 3743d0cb90d670ef8e636ae5e597d642
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=24.0.1312.57, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+13:11:28 Login exe parameters retrieved: Misc\chr_login.exe; Windows Security; tb3\administrator; yeo
+13:11:28 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+13:11:28 Platform: Win32
+13:11:55 Login successful as administrator
+13:11:55 iConsole Release: 14.5.3200.0
+13:11:56 Test Case 'Audit Options' started.
+13:11:56     Test step Run Std Search started
+13:11:57         INFO: Wait Element found: INPUT id=txtSubject
+13:11:57         INFO: Wait Element found: INPUT id=lstQU.0
+13:12:00         PASS: Standard search ran successfully (2 secs)
+13:12:00         Average search runtime = 2 secs (iterations=1)
+13:12:00     Test step Run Std Search finished
+13:12:00     Test step Audit Option Configuration Tests started
+13:12:00         INFO: Attibute value found: A file being printed (Heeded Warning)
+13:12:00         INFO: Attibute value found: A file being written to a user's disk volume (Disregarded Warning)
+13:12:00         INFO: Attibute value found: A file moving over the network (Blocked)
+13:12:00         INFO: Attibute value found: File Moved
+13:12:00         INFO: Attibute value found: Web Event (Silent Control)
+13:12:00         INFO: Attibute value found: A file being printed (Disregarded Warning)
+13:12:00         INFO: Attibute value found: A file being written to a user's disk volume (Silent Control)
+13:12:00         INFO: Attibute value found: A file being written to a user's disk volume
+13:12:01         INFO: Attibute value found: Web Event (Blocked)
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Disregarded Inform)
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Encryption Requested and Ignored)
+13:12:01         INFO: Attibute value found: File Copied
+13:12:01         INFO: Attibute value found: A file being printed (Silent Control)
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Encryption Requested and Heeded)
+13:12:01         INFO: Attibute value found: Web Event (Heeded Warning)
+13:12:01         INFO: Attibute value found: A file being printed
+13:12:01         INFO: Attibute value found: Web Event (Disregarded Warning)
+13:12:01         INFO: Attibute value found: A file being printed
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Encryption Enforced and Canceled)
+13:12:01         INFO: Attibute value found: A file being printed (Blocked)
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Blocked)
+13:12:01         INFO: Attibute value found: A file being written to a user's disk volume (Heeded Warning)
+13:12:01         INFO: Attibute value found: Web Event
+13:12:01         INFO: Attibute value found: E-mail (Heeded Inform)
+13:12:03         PASS: Element found: By.id: btn_Pane.NewIssue
+13:12:04         INFO: Wait Element found: DIV id=Issue
+13:12:04         PASS: the correct audit fields are displayed (txtName, mandfield1, mandfield2, mandfield3, selComment)
+13:12:05         PASS: the Issue name is set correctly (Security Issue)
+13:12:05         PASS: the correct values are listed in the mandfield1 select {,Pending,Escalate,Close}
+13:12:05         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+13:12:05         PASS: the correct values are listed in the mandfield3 select {,Non Issue,Non Issue Policy Update,User Education,Awaiting Resolution}
+13:12:05         PASS: the default associated user is set to Sender: crestrepo (Claudia Restrepo)
+13:12:06         INFO: Wait Element found: DIV id=ShuttlePicker
+13:12:06         PASS: the correct values are listed in the selComment_picker select {Awaiting Response}
+13:12:07         INFO: Wait Element found: DIV id=SendMail
+13:12:07         INFO: Wait Element found: DIV id=content2Sample
+13:12:07         PASS: Default reply template is: User Correspondence
+13:12:10         Logout successful
+13:12:21         IISReset succeeded on dicri02-testw7.tb3.com
+13:12:40         Login successful as administrator
+13:12:43         INFO: Wait Element found: DIV id=Customize
+13:12:49         INFO: Wait Element found: DIV id=Issue
+13:12:49         PASS: the correct audit fields are displayed (txtName, mandfield1, mandfield2, btn_Lostin_Translation.Search, btn_Associated_Users.Search, btn_Associated_Incidents.Search, selComment)
+13:12:49         PASS: the Issue name is set correctly (Discuss with User)
+13:12:49         PASS: the correct values are listed in the mandfield1 select {,Pending,Escalate,Close,Done and Dusted,Scrooged}
+13:12:50         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+13:12:50         PASS: Allow Multi-select for Audit Field 3 (Resolution) successfully enabled
+13:12:50         INFO: Wait Element found: DIV id=ShuttlePicker
+13:12:50         PASS: the correct values are listed in the shuttlepicker_available select {Non Issue,Non Issue Policy Update,User Education}
+13:12:50         PASS: Allow Multi-select for Associated User field successfully enabled
+13:12:50         PASS: Element found: By.selector: label#ParticipantsLabel>span
+13:12:50         INFO: Wait Element found: DIV id=ShuttlePicker
+13:12:51         INFO: Attibute value found: imgBtn disBtn noLabel saBtn 
+13:12:51         INFO: Attibute value found: imgBtn noLabel saBtn 
+13:12:51         PASS: All Managed Users are associated with the New Issue
+13:12:52         PASS: Prevent No Associated Participants was enforced
+13:12:52         INFO: Wait Element found: DIV id=ShuttlePicker
+13:12:52         PASS: Option selected: 0 in shuttlepicker_available
+13:12:53         INFO: Wait Element found: DIV id=ShuttlePicker
+13:12:53         PASS: the correct values are listed in the selComment_picker select {Awaiting Response,Bananas in pyjamas are coming up the stairs,How do you like them apples?}
+13:12:53         PASS: Correct label shown for Audit Field 1: Ghostbusters:
+13:12:53         PASS: Correct label shown for Audit Field 2: Groundhog Day:
+13:12:53         PASS: Correct label shown for Audit Field 3: Lostin Translation:
+13:12:53         PASS: Option selected: Scrooged in mandfield1
+13:12:54         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+13:12:55         INFO: Wait Element found: DIV id=SendMail
+13:12:55         INFO: Wait Element found: DIV id=content2Sample
+13:12:56         PASS: Default reply template is: General Escalation
+13:12:58         Logout successful
+13:13:08         IISReset succeeded on dicri02-testw7.tb3.com
+13:13:27         Login successful as administrator
+13:13:28         INFO: Wait Element found: DIV id=Customize
+13:13:36         INFO: Wait Element found: DIV id=Issue
+13:13:37         PASS: the correct audit fields are displayed (Participants)
+13:13:37         PASS: the Issue name is set correctly (<blank>)
+13:13:37         PASS: the correct values are listed in the mandfield3 select {,Non Issue,Non Issue Policy Update,User Education}
+13:13:37         PASS: the default associated user is set to None (event-related)
+13:13:39         Logout successful
+13:13:50         IISReset succeeded on dicri02-testw7.tb3.com
+13:14:07         Login successful as administrator
+13:14:09         INFO: Wait Element found: DIV id=Customize
+13:14:14         INFO: Wait Element found: DIV id=Issue
+13:14:14         PASS: the Issue name is set correctly (Scrooged)
+13:14:15         PASS: Option selected: Close in mandfield1
+13:14:15         PASS: Audit Fields 2 & 3 set to 'Must Be Completed' when 'Close' selected for Field 1
+13:14:15         PASS: Validation error provoked by failing to fill in both 'Must Be Completed' fields
+13:14:15         PASS: Option selected: No Action Taken in mandfield2
+13:14:16         PASS: Validation error provoked by failing to fill in 'Must Be Completed' field 3
+13:14:16         PASS: Option selected: -1 in mandfield2
+13:14:16         PASS: Option selected: User Education in mandfield3
+13:14:17         PASS: Element found: By.selector: span.validationMessage
+13:14:17         PASS: Validation error provoked by failing to fill in 'Must Be Completed' field 2
+13:14:18         Bulk Audit using Field 1 value with 'Must Be Completed' setting:
+13:14:20             PASS: Element found: By.id: btn_Results.ToolAudit05
+13:14:21             INFO: Wait Element found: DIV id=Operation
+13:14:22             PASS: Element found: By.id: Operation
+13:14:22             PASS: Audit Operation dialog prompted for 'Must Be Completed' fields
+13:14:22             PASS: Option selected: No Action Taken in mandfield2
+13:14:22             PASS: Option selected: User Education in mandfield3
+13:14:22             INFO: Wait Element found: DIV id=BulkAuditOperation
+13:14:33             PASS: Bulk Audit operation completed successfully for 3 events
+13:14:33         Bulk Audit using Field 1 value with 'Must Be Completed' complete
+13:14:33         Bulk Audit using Field 1 value without 'Must Be Completed' setting:
+13:14:33             PASS: Event row id:3 -> CHECKED = true
+13:14:34             PASS: Event row id:4 -> CHECKED = true
+13:14:35             PASS: Event row id:5 -> CHECKED = true
+13:14:35             PASS: Element found: By.id: btn_Results.ToolAudit02
+13:14:35             INFO: Wait Element found: DIV id=BulkAuditOperation
+13:14:45             PASS: Bulk Audit operation completed successfully for 3 events
+13:14:46         Bulk Audit using Field 1 value without 'Must Be Completed' complete:
+13:14:46         Testing Auditing Issues with specific values:
+13:14:46             INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+13:14:50             INFO: Wait Element found: DIV id=Customize
+13:14:52             INFO: Checkbox By.id: chkUE was set to: false
+13:14:52             PASS: Option selected: Escalate in lstAS1
+13:14:54             PASS: Search returned only audited events with status=Escalate
+13:14:58             INFO: Text found: Close
+13:14:58             PASS: Audit Issue updated to Close
+13:14:59             INFO: Wait Element found: DIV id=Issue
+13:14:59             PASS: Audit issue updated to Close
+13:15:00             INFO: Wait Element found: DIV id=Customize
+13:15:01             PASS: Option selected: Close in lstAS1
+13:15:03             INFO: Text found: Close
+13:15:03             PASS: Search returned only audited events with status=Close
+13:15:03             PASS: Event row id:0 -> CHECKED = true
+13:15:04             PASS: Event row id:1 -> CHECKED = true
+13:15:04             INFO: Wait Element found: DIV id=BulkAuditOperation
+13:15:15             INFO: Text found: Skipped: 2
+13:15:15             PASS: Bulk Audit operation skipped 2 events
+13:15:15             INFO: Wait Element found: H3 id=_desc
+13:15:25             PASS: Event Information dialog shows 'Unable to apply changes as no matching issue was found'
+13:15:36         Specific value Auditing tests complete
+13:15:37         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+13:15:40     Test step Audit Option Configuration Tests finished
+13:15:42     Logout successful
+13:15:42 Test Case 'Audit Options' completed execution (see Summary for individual test details)
+13:15:42  
+13:15:42 Tests finished
+13:15:42 Summary: Test cases: 1, Tests: 64, Fails: 1, Known Fails: 0

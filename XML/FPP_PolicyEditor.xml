@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+	<PARAMS>
+	  
+    <!-- Values for the text / int value that is in input boxes by default-->
+	  
+        <!-- For Global Options -->
+    <DEFAULTPARAM1></DEFAULTPARAM1>
+	  <DEFAULTPARAM2>John Doe</DEFAULTPARAM2>
+	  <DEFAULTPARAM3>x1000</DEFAULTPARAM3>
+	  <DEFAULTPARAM4>1</DEFAULTPARAM4>
+    <DEFAULTPARAM5>Highest</DEFAULTPARAM5>
+    <DEFAULTPARAM6>Low</DEFAULTPARAM6>
+    <DEFAULTPARAM7>Monitor</DEFAULTPARAM7>
+    <DEFAULTPARAMTHRESHOLD1>5</DEFAULTPARAMTHRESHOLD1>
+    <DEFAULTPARAMMINEMAILSIZE1>10</DEFAULTPARAMMINEMAILSIZE1>
+    <DEFAULTPARAMMINEMAILSIZE2>10240</DEFAULTPARAMMINEMAILSIZE2>
+    <DEFAULTPARAMMINEMAILSIZE3>10485760</DEFAULTPARAMMINEMAILSIZE3>
+    <DEFAULTPARAMPAGESIZE1>10</DEFAULTPARAMPAGESIZE1>
+    <DEFAULTPARAMSAMPLERATE1>1000</DEFAULTPARAMSAMPLERATE1>
+    <DEFAULTPARAMATTACHNUM1>4</DEFAULTPARAMATTACHNUM1>
+      
+    <!-- For Corporate and regulatory compliance -->
+    <DEFAULTPARAM8>This message or the associated attachment(s) you are attempting to send is in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM8>
+    <DEFAULTPARAM9>The file you are attempting to print, move or save has been found to be in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM9>
+    <DEFAULTPARAM10>0</DEFAULTPARAM10>
+    <DEFAULTPARAM11>Report</DEFAULTPARAM11>
+    <DEFAULTPARAM12>This file has been moved as it was found to be in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM12>
+    <DEFAULTPARAM13>This content or file you are attempting to submit is in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM13>
+    
+        <!-- For Customer/ supplier Treatment -->
+    <DEFAULTPARAM14>
+Corporate policies mandate that customers and/or suppliers be treated professionally and fairly at all times. This message or the associated attachment(s) you are attempting to send is in possible violation of  a Customer/Supplier Treatment policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.
+    </DEFAULTPARAM14>
+    <DEFAULTPARAM15>The file you are attempting to print, move or save has been found to be in possible violation of a Customer/Supplier Treatment policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM15>
+    <DEFAULTPARAM16>This file has been moved as it was found to be in possible violation of a Customer/Supplier Treatment policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM16>
+    <DEFAULTPARAM17>Corporate policies mandate that customers and/or suppliers be treated professionally and fairly at all times. This content or file you are attempting to submit is in possible violation of  a Customer/Supplier Treatment policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM17>
+
+
+    <!-- For Employee Behavoir -->
+    <DEFAULTPARAM18>Corporate policies mandate that employee conduct is professional and exemplary. This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate employee behavior policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM18>
+    <DEFAULTPARAM19>The file you are attempting to print, move or save has been found to be in possible violation of a corporate employee behavior policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM19>
+    <DEFAULTPARAM20>This file has been moved as it was found to be in possible violation of a corporate employee behavior policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM20>
+    <DEFAULTPARAM21>Corporate policies mandate that employee conduct is professional and exemplary. This content or file you are attempting to submit is in possible violation of a corporate employee behavior policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM21>
+
+
+    <!-- For intellectual property -->
+    <DEFAULTPARAM22>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM22>
+    <DEFAULTPARAM23>The file you are attempting to print, move or save has been found to be in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM23>
+    <DEFAULTPARAM24>This file has been moved as it was found to be in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM24>
+    <DEFAULTPARAM25>This content or file you are attempting to submit is in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM25>
+    
+    
+    <!-- For Legal -->
+    <DEFAULTPARAM26>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate legal rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM26>
+    <DEFAULTPARAM27>The file you are attempting to print, move or save has been found to be in possible violation of a corporate legal rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM27>
+    <DEFAULTPARAM28>This file has been moved as it was found to be in possible violation of a corporate legal rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM28>
+    <DEFAULTPARAM29>This content or file you are attempting to submit is in possible violation of a corporate legal rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM29>
+
+    <!-- For No public information -->
+    <DEFAULTPARAM30>Corporate policy mandates that non public information (NPI) such as financial data, documents marked as "internal use only", pricing/sales information etc cannot be released outside of the firm. This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM30>
+    <DEFAULTPARAM31>The file you are attempting to print, move or save has been found to be in possible violation of "%triggername%" which is considered to be non public information and must be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM31>
+    <DEFAULTPARAM32>This file has been moved as it was found to be in possible violation of a corporate non-public information policy called "%triggername%" which is considered to be non public information and must be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM32>
+    <DEFAULTPARAM33>Corporate policy mandates that non public information (NPI) such as financial data, documents marked as "internal use only", pricing/sales information etc cannot be released outside of the firm. This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM33>
+
+    <!-- For No personnal health info -->
+    <DEFAULTPARAM34>Federal privacy standards require protection of personal health information such as patients' medical records, insurance and other health information provided to health plans, doctors, hospitals and other health care providers. This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM34>
+    <DEFAULTPARAM35>The file you are attempting to print, move or save has been found to be in possible violation of a personal health information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM35>
+    <DEFAULTPARAM36>This file has been moved as it was found to be in possible violation of a personal health information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM36>
+    <DEFAULTPARAM37>Federal privacy standards require protection of personal health information such as patients' medical records, insurance and other health information provided to health plans, doctors, hospitals and other health care providers. This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM37>
+
+    <!-- For No personnally identified info -->
+                
+    <DEFAULTPARAM38>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%" which is considered personally identifiable information (PII) and can be used for identity theft, planning robberies, stalking etc.
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM38>
+    <DEFAULTPARAM39>The file you are attempting to print, move or save has been found to be in possible violation of a personally identifiable information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM39>
+    <DEFAULTPARAM40>This file has been moved as it was found to be in possible violation of a personally identifiable information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM40>
+    <DEFAULTPARAM41>This content or file you are attempting to submit is in possible violation of a policy called "%triggername%" which is considered personally identifiable information (PII) and can be used for identity theft, planning robberies, stalking etc.
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM41>
+
+    <!-- For Security General / Corporate Policy -->
+
+    <DEFAULTPARAM42>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate security policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM42>
+    <DEFAULTPARAM43>The file you are attempting to print, move or save has been found to be in possible violation of a corporate security policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM43>
+    <DEFAULTPARAM44>This file has been moved as it was found to be in possible violation of a corporate security policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM44>
+    <DEFAULTPARAM45>This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM45>
+    
+
+    <!-- For User Defined -->
+
+    <DEFAULTPARAM47>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM47>
+    <DEFAULTPARAM48>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM48>
+    <DEFAULTPARAM49>The file you are attempting to print, move or save has been found to be in possible violation of a policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM49>
+    <DEFAULTPARAM50>This file has been moved as it was found to be in possible violation of a policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM50>
+    <DEFAULTPARAM51>The document you are attempting to print exceeds the page limit for large print jobs.  If this is necessary to print this many pages press continue to resume printing.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEFAULTPARAM51>
+
+
+
+    <!-- Values for the text / int value that we want to insert into the input boxes-->
+	<INSERTPARAM1>ANetworkPath</INSERTPARAM1>
+	<INSERTPARAM2>AnotherNetworkPath</INSERTPARAM2>
+	<INSERTPARAM3>YetAnotherNetworkPath</INSERTPARAM3>
+	<INSERTPARAM4>allie.feiler@orchlab.com</INSERTPARAM4>
+	<INSERTPARAM5>allyn.hulick@orchlab.com</INSERTPARAM5>
+	<INSERTPARAM6>cary.minok@orchlab.com</INSERTPARAM6>
+	<INSERTPARAM7>graham.puma@orchlab.com</INSERTPARAM7>
+	<INSERTPARAM8>sharon.sze@orchlab.com</INSERTPARAM8>
+	<INSERTPARAM9>Derek Jobsworth III</INSERTPARAM9>
+	<INSERTPARAM10>x12345</INSERTPARAM10>
+	<INSERTPARAM11>orchlab.com</INSERTPARAM11>
+	<INSERTPARAM12>this is a very bad thing to say indeed</INSERTPARAM12>
+	<INSERTPARAM13>nothing to see here</INSERTPARAM13>
+	<INSERTPARAM14>*.mp3</INSERTPARAM14>
+	<INSERTPARAM15>2000</INSERTPARAM15>
+	<INSERTPARAM16>10</INSERTPARAM16>
+	  
+	<!-- Values for the navigation to the individual policy tabs -->
+
+	<TABID>tab_editPolicy</TABID>
+	<LINKID>LinkPolicyGroup1</LINKID>
+    <TREEID>treeToggle_</TREEID>
+
+    <RULES>Rules</RULES>
+	<NEXTPAGECHECK1>btn_Rules.Close</NEXTPAGECHECK1>
+    <EDITBUTTONID>btn_Edit_</EDITBUTTONID>
+	<TABID>tab_</TABID>
+
+    <!-- <AMLEMAILBUTTONID>treeTitle_1.0.0 </AMLEMAILBUTTONID>
+    <CRCEXPANDOPTIONS>treeToggle_1.0</CRCEXPANDOPTIONS>
+    <BRDMBIEDITBUTTON>btn_Edit_1_1_</BRDMBIEDITBUTTON>
+    <BRDMBIEDITBUTTON>btn_Edit_1_2_</BRDMBIEDITBUTTON> -->
+    
+    <!-- Values for input boxes--> <!-- Need to just define each type eg text-->
+    <TEXT>text</TEXT>
+    <LIST>list</LIST>
+    <LISTITEM>listitem</LISTITEM>
+    <DATALOOKUP>datalookupitem</DATALOOKUP>
+    <OPTION>option</OPTION>
+
+    <!-- Values for check boxes-->
+    <CHECKBOX>treeChk</CHECKBOX>
+    <AMLCHECKBOX1>treeChk_1.0</AMLCHECKBOX1>
+    <AMLCHECKBOX2>treeChk_1.0.0</AMLCHECKBOX2>
+    <AMLCHECKBOX3>treeChk_1.0.1</AMLCHECKBOX3>
+    <AMLCHECKBOX4>treeChk_1.0.2</AMLCHECKBOX4>
+    <AMLCHECKBOX5>treeChk_1.0.3</AMLCHECKBOX5>
+    
+	<!-- error text for integer fields -->
+	<ERRORTEXT1>This setting must be a positive number. Note: the use of decimal places is not supported.</ERRORTEXT1>
+   
+
+  
+  </PARAMS>
+
+ 
+  <!-- Common blocks will have one set for each Policy Class-->
+  <COMMON_OBJ>
+    
+    <!-- general -->
+
+    <!-- Common content tab -->
+    <COMMONCONTENT NegativeIndicators="yes|no" PositiveIndicators="yes|no" ImmediateDisqualifier="yes|no" SensitivitySetting="yes|no" ThresholdValue="yes|no" ThresholdDefault="DEFAULTPARAM4|DEFAULTPARAMTHRESHOLD1" >
+		<TAB clickid="%TABID%" label="Common Content">
+      <IF ImmediateDisqualifier="yes" >
+        <TEXTBOX label="Immediate Disqualifier - enter words and phrases that if present, will prevent the policy from matching the section of the event in which they are found." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+      </IF>
+      <IF ThresholdValue="yes">
+        <TEXTBOX label="Threshold Value - enter a number to override the default threshold value." clickid="%LIST%" default="$ThresholdDefault$" testval="%INSERTPARAM15%" />
+      </IF>
+        <IF PositiveIndicators="yes" >
+			<TEXTBOX label="Positive Indicators - enter names or numbers relating to accounts or individuals involved in possible anti-money laundering behavior that should trigger policy. You may also enter words or phrases being used in lieu of industry terms to mask the existence of such actions." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM13%" />
+		  </IF>
+		  <IF NegativeIndicators="yes" > 
+			<TEXTBOX label="Negative Indicators - enter disclaimer text and other organization specific information as it appears in an event where it triggered policy incorrectly. Commas in disclaimers must be entered with a leading \." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%"/>
+		  </IF>
+      <IF SensitivitySetting="yes" >
+		  <SELECT  label="Sensitivity Setting - select a setting that determines the Sensitivity Setting of the policy." clickid="%TEXT%" default="%DEFAULTPARAM5%" value="minscore(3)" testval="Highest" />
+      </IF>
+      </TAB>
+	</COMMONCONTENT>   
+    <!-- Email tab -->
+    <EMAIL addresses="message text" incaddress="yes|no" no7="yes|no" extrecip="yes|no" ExcludedAddresses="yes|no" message="default_text" ExcludedSearchText="yes|no" IncludedFileNames="yes|no" PositiveIndicators="yes|no" MinEmailSize="yes|no" MinEmailSizeDefault="DEFAULTPARAMMINEMAILSIZE1|DEFAULTPARAMMINEMAILSIZE2" SamplingRate="yes|no" Attachnum="yes|no">		
+      <TAB clickid="%TABID%" label="E-mail">
+	<SELECT  label="Enter a severity that will be assigned to incidents violating this policy" clickid="%TEXT%" default="%DEFAULTPARAM6%" value="50" testval="High" />
+	<SELECT  label="Apply the following action" clickid="%OPTION%" default="%DEFAULTPARAM7%" value="Monitor" testval="Monitor" />
+	<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INSERTPARAM12%" />
+	<IF ExcludedAddresses="yes">
+		<TEXTBOX label="$addresses$" clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM13%" />
+	</IF>
+	<IF ExcludedSearchText="yes">
+		<TEXTBOX label="Excluded Search Text - enter words or phrases that will prevent policy from being applied to any section of an e-mail if found in the subject." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+	</IF>	
+	<IF incaddress="yes" >
+		<TEXTBOX label="Included Addresses - enter addresses of recipients to which policy should be applied." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM7%" />
+	</IF>
+	<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+	<IF no7="yes" >
+		<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+	</IF>
+	<IF extrecip="yes" >
+		<TEXTBOX label="Enter a numeric value into this field. Any message that has more external recipients than this value will trigger the policy." clickid="%DATALOOKUP%" default="%DEFAULTPARAM8%" testval="%INSERTPARAM16%" />
+	</IF>
+	<IF IncludedFileNames="yes">
+		<TEXTBOX label="Excluded File Names - enter file types to be excluded from policy using the format *.filetype. Multiple entries must be separated by a comma." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+	</IF>
+	<IF PositiveIndicators="yes">
+		<TEXTBOX label="Positive Indicators - enter fully qualified e-mail names or e-mail addresses of senior managers whose messages should not be forwarded." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+	</IF>
+	<IF MinEmailSize="yes">
+		<TEXTBOX label="Minimum E-mail Size - enter numeric value as minimum e-mail size (in KB - kilobytes) required to trigger policy." clickid="%LISTITEM%" default="$MinEmailSizeDefault$" testval="%INSERTPARAM16%" />
+	</IF>
+        <IF SamplingRate="yes">
+		<TEXTBOX label="Sampling Rate - enter a number that will determine at what rate this policy will fire." clickid="%LISTITEM%" default="DEFAULTPARAMSAMPLERATE1" testval="%INSERTPARAM12%" />
+        </IF>
+        <IF Attachnum="yes">
+		<TEXTBOX label="Enter a numeric value into this field. Any message that has more attachments than this value will trigger the policy." clickid="%LISTITEM%" default="DEFAULTPARAMATTACHNUM1" testval="%INSERTPARAM16%" />
+        </IF>
+      </TAB>
+    </EMAIL>   
+    <!-- Files in motion tab -->
+    <FILESINMOTION>
+	<TAB clickid="%TABID%" label="Files in Motion" message="default_text" no4="yes|no" no6="yes|no" DefaultMinFileSize="DEFAULTPARAM10|DEFAULTPARAMMINEMAILSIZE3" PrintJobSize="yes|no">
+		<SELECT  label="Enter a severity that will be assigned to incidents violating this policy." clickid="%TEXT%" default="%DEFAULTPARAM6%" value="50" testval="High" />
+		<SELECT  label="Apply the following action." clickid="%OPTION%" default="%DEFAULTPARAM7%" value="Monitor" testval="Warn" />
+		<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INSERTPARAM12%" />
+		<TEXTBOX label="Excluded File Names - enter file types to be excluded from policy using the format *.filetype. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+		<IF no4="yes" >
+			<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+		</IF>		  
+		<INTEGERBOX label="Minimum File Size - enter a minimum file size (in bytes) needed to trigger policy." clickid="%DATALOOKUP%" dp="0" min="0" max="" default="$DefaultMinFileSize$" testval="%INSERTPARAM15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+		<IF no6="yes" >
+			<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+		</IF>
+	      <TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+	      <IF PrintJobSize="yes" >
+		<INTEGERBOX label="Print Job Size - enter numeric value as minimum number of pages that can be printed before triggering the warning." clickid="%DATALOOKUP%" dp="0" min="0" max="" default="DEFAULTPARAMPAGESIZE1" testval="%INSERTPARAM15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+	      </IF>
+	</TAB>
+    </FILESINMOTION>
+    <!-- data at rest tab -->
+    <DATAATREST>
+		<TAB clickid="%TABID%" label="Data at Rest" message="default_text" no4="yes|no" no6="yes|no" DefaultMinFileSize="DEFAULTPARAM10|DEFAULTPARAMMINEMAILSIZE3">
+			<SELECT  label="Enter a severity that will be assigned to incidents violating this policy." clickid="%TEXT%" default="%DEFAULTPARAM6%" value="50" testval="High" />
+			<SELECT  label="Apply the following action." clickid="%OPTION%" default="%DEFAULTPARAM11%" value="Report" testval="Delete" />
+			<TEXTBOX label="Stub File Content - enter the text that the user will see when a 'Replace with Stub File' action is activated." clickid="%TEXT%" default="$message$" testval="%INSERTPARAM12%" />
+			<TEXTBOX label="Excluded File Names - enter file types to be excluded from policy using the format *.filetype. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+			<IF no4="yes" >
+				<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+			</IF>
+			<INTEGERBOX label="Minimum File Size - enter a minimum file size (in bytes) needed to trigger policy." dp="0" min="0" max="" clickid="%DATALOOKUP%" default="$DefaultMinFileSize$" testval="%INSERTPARAM15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+			<IF no6="yes" >
+				<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+			</IF>
+			<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+		</TAB>
+	</DATAATREST>   
+    <!-- Web end point -->
+    <WEBENDPOINT>
+		<TAB clickid="%TABID%" label="Web - Endpoint" message="default_text" no4="yes|no" >
+			<SELECT label="Enter a severity that will be assigned to incidents violating this policy" clickid="%TEXT%" default="%DEFAULTPARAM6%" value="50" testval="High" />
+			<SELECT label="Apply the following action" clickid="%OPTION%" default="%DEFAULTPARAM7%" value="Monitor" testval="Warn" />
+			<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INSERTPARAM12%" />
+			<TEXTBOX label="Excluded URLs - enter URLs of sites to be excluded from the application of this policy. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+			<IF no4="yes" >
+				<TEXTBOX label="" clickid="%%" default="%%" testval="%%" />
+			</IF>
+			<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+		</TAB>
+    </WEBENDPOINT>
+    
+  </COMMON_OBJ>
+
+<!-- ********************************************************* Main GUI definitions ******************************************************************************** -->
+
+   <MAINTAB clickid="%TABID%" label="Policy">
+    <LINK clickid="%LINKID%" label="Standard Policy Pack">
+	
+	 <!-- Global policy options -->
+	 
+      <TREE label="Global Options" clickid="%TREEID%" checkid="%EDITBUTTONID%" closeid="%NEXTPAGECHECK1%">
+	  
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%" label="Action Configuration - Data At Rest" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Report Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM1%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Replace Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM2%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Delete Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM3%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%"  label="Action Configuration - Data In Motion - E-mail" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Monitor Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM4%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Advise Encryption Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM5%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Enforce Encryption Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM6%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Warn Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM7%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Block Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM8%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%" label="Security Officer Contact Information Configuration" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Settings">
+            <TEXTBOX label="Enter the name of the security officer who will be responsible for fielding any questions related to security violations." clickid="%LIST%" default="%DEFAULTPARAM2%" testval="%INSERTPARAM9%" />
+            <TEXTBOX label="Enter the phone extension of the security officer who will be responsible for fielding any questions related to security violations." clickid="%LIST%" default="%DEFAULTPARAM3%" testval="%INSERTPARAM10%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%"  label="Miscellaneous" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Internal Domains Variable">
+            <TEXTBOX label="Global Internal Domains - enter the list of e-mail domains that are considered internal to your organization e.g. internal.com. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM11%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Global Policy Variables">
+            <TEXTBOX label="Global Subject Excludes - enter words or phrases that will prevent policy from being applied to any section of an e-mail if found in the subject." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM12%" />
+            <TEXTBOX label="Global Immediate Disqualifier - enter words and phrases that if present, will prevent the policy from matching the section of the event in which they are found." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM13%" />
+            <TEXTBOX label="Global File Exclude List - enter file types to be globally excluded from policy using the following format *.filetype." clickid="%LIST%" default="%DEFAULTPARAM1%" testval="%INSERTPARAM14%" />
+            <INTEGERBOX label="Maximum Size of Email Distribution Lists - Specify a threshold number of list members. After expanding this number of recipients from the distribution list, or if expanding a nested distribution list would exceed this number, no further individual recipients are extracted." 
+			dp="0" min="0" max="" clickid="%LIST%" default="%DEFAULTPARAM4%" testval="%INSERTPARAM15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+          </TAB>
+        </SUB_TREE_NODE>
+      </TREE>
+
+   <!--Test data for Corporate and Regulatory Compliance --> 
+ 
+     <TREE label="Corporate and Regulatory Compliance" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+		<SUB_TREE_NODE label="Anti-Money Laundering - OFAC" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+			<COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no" />
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Bid Rigging Detection: Insurance" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE label="Bid Rigging Detection: Municipal Bond Insurance" checkbox="%AMLCHECKBOX1%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE label="Blast E-mail" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Gatekeeper Address(es). These entries will prevent policy from triggering on any communication that includes one of these recipient(s)." incaddress="no" no7="no" extrecip="yes" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Bribes/&amp;thinsp;Kickbacks/&amp;thinsp;Quid Pro Quos/&amp;thinsp;Blackmail" checkbox="%AMLCHECKBOX1%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE label="Broker Error" checkbox="%AMLCHECKBOX1%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Communication with Regulatory, Legal and Governmental Authorities" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Gatekeeper Address(es). These entries will prevent policy from triggering on any communication that includes one of these recipient(s)." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Fair and Balanced Advice" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Information Destruction Alert" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Investment Advice Prohibition" checkbox="%AMLCHECKBOX1%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Securities Parking" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Solicitations: Charitable" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Solicitations: General" checkbox="%AMLCHECKBOX1%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Solicitations: Political" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Solicitations: Private Investments" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Solicitations: Religious" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Tax Advice Prohibition" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Trading in an Outside Account: Order Confirmations" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Trading in an Outside Account: Order Placements" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Whistleblower" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM8%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM9%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM12%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM13%" no4="no" />
+          </SUB_TREE_NODE>
+        </TREE>
+
+
+        <!--Test data for Customer/ Supplier treatment -->
+
+        <TREE label="Customer/ Supplier Treatment" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+          <SUB_TREE_NODE label="Customer Complaints: Response Prohibition" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Customer Complaints: Unprofessional Responses" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+			<COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Customer Conditioning" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+			<COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Customer Threats" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+			<COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Exclusivity" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+			<COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Gifts and Entertainments" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Guarantess and Assurances" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM16%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      
+        <SUB_TREE_NODE label="Unqualified Rebates or Benefits" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM14%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no" />
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM15%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM15%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM17%" no4="no" />
+        </SUB_TREE_NODE>
+      </TREE>
+
+      <!--Test data for Employee behaviour -->
+
+      <TREE label="Employee Behavior" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Coercive Behavior and Intimidation" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Communication with Competitors" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Gatekeeper Address(es). These entries will prevent policy from triggering on any communication that includes one of these recipient(s)." incaddress="no" no7="no" extrecip="yes" ExcludedAddresses="no" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Communication with the Press/ News Organizations" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="yes" ExcludedAddresses="no" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Corporate Criticism" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Deceptive Language" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Discrimination and Racism" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Discrimination: Age" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Fantasy Leagues" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Gambling prohibition" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Harisment" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inappropriate, Offensive and Sexual Language" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Intent to resign" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Jokes" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Office relationships - romantic" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Outside business activities" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Termination \ layoffs" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="UK Resumes / CV's" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="US Resumes / CV's" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM18%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM19%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM20%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM21%" no4="no" />
+        </SUB_TREE_NODE>
+
+      </TREE>
+
+        <!--Test data for Intellectual Property (IP) -->
+
+      <TREE label="Intellectual Property (IP)" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Confidential trade data" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM22%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM23%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM24%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM25%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Patent applications" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM22%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM23%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM24%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM25%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Product and design spec" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM22%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM23%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM24%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM25%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Propritey software code" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM22%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM23%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM24%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM25%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Technical specs and design" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM22%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM23%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM24%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM25%" no4="no" />
+        </SUB_TREE_NODE>
+        </TREE>
+
+      <!--Test data for Legal -->
+
+      <TREE label="Legal" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Attrony client privage" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM26%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM27%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM28%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM29%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Discussion of legal procedings" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM26%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM27%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM28%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM29%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Potential ethical issues" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM26%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM27%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM28%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM29%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Potential legal issues" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM26%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM27%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM28%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM29%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Threats of litigation" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM26%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM27%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM28%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM29%" no4="no" />
+        </SUB_TREE_NODE>
+
+      </TREE>
+
+      <!--Test data No public information -->
+
+      <TREE label="No public information" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Board minutes and discussions" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Corporate contracts" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Customer lists" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="draft documentation" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Financial information - balance sheet" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Financial information income statement" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Financial information projections" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Information security label control" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inside info / front running" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inside info / no public company" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inside info / no public financial" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inside info / rumors and secrets" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Inside info / trading ahead of research" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Internal investigations" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Internal IT docs" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Licence agreement" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Mergers and accisitions" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Pricing list" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Project info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Restricted list" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="no" SensitivitySetting="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Sales info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM30%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM31%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM32%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM33%" no4="no" />
+        </SUB_TREE_NODE>
+        
+    </TREE>
+
+
+      <!--Test data No personnal health info -->
+
+      <TREE label="No personnal health info" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Benefits enrollent info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Diagnosis info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Individually identifiable heath info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Medical billings and claims" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Medical history" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Medical records numbers" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Medical records numbers thresholds" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM34%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM35%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM36%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM37%" no4="no" />
+        </SUB_TREE_NODE>
+        </TREE>
+
+      <!--Test data Personnally identifiable information -->
+
+      <TREE label="Personnally identifiable information" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <EXTRA_NODE label="National ID Numbers " checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          
+          <SUB_TREE_NODE label="Australian Medicare Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Australian State Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Australian Tax File Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Canadian Social Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Canadian Social Insurance Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Canadian Social Insurance Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Chinese Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="German Social Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Hong Kong Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Indian Permanent Account Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Indonesian Identity Card Number  (Nomor Induk Kependudukan)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Irish Personal Public Service Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Italian National Identification Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Macau Permanent Resident Identity Card (BIRP)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Macau Non-Permanent Resident Identity Card (BIRNP)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Malaysian National Registration Identification Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Pakistan National Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Singapore National Registration Identity Card" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Taiwan Identity Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Thailand Population Identification Code" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Social Security Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Social Security Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Social Security Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK Drivers License - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK National Insurance Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK National Insurance Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK National Insurance Number with Additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK Tax Identification Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="UK Tax Identification Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Drivers License" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Drivers License - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Passport Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Passport Number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Taxpayer Identification Number (TIN)" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="US Taxpayer Identification Number (TIN) - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="Vietnam ID Card Number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAM4"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+        </EXTRA_NODE>
+
+          <SUB_TREE_NODE label="Account number" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM%38" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+          </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Account number - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Account number and routing info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="no" />
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Account number withn additional PII" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Background Checks" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Credit Card Info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Credit Card Info - Threshold" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="yes" default="DEFAULTPARAMTHRESHOLD1"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Credit Report" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Employee eval info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Uk employee comp info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Unecrypted wire transfer info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="yes" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="US employee compensation info" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="no" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM38%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM39%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM40%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM41%" no4="no" />
+        </SUB_TREE_NODE>
+        </TREE>
+
+      <!--Test data Security general corp policy -->
+
+      <TREE label="Personnally identifiable information" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+        <SUB_TREE_NODE label="Audio Files" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="yes" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="E-mail to personal Addresses" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="yes" no7="no" extrecip="no" ExcludedAddresses="no" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Forwarding Senior Management E-mail or Documents" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="yes" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="yes" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Graphic and Image Files" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="yes" PositiveIndicators="no" MinEmailSize="yes" ThresholdDefault="DEFAULTPARAMMINEMAILSIZE1" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Large Message or File Size" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="yes" ThresholdDefault="DEFAULTPARAMMINEMAILSIZE2" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAMMINEMAILSIZE3"/>
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAMMINEMAILSIZE3"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Large Print Job Warning" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM46%" no4="no" no6="no" PrintJobSize="yes"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Network security Threats" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM45%" no4="no" />
+        </SUB_TREE_NODE>
+
+
+        <SUB_TREE_NODE label="Password Protection and Encryption: Prohibition" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="yes" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Ramdom Sample" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="no" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="yes"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Sharing of user names and passwords" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="yes" ThresholdValue="no"/>
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Suspicious E-mail Behavior" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Transfer of attachments - Threshold" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Transfer of personal E-mailFile Folders" checkbox="" defaultcheckbox="" clickid="%TREEID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="yes" SamplingRate="no"/>
+        </SUB_TREE_NODE>
+
+        <SUB_TREE_NODE label="Video Files" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+          <COMMON type="EMAIL" message="%DEFAULTPARAM42%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="no" no7="no" extrecip="no" ExcludedAddresses="yes" ExcludedSearchText="no" IncludedFileNames="yes" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+          <COMMON type="FILESINMOTION" message="%DEFAULTPARAM43%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+          <COMMON type="DATAATREST" message="%DEFAULTPARAM44%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+        </SUB_TREE_NODE>
+
+      </TREE>
+
+        <!--Test data User defined policy -->
+
+        <TREE label="User defined" checkbox="%CHECKBOX%" defaultcheckbox="%DEFAULTCHECKBOX%" clickid="%TREEID%" checkid="%EDITBUTTONID%">
+
+          <SUB_TREE_NODE label="User Defined 1" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM47%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="yes" no7="no" extrecip="no" ExcludedAddresses="no" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM48%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM49%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM50%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="User Defined 2" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM47%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="yes" no7="no" extrecip="no" ExcludedAddresses="no" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM48%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM49%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM50%" no4="no" />
+          </SUB_TREE_NODE>
+
+          <SUB_TREE_NODE label="User Defined 3" checkbox="" defaultcheckbox="" clickid="%EDITBUTTONID%" checkid="%RULES%" >
+            <COMMON type="COMMONCONTENT" NegativeIndicators="no" PositiveIndicators="yes" ImmediateDisqualifier="yes" SensitivitySetting="no" ThresholdValue="no"/>
+            <COMMON type="EMAIL" message="%DEFAULTPARAM47%" addresses="Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy." incaddress="yes" no7="no" extrecip="no" ExcludedAddresses="no" ExcludedSearchText="yes" IncludedFileNames="no" PositiveIndicators="no" MinEmailSize="no" Attachnum="no" SamplingRate="no"/>
+            <COMMON type="FILESINMOTION" message="%DEFAULTPARAM48%" no4="no" no6="no" PrintJobSize="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="DATAATREST" message="%DEFAULTPARAM49%" no4="no" no6="no" DefaultMinFileSize="DEFAULTPARAM10" />
+            <COMMON type="WEBENDPOINT" message="%DEFAULTPARAM50%" no4="no" />
+          </SUB_TREE_NODE>
+
+
+
+
+
+
+
+        </TREE>
+</LINK>
+  </MAINTAB>         
+            
+</ICONSOLE>

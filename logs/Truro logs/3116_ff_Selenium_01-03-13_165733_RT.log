@@ -1,0 +1,83 @@
+16:57:33 Tests started
+16:57:33 iConsole Automation Package Version: 
+16:57:52 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0
+16:57:52 Platform: Win32
+16:57:58 Login successful as Selenium Reviewer
+16:57:58 iConsole Release: 14.5.3116.0
+16:57:59 Test Case 'Search Response Times' started.
+16:57:59     Test step Search Response Times started
+16:57:59         Search User:jkimber, address: jkimber@orchestria.com
+16:57:59         Starting Stress Loop: 1
+16:58:00             INFO: Wait Element found: DIV id=Customize
+16:58:01             PASS: Option selected: All Dates in __attr4dateRange
+16:58:04             PASS: Test case 0 search ran successfully in 3 secs
+16:58:04             Checking the parameters used in the search:
+16:58:04                 PASS: The correct 'dateRange' value was used in the search ('2;1;2;1', 'All Dates')
+16:58:04                 PASS: All Event Types were used in the search
+16:58:04             Checking search parameters completed
+16:58:05             INFO: Wait Element found: DIV id=Customize
+16:58:06             INFO: Wait Element found: INPUT id=txtNameMatch
+16:58:07             INFO: Wait Element found: DIV id=progressContent
+16:58:10             PASS: Test case 1 search ran successfully in 2 secs
+16:58:10             Checking the parameters used in the search:
+16:58:10                 PASS: The correct 'dateRange' value was used in the search ('2;1;2;1', 'All Dates')
+16:58:10                 PASS: All Event Types were used in the search
+16:58:10                 PASS: The correct 'txtNameMatch' value was used in the search ('jkimber')
+16:58:10             Checking search parameters completed
+16:58:10             INFO: Wait Element found: DIV id=Customize
+16:58:11             INFO: Wait Element found: INPUT id=txtNameMatch
+16:58:12             INFO: Wait Element found: H3 id=AvailableItems_desc
+16:58:12             INFO: Wait Element found: DIV id=progressContent
+16:58:14             PASS: Specific name match set to jkimber
+16:58:14             INFO: Wait Element found: DIV id=progressContent
+16:58:16             PASS: Test case 2 search ran successfully in 2 secs
+16:58:16             Checking the parameters used in the search:
+16:58:16                 PASS: The correct 'dateRange' value was used in the search ('2;1;2;1', 'All Dates')
+16:58:16                 PASS: All Event Types were used in the search
+16:58:16                 PASS: the txtSpecificMatch element contained the correct entries (jkimber)
+16:58:16             Checking search parameters completed
+16:58:17             INFO: Wait Element found: DIV id=Customize
+16:58:18             INFO: Wait Element found: BUTTON id=btn2txtSpecificMatch
+16:58:18             INFO: Wait Element found: SELECT id=__attr4dateRange
+16:58:18             PASS: Option selected: Today in __attr4dateRange
+16:58:20             INFO: Wait Element found: DIV id=progressContent
+16:58:22             PASS: Test case 3 search ran successfully in 1 secs
+16:58:22             Checking the parameters used in the search:
+16:58:22                 PASS: The correct 'dateRange' value was used in the search ('2;1;2;2', 'Today'')
+16:58:22                 PASS: E-mail Events only were used in the search
+16:58:22             Checking search parameters completed
+16:58:22             INFO: Wait Element found: DIV id=Customize
+16:58:23             PASS: Option selected: All Dates in __attr4dateRange
+16:58:24             PASS: Option selected: Days in __attr3dateRange
+16:58:24             INFO: Wait Element found: DIV id=progressContent
+16:58:26             PASS: Test case 4 search ran successfully in 2 secs
+16:58:26             Checking the parameters used in the search:
+16:58:26                 PASS: The correct 'dateRange' value was used in the search ('1;2;1;1', 'Specified period: 2 days')
+16:58:26                 PASS: E-mail Events only were used in the search
+16:58:26             Checking search parameters completed
+16:58:27             INFO: Wait Element found: DIV id=Customize
+16:58:30             PASS: Option selected: Addressee 1 sent E-mails to Addressee 2 in lstEEDir
+16:58:30             INFO: Wait Element found: DIV id=progressContent
+16:58:31             PASS: Test case 5 search ran successfully in 1 secs
+16:58:31             Checking the parameters used in the search:
+16:58:31                 PASS: The correct 'dateRange' value was used in the search ('1;1;1;1', 'Specified period: 1 day')
+16:58:31                 PASS: E-mail Events only were used in the search
+16:58:31                 PASS: The correct 'txtEEAddress1' value was used in the search ('jkimber@orchestria.com')
+16:58:31                 PASS: The correct 'lstEEDir' value was used in the search ('Addressee 1 sent E-mails to Addressee 2')
+16:58:31             Checking search parameters completed
+16:58:32             INFO: Wait Element found: DIV id=Customize
+16:58:33             INFO: Wait Element found: DIV id=progressContent
+16:58:34             PASS: Test case 6 search ran successfully in 1 secs
+16:58:34             Checking the parameters used in the search:
+16:58:34                 PASS: The correct 'dateRange' value was used in the search ('1;2;1;1', 'Specified period: 2 days')
+16:58:34                 PASS: E-mail Events only were used in the search
+16:58:34                 PASS: The correct 'txtEEAddress1' value was used in the search ('jkimber@orchestria.com')
+16:58:34                 PASS: The correct 'lstEEDir' value was used in the search ('Addressee 1 sent E-mails to Addressee 2')
+16:58:34             Checking search parameters completed
+16:58:35         Completed Stress Loop: 1
+16:58:35     Test step Search Response Times finished
+16:58:37     Logout successful
+16:58:37 Test Case 'Search Response Times' completed execution (see Summary for individual test details)
+16:58:37  
+16:58:37 Tests finished
+16:58:37 Summary: Test cases: 1, Tests: 33, Fails: 0, Known Fails: 0

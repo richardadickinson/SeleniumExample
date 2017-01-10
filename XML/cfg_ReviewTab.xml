@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   
+    Document   : cfg_reviewtab.xml
+    Created on : 16 March 2012, 09:21
+    Author     : dicri02
+    Description: Tests the Review Tab GUI and verifies OOTB Search and Report defaults and confirms they all run
+    Parameters :  The path to the xml file that contains the GUI definition, default parameters and common objects need to be provided.
+		  This can be located anywhere on the local machine:
+			<parameter name="dataStructure" value="XML\ReviewTabx.xml" />   <-- full path or relative to the test suite jar file
+
+-->
+
+
+<root>
+
+	<test name="Review Tab" sso="false" username="admin">
+		<step classname="testcases.ReviewTab" name="Review Tab">
+			<parameter name="dataStructure" value="XML\DataStructures\ReviewTab.xml" />
+		</step>
+	</test>
+
+</root>

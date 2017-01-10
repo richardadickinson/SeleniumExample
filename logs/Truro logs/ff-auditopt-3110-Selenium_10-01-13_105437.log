@@ -1,0 +1,138 @@
+10:54:37 Tests started
+10:54:37 iConsole Automation Package Version: 
+10:54:52 Audit Options WKType 11 was restored to default
+10:54:52 Audit Field 1 value idx=5 was restored to default
+10:54:53 Audit Field 1 value idx=39 was restored to default
+10:54:53 Audit Field 1 Label was restored to default
+10:54:53 Audit Field 2 Label was restored to default
+10:54:53 Audit Field 3 Label was restored to default
+10:54:53 Removing Audit comment: Bananas in pyjamas are coming up the stairs
+10:54:53 Removing Audit comment: How do you like them apples?
+10:54:53 Audit Field 1 "Other Audit Fields" restored to default
+10:54:53 Audit Button 3 settings restored to default
+10:54:53 Audit Button 5 settings restored to default
+10:55:10 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0
+10:55:10 Platform: Win32
+10:55:25 Login successful as administrator
+10:55:25 iConsole Release: 14.5.3110.0
+10:55:25 Test Case 'Audit Options' started.
+10:55:25     Test step Run Std Search started
+10:55:29         INFO: Wait Element found: INPUT id=txtSubject
+10:55:29         INFO: Wait Element found: INPUT id=lstQU.0
+10:55:40         PASS: Standard search ran successfully (9 secs)
+10:55:40         Average search runtime = 9 secs (iterations=1)
+10:55:40     Test step Run Std Search finished
+10:55:40     Test step Audit Option Configuration Tests started
+10:55:40         INFO: Attibute value found: E-mail (Heeded Warning)
+10:55:44         PASS: Element found: By.id: btn_Pane.NewIssue
+10:55:48         INFO: Wait Element found: DIV id=Issue
+10:55:48         PASS: the correct audit fields are displayed (txtName, mandfield1, mandfield2, mandfield3, selComment)
+10:55:49         PASS: the Issue name is set correctly (Security Issue)
+10:55:49         PASS: the correct values are listed in the mandfield1 select {,Pending,Escalate,Close}
+10:55:49         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+10:55:49         PASS: the correct values are listed in the mandfield3 select {,Non Issue,Non Issue Policy Update,User Education,Awaiting Resolution}
+10:55:49         PASS: the default associated user is set to Sender: mcrowe (Martin Crowe)
+10:55:49         INFO: Wait Element found: DIV id=ShuttlePicker
+10:55:49         PASS: the correct values are listed in the selComment_picker select {Awaiting Response}
+10:55:53         INFO: Wait Element found: DIV id=SendMail
+10:55:54         INFO: Wait Element found: DIV id=content2Sample
+10:55:54         PASS: Default reply template is: User Correspondence
+10:55:57         Logout successful
+10:56:12         IISReset succeeded on 593-tb-dicri02
+10:56:36         Login successful as administrator
+10:56:43         INFO: Wait Element found: DIV id=Customize
+10:57:02         INFO: Wait Element found: DIV id=Issue
+10:57:02         PASS: the correct audit fields are displayed (txtName, mandfield1, mandfield2, btn_Lost in Translation.Search, btn_Associated Users.Search, btn_Associated Incidents.Search, selComment)
+10:57:02         PASS: the Issue name is set correctly (Discuss with User)
+10:57:02         PASS: the correct values are listed in the mandfield1 select {,Pending,Escalate,Close,Done and Dusted,Scrooged}
+10:57:02         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+10:57:02         PASS: Allow Multi-select for Audit Field 3 (Resolution) successfully enabled
+10:57:02         INFO: Wait Element found: DIV id=ShuttlePicker
+10:57:03         PASS: the correct values are listed in the shuttlepicker_available select {Non Issue,Non Issue Policy Update,User Education}
+10:57:03         PASS: Allow Multi-select for Associated User field successfully enabled
+10:57:03         PASS: Element found: By.selector: label#ParticipantsLabel>span
+10:57:03         INFO: Wait Element found: DIV id=ShuttlePicker
+10:57:03         INFO: Attibute value found: imgBtn noLabel saBtn 
+10:57:03         INFO: Attibute value found: imgBtn noLabel saBtn 
+10:57:03         FAIL: All Managed Users are not associated with the New Issue
+10:57:03         INFO: Wait Element found: DIV id=ShuttlePicker
+10:57:04         PASS: the correct values are listed in the selComment_picker select {Awaiting Response,Bananas in pyjamas are coming up the stairs,How do you like them apples?}
+10:57:04         PASS: Correct label shown for Audit Field 1: Ghostbusters:
+10:57:04         PASS: Correct label shown for Audit Field 2: Groundhog Day:
+10:57:04         PASS: Correct label shown for Audit Field 3: Lost in Translation:
+10:57:04         PASS: Option selected: Scrooged in mandfield1
+10:57:04         PASS: the correct values are listed in the mandfield2 select {,No Action Taken,Discuss with User,Escalate to Management,Escalate to Security,Escalate to Compliance,Escalate to HR,Escalate to Legal}
+10:57:08         INFO: Wait Element found: DIV id=SendMail
+10:57:09         INFO: Wait Element found: DIV id=content2Sample
+10:57:09         PASS: Default reply template is: General Escalation
+10:57:12         Logout successful
+10:57:27         IISReset succeeded on 593-tb-dicri02
+10:57:52         Login successful as administrator
+10:57:56         INFO: Wait Element found: DIV id=Customize
+10:58:16         INFO: Wait Element found: DIV id=Issue
+10:58:17         PASS: the correct audit fields are displayed (Participants)
+10:58:17         PASS: the Issue name is set correctly (<blank>)
+10:58:17         PASS: the correct values are listed in the mandfield3 select {,Non Issue,Non Issue Policy Update,User Education}
+10:58:17         PASS: the default associated user is set to None (event-related)
+10:58:21         Logout successful
+10:58:36         IISReset succeeded on 593-tb-dicri02
+10:59:00         Login successful as administrator
+10:59:04         INFO: Wait Element found: DIV id=Customize
+10:59:24         INFO: Wait Element found: DIV id=Issue
+10:59:24         PASS: the Issue name is set correctly (Scrooged)
+10:59:24         PASS: Option selected: Close in mandfield1
+10:59:25         PASS: Audit Fields 2 & 3 set to 'Must Be Completed' when 'Close' selected for Field 1
+10:59:27         PASS: Validation error provoked by failing to fill in both 'Must Be Completed' fields
+10:59:27         PASS: Option selected: No Action Taken in mandfield2
+10:59:29         PASS: Validation error provoked by failing to fill in 'Must Be Completed' field 3
+10:59:29         PASS: Option selected: -1 in mandfield2
+10:59:29         PASS: Option selected: User Education in mandfield3
+10:59:31         PASS: Element found: By.selector: span.validationMessage
+10:59:31         PASS: Validation error provoked by failing to fill in 'Must Be Completed' field 2
+10:59:31         Bulk Audit using Field 1 value with 'Must Be Completed' setting:
+10:59:33             PASS: Element found: By.id: btn_Results.ToolAudit05
+10:59:35             INFO: Wait Element found: DIV id=Operation
+10:59:35             PASS: Element found: By.id: Operation
+10:59:35             PASS: Audit Operation dialog prompted for 'Must Be Completed' fields
+10:59:35             PASS: Option selected: No Action Taken in mandfield2
+10:59:35             PASS: Option selected: User Education in mandfield3
+10:59:35             INFO: Wait Element found: DIV id=BulkAuditOperation
+10:59:45             PASS: Bulk Audit operation completed successfully for 3 events
+10:59:46         Bulk Audit using Field 1 value with 'Must Be Completed' complete
+10:59:46         Bulk Audit using Field 1 value without 'Must Be Completed' setting:
+10:59:46             PASS: Event row id:3 -> CHECKED = true
+10:59:47             PASS: Event row id:4 -> CHECKED = true
+10:59:48             PASS: Event row id:5 -> CHECKED = true
+10:59:48             PASS: Element found: By.id: btn_Results.ToolAudit02
+10:59:48             INFO: Wait Element found: DIV id=BulkAuditOperation
+10:59:58             PASS: Bulk Audit operation completed successfully for 3 events
+10:59:58         Bulk Audit using Field 1 value without 'Must Be Completed' complete:
+10:59:58         Testing Auditing Issues with specific values:
+10:59:59             INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:00:06             INFO: Wait Element found: DIV id=Customize
+11:00:07             INFO: Checkbox By.id: chkUE was set to: false
+11:00:07             PASS: Option selected: Escalate in lstAS1
+11:00:12             PASS: Search returned only audited events with status=Escalate
+11:00:22             INFO: Text found: Close
+11:00:22             PASS: Audit Issue updated to Close
+11:00:25             INFO: Wait Element found: DIV id=Issue
+11:00:25             PASS: Audit issue updated to Close
+11:00:29             INFO: Wait Element found: DIV id=Customize
+11:00:29             PASS: Option selected: Close in lstAS1
+11:00:34             INFO: Text found: Close
+11:00:34             PASS: Search returned only audited events with status=Close
+11:00:35             PASS: Event row id:0 -> CHECKED = true
+11:00:35             PASS: Event row id:1 -> CHECKED = true
+11:00:36             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:00:46             INFO: Text found: Skipped: 2
+11:00:46             PASS: Bulk Audit operation skipped 2 events
+11:00:46             INFO: Wait Element found: H3 id=_desc
+11:00:57             PASS: Event Information dialog shows 'Unable to apply changes as no matching issue was found'
+11:01:09         Specific value Auditing tests complete
+11:01:10         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:01:14     Test step Audit Option Configuration Tests finished
+11:01:36     Logout successful
+11:01:36 Test Case 'Audit Options' completed execution (see Summary for individual test details)
+11:01:36  
+11:01:36 Tests finished
+11:01:36 Summary: Test cases: 1, Tests: 61, Fails: 1, Known Fails: 0

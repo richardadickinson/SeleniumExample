@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_auditopts.xml
+    Created on : 01 March 2012, 10:11
+    Author     : dicri02
+    Description: Test the various Audit options configurations affect in the iConsole
+    Parameters : There are no special parameters for this test step but the test uses the search test step to run the Standard Search first.
+		 The test case may be run as an admin or BULK reviewer user.   
+
+-->
+
+
+<root>
+
+   	<test name="Audit Options" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Std Search">
+		</step>
+		<step classname="testcases.AuditOptions" name="Audit Option Configuration Tests">
+		</step>
+	</test> 
+
+</root>

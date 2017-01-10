@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<searches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://localhost/WgnWebService/Schemas/SearchDefinition.xsd">
+
+	<search 
+		spname="Audit_Status_Report" 
+		major="1" 
+		minor="1" 
+		label="Audit Status Report" 
+		description="Provides a reviewer with a list of all issues with a particular status" 
+		category="Reports" 
+		class="EventReport"
+		report="true" 
+		show_parameters="true">
+		<parameters>
+			<parameter_group label="In Date Range" tooltip="Limit the search to a specific time period" width="100%">
+				<parameter name="dateRange" type="date_range" label="Date Range" argpos="1"/>
+			</parameter_group>
+			<parameter_group label="Audit State - As tagged by reviewer"  tooltip="Limit the search by various options" width="100%">
+				<parameter name="lstAuditStatus" type="list" argpos="2" label="Audit Status:" value="0" size="1" sppackage="Wgn_iConsole" spname="CSWGN_BBG_AuditField1List" tooltip="Select to filter events by audit status field 1" report="false" />
+			</parameter_group>
+			<parameter_group label="By Bloomberg User ID" tooltip="Limit the search by selecting specific users" width="100%">
+				<parameter name="txtNameMatch" type="lookupbyid" argpos="3"  label="Employee:" size="60" lookup_function="NameLookup" tooltip="Enter a list of the names (separated with ;) of users to be included in the results" report="false"/>
+			</parameter_group>
+			<!-- A Comment -->
+			<script><![CDATA[
+					 <script language="javascript">
+					 <!-- 
+					  function NameLookup(name, nameDisabled)
+					  {
+					   PopupWithHiddenField('User Selector', 'User_Picker', 1, 1, nameDisabled, name);
+					  }
+					 -->
+					 </script>
+				]]></script>
+		</parameters>
+		<!--results row_function="_EventDetails" ref="event_uid"-->
+		<results>
+			<column name="eventuid" type="id" primary_key="false" hidden="true"/>
+			<column name="EventTimeStamp" type="timestamp" width="9%" label="Date/Time Timestamp"/>
+			<column name="SenderUUID" type="text" width="9%" label="Sender UUID" show_tooltip="true"/>
+			<column name="sender" type="link" width="11%" label="Sender" show_tooltip="true" link_function="_UserDetails" ref="user_uid"/>
+			<column name="recipients" type="text" width="11%" label="Recipients" show_tooltip="true"/>
+			<column name="subject" type="text" width="11%" label="Subject Line" show_tooltip="true"/>
+			<column name="Status_Change_Date" type="timestamp" width="9%" label="Status Date Change"/>
+			<column name="Status" type="text" width="6%" label="Audit Status"/>
+			<column name="PolicyName" type="text" width="9%" label="Policy Name"/>
+			<column name="Resolution" type="text" width="6%" label="Action/Resolution"/>
+			<column name="Comments" type="text" width="11%" label="Comments"/>
+			<column name="Reviewers" type="text" width="8%" label="Current Reviewer"/>
+			<column name="user_uid" type="id" hidden="true"/>
+			<column name="part_index" type="id" hidden="true"/>
+			<column name="$SID" type="text" hidden="true"/>
+			<tool name="excel" tooltip="Show Excel View" icon="excel.gif" function="ShowExcel"/>
+			<script>
+				<![CDATA[
+					<script language="javascript">
+					<!--
+						var bExcelLoaded = false;
+						var bExcelDisplayed = false;
+						var cols = 'abcdefghijklmnopqrstuvwxyz';
+						function ResultsComponent()
+						{
+							document.write('<object id="excel" width="100%" height="100%" classid="'+OWCClassID('Spreadsheet')+'">');
+							document.write('<param name="Caption" value="Orchestria iConsole Results">');
+							document.write('<param name="DisplayTitleBar" value="true">');
+							document.write('<param name="DataType" value="HTMLData">');
+							document.write('<param name="AutoFit" value="false">');
+							document.write('<param name="EnableEvents" value="true">');
+							document.write('<param name="DisplayWorkbookTabs" value="false">');
+							document.write('<param name="DisplayRowHeadings" value="true">');
+							document.write('<param name="DisplayColumnHeadings" value="true">');
+							document.write('<p>This feature requires the Microsoft Office Web Components to be installed.<br/>'); 
+							document.write('Visit <a href="http://www.microsoft.com/downloads" target="_blank">Microsoft Downloads</a> to get them.</p>');
+							document.write('</object><br/>');
+						}
+						function ShowExcel(name)
+						{
+							if (!bExcelDisplayed) LoadSpreadsheet();
+							bExcelDisplayed = !bExcelDisplayed;
+							ShowResultsComponent(bExcelDisplayed);
+							ShowResultsTable(!bExcelDisplayed);
+							document.getElementById('imgTool_'+name).title = 
+								(bExcelDisplayed) ? 'Hide Excel View' : 'Show Excel View';
+							document.getElementById('imgTool_'+name).src = 
+								'images/'+ ((bExcelDisplayed) ? 'excel-pressed' : 'excel') + '.gif';
+						}
+						function cellref(c, r)
+						{
+							if (c > 25)
+								return cols.charAt(c/26-1) + cols.charAt(c%26)+r;
+							else 
+								return cols.charAt(c)+r
+						}
+						function LoadSpreadsheet()
+						{
+							try {
+								var excel = document.getElementById('excel');
+								if (excel != null) {
+									var version = parseInt(excel.Version);
+									if (version >= 10)
+									{
+										if (excel.Worksheets.Count > 1)
+										{
+											excel.Worksheets(1).Name = 'Search Results';
+											excel.Worksheets(3).Delete();
+											excel.Worksheets(2).Delete();
+										}
+									}
+
+            						// Unlock all cells
+            						excel.ActiveSheet.Protection.Enabled = false;
+           							excel.ActiveSheet.Cells.Locked = false;
+					                
+									var theHeading = document.getElementById('tblResultsTableHeading');
+									var theTable = document.getElementById('tblResultsTable');
+
+									// Copy the column headings
+									for (var c = 2; c < theHeading.tBodies[0].rows[0].cells.length; c++)
+									{
+										// Swap these to put headings on the columns
+										excel.Range(cellref(c-2,1)).Value = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+										//excel.ActiveWindow.ColumnHeadings(c-1).Caption = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+									}
+									
+									// Copy cells from existing table
+									for (var r = 0; r < theTable.tBodies[0].rows.length; r++)
+									{
+										for (var c = 2; c < theTable.tBodies[0].rows[r].cells.length; c++)
+										{
+											// Swap these to put headings on the columns
+											excel.Range(cellref(c-2, r+2)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+											//excel.Range(cellref(c-2, r+1)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+										}
+            						}
+	             					
+            						// Set the timestamp format
+ 									excel.ActiveSheet.Columns(2).Select();
+									excel.Selection.NumberFormat = "dd/mmmm/yyyy hh:mm:ss";
+									
+           							// Fit the columns
+            						excel.Cells.Select();
+            						if (version >= 10)
+            							excel.Selection.EntireColumn.AutoFit();
+            						else
+              							excel.Selection.AutoFitColumns();
+            						excel.Cells(1,1).Select();
+
+            						// Lock all cells
+           							excel.ActiveSheet.Cells.Locked = true;
+            						if (version >= 10)
+            							excel.ActiveSheet.Protection.AllowFormattingColumns = true;
+            						else
+	           							excel.ActiveSheet.Protection.AllowSizingAllColumns = true;
+            						excel.ActiveSheet.Protection.Enabled = true;
+										           					
+            						bExcelLoaded = true;
+            					}
+            				}
+            				catch (e)
+            				{
+             					alert(e.message);
+	           				}
+						}
+					-->
+					</script>
+				]]>
+			</script>
+		</results>
+	</search>
+	<search 
+		spname="Detail_Alert" 
+		major="1" 
+		minor="2" 
+		label="Detailed Alert Report" 
+		description="Provides a reviewer with a list of all issues that have been created for an individual, regardless of the status" 
+		category="Reports" 
+		class="EventReport"		
+		report="true" 
+		show_parameters="true">
+		<parameters>
+			<parameter_group label="In Date Range" tooltip="Limit the search to a specific time period" width="100%">
+				<parameter name="dateRange" type="date_range" label="Date Range" argpos="1"/>
+			</parameter_group>
+			<parameter_group label="By Bloomberg User ID" tooltip="Limit the search by selecting specific users" width="100%">
+				<parameter name="txtNameMatch" type="lookupbyid" argpos="2" label="Employee:" size="60" lookup_function="NameLookup" tooltip="Enter a list of the names (separated with ;) of users to be included in the results" report="false" />
+			</parameter_group>
+			<!-- A Comment -->
+			<script><![CDATA[
+					<script language="javascript">
+					<!-- 
+						function NameLookup(name, nameDisabled)
+						{
+							PopupWithHiddenField('User Selector', 'User_Picker', 1, 1, nameDisabled, name);
+						}
+					-->
+					</script>
+				]]></script>
+		</parameters>
+		<!--results row_function="_EventDetails" ref="event_uid"-->
+		<results>
+			<column name="eventuid" type="id" primary_key="false" hidden="true"/>
+			<column name="Reviewers" type="text" width="10%" label="Current Reviewer"/>
+			<column name="SenderUUID" type="text" width="9%" label="Sender UUID" show_tooltip="true"/>
+			<column name="sender" type="link" width="12%" label="Sender" show_tooltip="true" link_function="_UserDetails" ref="user_uid"/>
+			<column name="EventTimeStamp" type="timestamp" width="9%" label="Date/Time Timestamp"/>
+			<column name="recipients" type="text" width="12%" label="Recipient(s)" show_tooltip="true"/>
+			<column name="PolicyName" type="text" width="12%" label="Policy Name"/>
+			<column name="Status" type="text" width="7%" label="Status"/>
+			<column name="Action" type="text" width="7%" label="Action/Resolution"/>
+			<column name="Issue" type="text" width="7%" label="Issue"/>
+			<column name="Comments" type="text" width="15%" label="Comments"/>
+			<column name="user_uid" type="id" hidden="true"/>
+			<column name="$SID" type="text" hidden="true"/>
+			<tool name="excel" tooltip="Show Excel View" icon="excel.gif" function="ShowExcel"/>
+			<script>
+				<![CDATA[
+					<script language="javascript">
+					<!--
+						var bExcelLoaded = false;
+						var bExcelDisplayed = false;
+						var cols = 'abcdefghijklmnopqrstuvwxyz';
+						function ResultsComponent()
+						{
+							document.write('<object id="excel" width="100%" height="100%" classid="'+OWCClassID('Spreadsheet')+'">');
+							document.write('<param name="Caption" value="Orchestria iConsole Results">');
+							document.write('<param name="DisplayTitleBar" value="true">');
+							document.write('<param name="DataType" value="HTMLData">');
+							document.write('<param name="AutoFit" value="false">');
+							document.write('<param name="EnableEvents" value="true">');
+							document.write('<param name="DisplayWorkbookTabs" value="false">');
+							document.write('<param name="DisplayRowHeadings" value="true">');
+							document.write('<param name="DisplayColumnHeadings" value="true">');
+							document.write('<p>This feature requires the Microsoft Office Web Components to be installed.<br/>'); 
+							document.write('Visit <a href="http://www.microsoft.com/downloads" target="_blank">Microsoft Downloads</a> to get them.</p>');
+							document.write('</object><br/>');
+						}
+						function ShowExcel(name)
+						{
+							if (!bExcelDisplayed) LoadSpreadsheet();
+							bExcelDisplayed = !bExcelDisplayed;
+							ShowResultsComponent(bExcelDisplayed);
+							ShowResultsTable(!bExcelDisplayed);
+							document.getElementById('imgTool_'+name).title = 
+								(bExcelDisplayed) ? 'Hide Excel View' : 'Show Excel View';
+							document.getElementById('imgTool_'+name).src = 
+								'images/'+ ((bExcelDisplayed) ? 'excel-pressed' : 'excel') + '.gif';
+						}
+						function cellref(c, r)
+						{
+							if (c > 25)
+								return cols.charAt(c/26-1) + cols.charAt(c%26)+r;
+							else 
+								return cols.charAt(c)+r
+						}
+						function LoadSpreadsheet()
+						{
+							try {
+								var excel = document.getElementById('excel');
+								if (excel != null) {
+									var version = parseInt(excel.Version);
+									if (version >= 10)
+									{
+										if (excel.Worksheets.Count > 1)
+										{
+											excel.Worksheets(1).Name = 'Search Results';
+											excel.Worksheets(3).Delete();
+											excel.Worksheets(2).Delete();
+										}
+									}
+
+            						// Unlock all cells
+            						excel.ActiveSheet.Protection.Enabled = false;
+           							excel.ActiveSheet.Cells.Locked = false;
+					                
+									var theHeading = document.getElementById('tblResultsTableHeading');
+									var theTable = document.getElementById('tblResultsTable');
+
+									// Copy the column headings
+									for (var c = 2; c < theHeading.tBodies[0].rows[0].cells.length; c++)
+									{
+										// Swap these to put headings on the columns
+										excel.Range(cellref(c-2,1)).Value = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+										//excel.ActiveWindow.ColumnHeadings(c-1).Caption = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+									}
+									
+									// Copy cells from existing table
+									for (var r = 0; r < theTable.tBodies[0].rows.length; r++)
+									{
+										for (var c = 2; c < theTable.tBodies[0].rows[r].cells.length; c++)
+										{
+											// Swap these to put headings on the columns
+											excel.Range(cellref(c-2, r+2)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+											//excel.Range(cellref(c-2, r+1)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+										}
+            						}
+	             					
+            						// Set the timestamp format
+ 									excel.ActiveSheet.Columns(2).Select();
+									excel.Selection.NumberFormat = "dd/mmmm/yyyy hh:mm:ss";
+									
+           							// Fit the columns
+            						excel.Cells.Select();
+            						if (version >= 10)
+            							excel.Selection.EntireColumn.AutoFit();
+            						else
+              							excel.Selection.AutoFitColumns();
+            						excel.Cells(1,1).Select();
+
+            						// Lock all cells
+           							excel.ActiveSheet.Cells.Locked = true;
+            						if (version >= 10)
+            							excel.ActiveSheet.Protection.AllowFormattingColumns = true;
+            						else
+	           							excel.ActiveSheet.Protection.AllowSizingAllColumns = true;
+            						excel.ActiveSheet.Protection.Enabled = true;
+										           					
+            						bExcelLoaded = true;
+            					}
+            				}
+            				catch (e)
+            				{
+             					alert(e.message);
+	           				}
+						}
+					-->
+					</script>
+				]]>
+			</script>
+		</results>
+	</search>
+
+</searches>

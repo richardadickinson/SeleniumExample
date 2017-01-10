@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   
+    Document   : cfg_admintab.xml
+    Created on : 02 February 2011, 12:25
+    Author     : dicri02
+    Description: Tests the functions of the Administration tab - Publish/Unpublish, Install/Uninstall, Search Tree, 
+			Edit & Test Action menu items & deriving a new search
+    Parameters :  The paths to the xml files that contain the test search and report definitions need to be provided.
+		      These can be anywhere on the local machine:
+				<parameter name="searchesPath" value="C:\Temp\test_Searches.xml" />
+				<parameter name="reportsPath" value="C:\Temp\test_Reports.xml" />
+		     The other parameters used here are fixed hash values for the searches and reports contained in test_reports.xml and test_searches.xml,
+		     and for a derived search that will be created during the test. NONE OF THEM SHOULD BE CHANGED.
+		     The test case uses 2 logins to validate admin tab changes, the first must be an administrator the second should be a reviewer.
+-->
+
+
+<root>
+	
+	<test name="Administration tab" sso="false" username="admin" rlsusername="rls1" >
+      	<step classname="testcases.Admin_tab" name="Search Administration" >
+			<parameter name="searchExePath" value="C:\ctc\java\test_Searches.exe" />
+			<parameter name="searchesPath" value="C:\ctc\java\test_Searches.xml" />
+			<parameter name="reportsPath" value="C:\ctc\java\test_Reports.xml" />
+       	</step>  
+       	<step classname="testcases.AdminDerivedSearches" name="Derived Searches" >
+       	</step>
+	</test>
+
+</root>

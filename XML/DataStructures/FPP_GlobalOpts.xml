@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+	 
+   <MAINTAB clickid="%TABID%" label="Policy">
+    <LINK clickid="%LINKID%" label="Standard Policy Pack">
+	
+	 <!-- Global policy options -->
+	 
+      <TREE label="Global Options" clickid="%TREEID%" checkid="%EDITBUTTONID%" closeid="%NEXTPAGECHECK1%">
+	  
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%" label="Action Configuration - Data At Rest" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Report Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEF_1%" testval="%INS_1%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Replace Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEF_1%" testval="%INS_2%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Delete Action">
+            <TEXTBOX label="Global Copy File To Location - enter a valid UNC or local file system path to copy file(s) that trigger all Data At Rest policies." clickid="%TEXT%" default="%DEF_1%" testval="%INS_3%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%"  label="Action Configuration - Data In Motion - E-mail" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Monitor Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEF_1%" testval="%INS_4%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Advise Encryption Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEF_1%" testval="%INS_5%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Enforce Encryption Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEF_1%" testval="%INS_6%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Warn Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEF_1%" testval="%INS_7%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Block Action">
+            <TEXTBOX label="Global Forward To - enter the e-mail address for the recipient of forwarded e-mails." clickid="%TEXT%" default="%DEF_1%" testval="%INS_8%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%" label="Security Officer Contact Information Configuration" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Settings">
+            <TEXTBOX label="Enter the name of the security officer who will be responsible for fielding any questions related to security violations." clickid="%LIST%" default="%DEF_2%" testval="%INS_9%" />
+            <TEXTBOX label="Enter the phone extension of the security officer who will be responsible for fielding any questions related to security violations." clickid="%LIST%" default="%DEF_3%" testval="%INS_10%" />
+          </TAB>
+        </SUB_TREE_NODE>
+		
+        <SUB_TREE_NODE clickid="%EDITBUTTONID%"  label="Miscellaneous" checkid="%RULES%" >
+          <TAB clickid="%TABID%" label="Internal Domains Variable">
+            <TEXTBOX label="Global Internal Domains - enter the list of e-mail domains that are considered internal to your organization e.g. internal.com. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEF_1%" testval="%INS_11%" />
+          </TAB>
+          <TAB clickid="%TABID%" label="Global Policy Variables">
+            <TEXTBOX label="Global Subject Excludes - enter words or phrases that will prevent policy from being applied to any section of an e-mail if found in the subject." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+            <TEXTBOX label="Global Immediate Disqualifier - enter words and phrases that if present, will prevent the policy from matching the section of the event in which they are found." clickid="%LIST%" default="%DEF_1%" testval="%INS_13%" />
+            <TEXTBOX label="Global File Exclude List - enter file types to be globally excluded from policy using the following format *.filetype." clickid="%LIST%" default="%DEF_1%" testval="%INS_14%" />
+            <INTEGERBOX label="Maximum Size of Email Distribution Lists - Specify a threshold number of list members. After expanding this number of recipients from the distribution list, or if expanding a nested distribution list would exceed this number, no further individual recipients are extracted." 
+			dp="0" min="0" max="" clickid="%LIST%" default="%DEF_4%" testval="%INS_15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+          </TAB>
+        </SUB_TREE_NODE>
+      </TREE>
+
+     </LINK>
+  </MAINTAB>         
+            
+</ICONSOLE>

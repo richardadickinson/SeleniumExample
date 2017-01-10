@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : systemConfiguration.xml
+    Created on : 07 December 2010, 16:42
+    Author     : dicri02
+    Description:
+        Purpose of the document is to supply system specific test parameters:
+
+		seleniumhost="localhost" 		
+		CA DATAMINDER CMS & DB parameters:
+			cms				<IP or FQDN of parent CMS to iConsole server under test> e.g. "593-tb-fast"
+			dbname			<CMS database name> e.g. "WGN_593-TB-FAST" 
+			dbtype			<CMS database type> e.g. "sqlserver" or "oracle"
+			dbserver		<CMS database instance> e.g. "593-tb-fast" for SQL or "CMSORA2" for Oracle
+			dbusername		<DB admin login name> e.g. "sa" 
+			dbpassword		<DB admin login password> e.g. "avon" 
+		Domain security dialog parameters:
+			domainuser		<domain login name> e.g. "tb\administrator"	
+			domainpassword	<domain login password> e.g. "yeo"
+		Titles of the security popups for domain login on IE & FF, may change with browser version but mostly here for localisation:
+			iedomainlogin   "Windows Security" 
+			ffdomainlogin   "Authentication Required"
+		iConsole server and browser parameters:	
+			targetbrowser   <ie8|ie9|ie10|firefox|chrome> 			
+			webserver		<IP or FQDN of iConsole frontend server under test> e.g. "130.119.46.26" 
+			virtualdir		<iConsole virtual directory> e.g. "CADATAMINDER" 
+			protocol		<web protocol in use> e.g. "http://"  or for SSL "https://" 
+		Other system parameters:
+			extraspath	 	<path to all 3rd party utilities required to run scripts>
+			pop3host		<pop3 server location for validating audit mail sent from the iConsole> e.g. "130.119.46.13"
+			loglevel  		0 - none
+							1 - errors only
+							2 - + known errors
+							3 - + Tests
+							4 - Informational
+							5 - debug
+		Debug params:
+			firebug		"C:\Users\dicri02\AppData\Roaming\Mozilla\Firefox\Profiles\mudugu4a.default\extensions\firebug@software.joehewitt.com.xpi"
+	
+	Test users are defined as follows and then accessed via their 'ref' attribute in the other cfg files:
+		<users>
+			<user ref="admin" name="administrator" value="axe" />
+			<user ref="rls1" name="Selenium Reviewer" value="qa" />
+		</users>
+-->
+
+<root>
+    <config
+        seleniumhost="localhost"
+        targetbrowser="chrome"
+		extraspath="Misc"
+		domainuser="tb3\administrator"
+		domainpassword="yeo"
+		cms="dicri02-testw7.tb3.com"
+		dbtype="sqlserver"
+		dbserver="593-tb-fast.tb3.com"
+		dbname="WGN_DICRI02-TESTW7"
+		dbusername="sa" 
+		dbpassword="avon"
+		protocol="http://"
+		webserver="dicri02-testw7.tb3.com"
+		virtualdir="CADATAMINDER"
+		pop3host="130.119.46.13" 
+		loglevel="4"
+		iedomainlogin="Windows Security"
+		ffdomainlogin="Authentication Required"
+    />
+	<users>
+		<user ref="admin" name="administrator" value="axe" />
+		<user ref="rls1" name="Selenium Reviewer" value="qa" />
+		<user ref="rls2" name="psims" value="qa" />
+		<user ref="match1" name="jkimber" value="jkimber@orchestria.com" />
+		<user ref="match2" name="*richardd*" value= "*" />
+		<user ref="pop3" name="tb3\richardd" value="qa" />
+	</users>
+</root>

@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--*************************************************************************************
+  © Copyright Orchestria Ltd 2006. All rights reserved.
+*****************************************************************************************
+
+  Project:       APM Bloomberg Reports
+  Component:     Reports
+  Author:        Andy Reinke
+  Create Date:   22 Mar 2006
+  Description:   iConsole Standard standard Reports for Bloomberg
+
+*****************************************************************************************
+
+  Source Code Control Information (do not change this section)
+
+  Filename:      $Archive: /QA/Test Tools/Source Code/Selenium/Truro/misc/test_Searches.xml $
+  Revision:      $Revision: 1 $
+  Modified by:   $Author: Dicri02 $
+  Modified date: $Modtime: 31/08/12 10:34 $
+
+**************************************************************************************-->
+<searches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://localhost/WgnWebService/Schemas/SearchDefinition.xsd">
+  <search 
+    spname="Bloomberg_Standard_Search" 
+    major="2" 
+    minor="13" 
+    label="Bloomberg Standard Search" 
+    description="Standard Bloomberg Search screen." 
+    type="published"
+    class="EventReview"
+    help="help/htm/Standard_Search.htm"
+    >
+    <parameters>
+      <parameter_group label="Search For" tooltip="Define the main parameters for the search">
+
+        <parameter name="chkBB" type="checkbox" argpos="16" label="Email Violations" value="true" align="left" tooltip="Select to get captured Bloomberg Events" onclick="CheckType('BB');"/>
+        <parameter name="chkIME" type="checkbox" argpos="18" label="IM Violations" value="true" align="left" tooltip="Select to get captured Instant Message Events" onclick="CheckType('IME');"/>
+
+        <parameter_line>
+          <parameter name="txtBBAddress1" type="text" argpos="1" label="Address:" align="left" size="25" tooltip="Match string for Bloomberg addressee"/>
+          <parameter name="lstBBDir"  type="list" label="" argpos="2" align="left" tooltip="Select direction of Bloomberg between addressees">
+            <option>&lt;-&gt;</option>
+            <option>&lt;-</option>
+            <option>-&gt;</option>
+          </parameter>
+          <parameter name="txtBBAddress2" type="text" argpos="3" colspan="2" size="25" align="left" tooltip="Match string for Bloomberg addressee"/>
+        </parameter_line>
+
+        <parameter_line>
+          <parameter name="txtSubject" type="text" argpos="4" label="Message Subject:" colspan="7" size="60" tooltip="Match string for Message Subject"/>
+        </parameter_line>
+        <parameter_line>
+          <parameter name="chkSubject" type="checkbox" argpos="5" align="left" tooltip="Select to get messages with blank subject"/>
+          <parameter name="labAudit" type="label" colspan="4" label="Find Empty Subject Only"/>
+        </parameter_line>
+        <parameter_line>
+          <parameter name="txtTrigger" type="lookup" argpos="6" label="Policy Name" colspan="4" size="50" lookup_function="TriggerLookup" tooltip="Policy Name as tagged by the system"/>
+        </parameter_line>
+      </parameter_group>
+      <parameter_group label="By Bloomberg User ID or Group" collapse="true" tooltip="Limit the search by selecting specific users" width="100%">
+        <parameter_line>
+          <parameter name="lstUG" type="list" argpos="7" label="Select:" tooltip="Select between users and groups" onchange="UserGroupChanged();">
+            <option>Employee</option>
+            <option>Group</option>
+          </parameter>
+          <parameter name="chkIncSubGrps" type="checkbox" argpos="9" value="false" align="left" label="Include sub-groups" tooltip="Select to include the sub-groups below the selected groups"/>
+        </parameter_line>
+        <parameter name="txtSpecificMatch" type="lookupbyid" argpos="8" label="Specific Match:" size="60" lookup_function="NameLookup" tooltip="Choose a list of the names of users or groups to be included in the results"/>
+      </parameter_group>
+      <parameter_group label="Audit State - As tagged by reviewer" collapse="true" tooltip="Limit the search by specifying the audit details of interest">
+        <parameter_line>
+          <parameter name="labAudit" type="label" label="Show:"/>
+          <parameter name="chkUE" type="checkbox" argpos="20" value="true" colspan="9" label="Unreviewed Events" tooltip="Select to get events that have not been reviewed" onclick="CheckAudit('UE');"/>
+        </parameter_line>
+        <parameter_line>
+          <parameter name="spacer" type="label" label=""/>
+          <parameter name="chkRE" type="checkbox" argpos="19" value="true" colspan="9" label="Reviewed Events" tooltip="Select to get events that have been reviewed" onclick="CheckAudit('RE');"/>
+        </parameter_line>
+        <parameter_line>
+          <parameter name="spacer" type="label" label=""/>
+          <parameter name="labAS1" type="label" colspan="3" label="Audit Status:"/>
+          <parameter name="labAS2" type="label" colspan="3" label="Issue:"/>
+          <parameter name="labAS3" type="label" colspan="2" label="Action / Resolution:"/>
+        </parameter_line>
+        <parameter_line>
+          <parameter name="lstAS1" type="list" argpos="10" value="0" size="1" sppackage="Wgn_iConsole" spname="CSWGN_BBG_AuditField1List" tooltip="Select to filter events by audit status field 1"/>
+          <parameter name="lblAnd12" type="label" label="AND"/>
+          <parameter name="lstAS2" type="list" argpos="11" value="0" size="1" sppackage="Wgn_iConsole" spname="CSWGN_BBG_AuditField2List" tooltip="Select to filter events by audit status field 2"/>
+          <parameter name="lblAnd23" type="label" label="AND"/>
+          <parameter name="lstAS3" type="list" argpos="12" value="0" size="1" sppackage="Wgn_iConsole" spname="CSWGN_BBG_AuditField3List" tooltip="Select to filter events by audit status field 3"/>
+        </parameter_line>
+        <parameter name="txtAuditor" type="text" argpos="13" label="Auditor:" colspan="5" size="30" tooltip="Match string for auditor of events"/>
+      </parameter_group>
+	  <parameter_group label="In Date Range" tooltip="Limit the search to a specific time period" width="100%">
+		<parameter name="dateRange" type="date_range" argpos="21"/>
+	  </parameter_group>
+	  <parameter_group label="Query Sort Order" collapse="true" tooltip="Specify the query sort order">
+	  	<parameter name="choSO" type="choice" argpos="17" value="0" tooltip="Specify how to order the database records before retrieving a result set">
+	  		<option value="0">None</option> 
+	  		<option value="1">Most Recent First</option> 
+	  		<option value="2">Oldest First</option> 
+	  	</parameter>
+	  </parameter_group>
+      <parameter name="$ROWLIMIT" label="Results Row Limit:" type="numeric" argpos="15" value="500" hidden="true" tooltip="Enter a row limit for the results"/>
+      <parameter name="idUser" type="systemid" argpos="14" value="user"/>
+      <script>
+        <![CDATA[
+     <script language="javascript">
+     <!-- 
+			function LocalReset()
+			{
+				// LocalReset is called automatically when the page has been loaded (or reloaded)
+			  _DisableCheckbox('chkIncSubGrps', (document.getElementById('lstUG').value == 1));
+        DisableAuditFields(!document.getElementById('chkRE').checked);
+			}
+      function NameLookup(name, nameDisabled)
+      {
+				var lstUG = document.getElementById('lstUG');
+				if (lstUG.value == 1)
+					PopupWithHiddenField('User Selector', 'User_Picker', 1, 1, nameDisabled, name);
+				else
+					PopupWithHiddenField('Group Selector', 'Group_Picker', 1, 1, nameDisabled, name);
+      }
+			function UserGroupChanged()
+			{
+        document.getElementById('chkIncSubGrps').checked = !(document.getElementById('lstUG').value == 1);
+				_DisableCheckbox('chkIncSubGrps', (document.getElementById('lstUG').value == 1));
+				//document.getElementById('txtNameMatch').value = '';
+				document.getElementById('txtSpecificMatch').value = '';
+				document.getElementById('__attr1txtSpecificMatch').value = '';
+			}
+      function TriggerLookup(name)
+      {
+        Picker('Trigger Selector', 'Trigger Picker', 1, 1, name, true, true, true);
+      }
+      function CheckAudit(name)
+      {
+       if (!document.getElementById('chk'+name).checked)
+       {
+        if (name == 'UE')
+        {
+         document.getElementById('chkRE').focus();
+         document.getElementById('chkRE').checked = true;
+         document.getElementById('chkUE').focus();
+        }
+        else
+        {
+         document.getElementById('chkUE').focus();
+         document.getElementById('chkUE').checked = true;
+         document.getElementById('chkRE').focus();
+        }
+       }
+       DisableAuditFields(!document.getElementById('chkRE').checked);
+      }
+      function DisableAuditFields(disable)
+      {
+       document.getElementById('lstAS1').disabled = disable;
+       document.getElementById('lstAS2').disabled = disable;
+       document.getElementById('lstAS3').disabled = disable;
+       document.getElementById('txtAuditor').disabled = disable;
+      }
+      function CheckType(name)
+      {				
+			 // If none checked, check emails
+			 if (!document.getElementById('chkIME').checked)
+       {
+				document.getElementById('chkBB').focus();
+				document.getElementById('chkBB').checked = true;
+       }
+      }
+     -->
+     </script>
+    ]]></script>
+    </parameters>
+    <results row_function="_EventDetails" ref="event_uid" ref3="audit" help="help/htm/Standard_Search_Results.htm" update="true">
+      <column name="event_uid" type="id" primary_key="true" hidden="true" />
+      <column name="eventtimestamp" type="date" hidden="true" />
+      <column name="event_type" type="icon" width="3%" label="Event Type" hide_label="true"/>
+      <column name="subject" type="text" width="25%" label="Subject" show_tooltip="true"/>
+      <column name="capturets" type="timestamp" width="8%" label="Timestamp" show_tooltip="true"/>
+      <column name="sender" type="link" width="8%" label="From" show_tooltip="true" link_function="_UserDetails" ref="user_uid"/>
+      <column name="recipients" type="text" width="18%" label="Recipients/Participants" show_tooltip="true"/>
+      <column name="audit_trail" type="link" width="6%" display="true" label="Audit Trail" tooltip="Click for Audit Trail Drilldown" show_tooltip="true" link_function="_AuditTrailDrilldown" ref="event_uid"/>
+      <column name="audit" type="text" width="6%" display="true" label="Audit Status"/>
+      <column name="context" type="link" width="4%" hidden="true" label="Context" show_tooltip="true"/>
+      <column name="triggers" type="text" width="6%" display="false" label="Policies violated" show_tooltip="true"/>
+      <column name="LastViewedDate" type="date" width="8%" display="false" label="Date last viewed" show_tooltip="true"/>
+      <column name="LastViewer" type="text" width="8%" display="false" label="Last Viewed By" show_tooltip="true"/>
+      <column name="user_uid" type="id" hidden="true"/>
+      <column name="part_index" type="id" hidden="true"/>
+      <column name="$SID" type="text" hidden="true"/>
+      <tool name="excel" tooltip="Show Excel View" icon="excel.gif" function="ShowExcel"/>
+      <script>
+        <![CDATA[
+          <input name="event_uid" id="event_uid" type="hidden" value="0"/>
+          <script language="javascript">
+          <!--          
+			function _AuditTrailDrilldown(uid)
+			{
+				document.getElementById('event_uid').value = uid;
+				rut_RunQuery('Audit Trail','1',undefined,false,false,'','system','','drilldown');
+			}
+			function rut_RunQuery(sName, sMajor, sParameters, bSync, bPopup, sMinor, sSection, sCategory, sTarget)
+			{
+				var sCmd = '';
+				var sNamefield = '__RunQueryName';
+				if (sMajor == undefined || sMajor == '') sMajor = '1';
+				if (sMinor == undefined || sMinor == '') sMinor = '-1';
+				if (sSection == undefined || sSection == '') sSection = 'published';
+				if (sCategory == undefined) sCategory = '';
+				if (sParameters == undefined) sParameters = '';
+				if (sTarget == undefined || sTarget == '') sTarget = 'search-results';
+				if (bSync == undefined) bSync = false;
+				if (bPopup == undefined) bPopup = false;
+			  if (document.getElementById(sNamefield) == null)
+			  {
+				var oSearch = document.createElement('<input type="hidden" name="' + sNamefield + '" value=""/>');
+				document.getElementById('frmMain').appendChild(oSearch);
+			  }
+				document.getElementById(sNamefield).value = sName;
+				sCmd += 'GetSearchPage($'+this.type+',$'+this.section+',$'+this.category+');';
+				if (bSync)
+				{
+					sCmd += 'RunQuery3('+sNamefield+',$'+sMajor+',$'+sMinor+',$'+sSection+',$'+sCategory+',$'+TZOffsetMins()+',$'+sParameters+',$,$,$,$0,$,$,$true)';
+					if (bPopup)
+					{
+						ShowPopup(sCmd, sTarget, '', '', 2, '', 0, '800px','600px', 'fred',undefined,undefined,undefined,undefined,sNamefield);
+						CheckPopupReturn();					
+					}
+					else
+						Validate(sCmd, sTarget);
+				}
+				else
+				{
+					sCmd += 'RunQueryAsync4('+sNamefield+',$'+sMajor+',$'+sMinor+',$'+sSection+',$'+sCategory+',$'+TZOffsetMins()+',$'+sParameters+',$,$,$,$0,$,$,$,$true);' +
+							'SetProgressParameters($'+sTarget+',$)';
+					if (bPopup)
+					{
+						ShowPopup(sCmd, 'progress-page-ajax', '', '', 2, '', 0, '800px','600px', 'bert',undefined,undefined,undefined,undefined,sNamefield);
+						CheckPopupReturn();					
+					}
+					else
+						PP_ExecCommand(sCmd);
+				}
+			}
+            var bExcelLoaded = false;
+            var bExcelDisplayed = false;
+            var cols = 'abcdefghijklmnopqrstuvwxyz';
+            function ResultsComponent()
+            {
+              document.write('<object id="excel" width="100%" height="100%" classid="'+OWCClassID('Spreadsheet')+'">');
+              document.write('<param name="Caption" value="Orchestria iConsole Results">');
+              document.write('<param name="DisplayTitleBar" value="true">');
+              document.write('<param name="DataType" value="HTMLData">');
+              document.write('<param name="AutoFit" value="false">');
+              document.write('<param name="EnableEvents" value="true">');
+              document.write('<param name="DisplayWorkbookTabs" value="false">');
+              document.write('<param name="DisplayRowHeadings" value="true">');
+              document.write('<param name="DisplayColumnHeadings" value="true">');
+              document.write('<p>This feature requires the Microsoft Office Web Components to be installed.<br/>'); 
+              document.write('Visit <a href="http://www.microsoft.com/downloads" target="_blank">Microsoft Downloads</a> to get them.</p>');
+              document.write('</object><br/>');
+            }
+            function ShowExcel(name)
+            {
+              if (!bExcelDisplayed) LoadSpreadsheet();
+              bExcelDisplayed = !bExcelDisplayed;
+              ShowResultsComponent(bExcelDisplayed);
+              ShowResultsTable(!bExcelDisplayed);
+              document.getElementById('imgTool_'+name).title = 
+                (bExcelDisplayed) ? 'Hide Excel View' : 'Show Excel View';
+              document.getElementById('imgTool_'+name).src = 
+                'images/'+ ((bExcelDisplayed) ? 'excel-pressed' : 'excel') + '.gif';
+            }
+            function cellref(c, r)
+            {
+              if (c > 25)
+                return cols.charAt(c/26-1) + cols.charAt(c%26)+r;
+              else 
+                return cols.charAt(c)+r
+            }
+            function LoadSpreadsheet()
+            {
+              try {
+                var excel = document.getElementById('excel');
+                if (excel != null) {
+                  var version = parseInt(excel.Version);
+                  if (version >= 10)
+                  {
+                    if (excel.Worksheets.Count > 1)
+                    {
+                      excel.Worksheets(1).Name = 'Search Results';
+                      excel.Worksheets(3).Delete();
+                      excel.Worksheets(2).Delete();
+                    }
+                  }
+
+                        // Unlock all cells
+                        excel.ActiveSheet.Protection.Enabled = false;
+                        excel.ActiveSheet.Cells.Locked = false;
+                          
+                  var theHeading = document.getElementById('tblResultsTableHeading');
+                  var theTable = document.getElementById('tblResultsTable');
+
+                  // Copy the column headings
+                  for (var c = 2; c < theHeading.tBodies[0].rows[0].cells.length; c++)
+                  {
+                    // Swap these to put headings on the columns
+                    excel.Range(cellref(c-2,1)).Value = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+                    //excel.ActiveWindow.ColumnHeadings(c-1).Caption = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+                  }
+                  
+                  // Copy cells from existing table
+                  for (var r = 0; r < theTable.tBodies[0].rows.length; r++)
+                  {
+                    for (var c = 2; c < theTable.tBodies[0].rows[r].cells.length; c++)
+                    {
+                      // Swap these to put headings on the columns
+                      excel.Range(cellref(c-2, r+2)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+                      //excel.Range(cellref(c-2, r+1)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+                    }
+                        }
+                        
+                        // Set the timestamp format
+                  excel.ActiveSheet.Columns(2).Select();
+                  excel.Selection.NumberFormat = "dd/mmmm/yyyy hh:mm:ss";
+                  
+                        // Fit the columns
+                        excel.Cells.Select();
+                        if (version >= 10)
+                          excel.Selection.EntireColumn.AutoFit();
+                        else
+                            excel.Selection.AutoFitColumns();
+                        excel.Cells(1,1).Select();
+
+                        // Lock all cells
+                        excel.ActiveSheet.Cells.Locked = true;
+                        if (version >= 10)
+                          excel.ActiveSheet.Protection.AllowFormattingColumns = true;
+                        else
+                          excel.ActiveSheet.Protection.AllowSizingAllColumns = true;
+                        excel.ActiveSheet.Protection.Enabled = true;
+                                        
+                        bExcelLoaded = true;
+                      }
+                    }
+                    catch (e)
+                    {
+                      alert(e.message);
+                    }
+            }
+          -->
+          </script>
+        ]]>
+      </script>
+    </results>
+  </search>	
+	
+
+	<search 
+		spname="Bloomberg_Expiry_Date" 
+		major="2" 
+		minor="1" 
+		label="Bloomberg Expiry Date Query" 
+		class="EventReview"
+		description="Provides reviewers with a list of events that will be purged from Orchestria within a specified time frame"
+		>
+		<parameters>
+			<parameter_group label="Expiry Date" tooltip="Non-reviewed events expiring...days from today" width="150">
+				<parameter_line>				
+					<parameter align="left" size="4" name="days" type="numeric" argpos="1" value="7" label="" onchange="ValidateDays(this)"/>
+					<parameter align="left" type="label" name="lblDays" label="Days from today"></parameter>
+				</parameter_line>
+			</parameter_group>
+			<!--<parameter name="choSO" type="choice" argpos="4" value="0" hidden="true" tooltip="Specify how to order the database records before retrieving a result set"/>-->
+			<parameter name="RowLimit" label="Results Row Limit:" type="numeric" argpos="2" value="100" hidden="true" tooltip="Enter a row limit for the results"/>
+			<!--<parameter name="idUser" type="systemid" argpos="2" value="user"/>-->
+			<script><![CDATA[
+					<script language="javascript">
+					<!-- 
+						function ValidateDays(control)
+						{
+							var ival = parseInt(control.value);
+							if (ival <= 0 || control.value.length == 0) 
+							{
+								alert("Days cannot be 0, resetting to 7");
+								control.value = 7;
+							}
+							if (ival > 9999) 
+							{
+								alert("Days cannot be more than 4 digits");
+								control.value = 9999;
+							}
+						}
+					-->
+					</script>
+				]]></script>
+		</parameters>
+		<results row_function="_EventDetails" ref="event_uid" ref3="audit" help="help/htm/Standard_Search_Results.htm" update="true">
+			<column name="event_uid" type="id" primary_key="true" hidden="true"/>
+			<column name="event_type" type="icon" width="3%" label="Event Type" hide_label="true"/>
+			<column name="subject" type="text" width="32%" label="Subject" show_tooltip="true"/>
+			<column name="capturets" type="timestamp" width="15%" label="Timestamp" show_tooltip="true"/>
+			<column name="sender" type="link" width="15%" label="From" show_tooltip="true" link_function="_UserDetails" ref="user_uid"/>
+			<column name="recipients" type="text" width="27%" label="Recipients/Participants" show_tooltip="true"/>
+			<column name="audit" type="text" width="8%" label="Audit Status"/>
+			<column name="user_uid" type="id" hidden="true"/>
+			<column name="part_index" type="id" hidden="true"/>
+			<column name="$SID" type="text" hidden="true"/>
+			<tool name="excel" tooltip="Show Excel View" icon="excel.gif" function="ShowExcel"/>
+			<script>
+				<![CDATA[
+					<script language="javascript">
+					<!--
+						var bExcelLoaded = false;
+						var bExcelDisplayed = false;
+						var cols = 'abcdefghijklmnopqrstuvwxyz';
+						function ResultsComponent()
+						{
+							document.write('<object id="excel" width="100%" height="100%" classid="'+OWCClassID('Spreadsheet')+'">');
+							document.write('<param name="Caption" value="Orchestria iConsole Results">');
+							document.write('<param name="DisplayTitleBar" value="true">');
+							document.write('<param name="DataType" value="HTMLData">');
+							document.write('<param name="AutoFit" value="false">');
+							document.write('<param name="EnableEvents" value="true">');
+							document.write('<param name="DisplayWorkbookTabs" value="false">');
+							document.write('<param name="DisplayRowHeadings" value="true">');
+							document.write('<param name="DisplayColumnHeadings" value="true">');
+							document.write('<p>This feature requires the Microsoft Office Web Components to be installed.<br/>'); 
+							document.write('Visit <a href="http://www.microsoft.com/downloads" target="_blank">Microsoft Downloads</a> to get them.</p>');
+							document.write('</object><br/>');
+						}
+						function ShowExcel(name)
+						{
+							if (!bExcelDisplayed) LoadSpreadsheet();
+							bExcelDisplayed = !bExcelDisplayed;
+							ShowResultsComponent(bExcelDisplayed);
+							ShowResultsTable(!bExcelDisplayed);
+							document.getElementById('imgTool_'+name).title = 
+								(bExcelDisplayed) ? 'Hide Excel View' : 'Show Excel View';
+							document.getElementById('imgTool_'+name).src = 
+								'images/'+ ((bExcelDisplayed) ? 'excel-pressed' : 'excel') + '.gif';
+						}
+						function cellref(c, r)
+						{
+							if (c > 25)
+								return cols.charAt(c/26-1) + cols.charAt(c%26)+r;
+							else 
+								return cols.charAt(c)+r
+						}
+						function LoadSpreadsheet()
+						{
+							try {
+								var excel = document.getElementById('excel');
+								if (excel != null) {
+									var version = parseInt(excel.Version);
+									if (version >= 10)
+									{
+										if (excel.Worksheets.Count > 1)
+										{
+											excel.Worksheets(1).Name = 'Search Results';
+											excel.Worksheets(3).Delete();
+											excel.Worksheets(2).Delete();
+										}
+									}
+
+            						// Unlock all cells
+            						excel.ActiveSheet.Protection.Enabled = false;
+           							excel.ActiveSheet.Cells.Locked = false;
+					                
+									var theHeading = document.getElementById('tblResultsTableHeading');
+									var theTable = document.getElementById('tblResultsTable');
+
+									// Copy the column headings
+									for (var c = 2; c < theHeading.tBodies[0].rows[0].cells.length; c++)
+									{
+										// Swap these to put headings on the columns
+										excel.Range(cellref(c-2,1)).Value = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+										//excel.ActiveWindow.ColumnHeadings(c-1).Caption = theHeading.tBodies[0].rows[0].cells[c].innerText+'';
+									}
+									
+									// Copy cells from existing table
+									for (var r = 0; r < theTable.tBodies[0].rows.length; r++)
+									{
+										for (var c = 2; c < theTable.tBodies[0].rows[r].cells.length; c++)
+										{
+											// Swap these to put headings on the columns
+											excel.Range(cellref(c-2, r+2)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+											//excel.Range(cellref(c-2, r+1)).Value = theTable.tBodies[0].rows[r].cells[c].innerText+'';
+										}
+            						}
+	             					
+            						// Set the timestamp format
+ 									excel.ActiveSheet.Columns(2).Select();
+									excel.Selection.NumberFormat = "dd/mmmm/yyyy hh:mm:ss";
+									
+           							// Fit the columns
+            						excel.Cells.Select();
+            						if (version >= 10)
+            							excel.Selection.EntireColumn.AutoFit();
+            						else
+              							excel.Selection.AutoFitColumns();
+            						excel.Cells(1,1).Select();
+
+            						// Lock all cells
+           							excel.ActiveSheet.Cells.Locked = true;
+            						if (version >= 10)
+            							excel.ActiveSheet.Protection.AllowFormattingColumns = true;
+            						else
+	           							excel.ActiveSheet.Protection.AllowSizingAllColumns = true;
+            						excel.ActiveSheet.Protection.Enabled = true;
+										           					
+            						bExcelLoaded = true;
+            					}
+            				}
+            				catch (e)
+            				{
+             					alert(e.message);
+	           				}
+						}
+					-->
+					</script>
+				]]>
+			</script>
+		</results>
+	</search>
+
+</searches>

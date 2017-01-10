@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_sendauditmail.xml
+    Created on : 02 February 2011, 12:47
+    Author     : dicri02
+    Description: Test the Send Mail function on the iConsole QuickView Panes
+    Parameters : May be run as Admin or Reviewer user. Runs the Standard Search first to retrieve results.
+
+	<step classname="testcases.Search" name="Run Standard Search">
+		<parameter name="DWonly" value="true" />			return only 'disregarded warning' events. These will have valid sender addresses captured.
+		<parameter name="usersearch" value="*username*" />		search for mails from a specific email sender only
+        	</step>
+	<step classname="testcases.SendAuditMail" name="Send Audit Mail">
+            	<parameter name="event" value="0"/>				event results id to send mail from
+		<parameter name="quantity" value="2" />				number of events to send audit mails from (equates to number of test cycles)
+		<parameter name="usersearch" value="mailbox name" />		login name for mailbox - must match user used in the Search usersearch parameter
+		<parameter name="userpw" value="password" />			password for the user in usersearch
+        	</step>
+
+-->
+
+<root>
+
+	<test name="Send Audit Email - Send 5 Mails" sso="false" username="rls1">
+        	<step classname="testcases.Search" name="Run Search">
+				<parameter name="DWonly" value="true" />
+        	</step>
+        	<step classname="testcases.SendAuditMail" name="Send Audit Mail">
+            	<parameter name="quantity" value="5" />
+        	</step>
+    	</test>
+
+	<test name="Verify Sent Audit Mail (from recipient Inbox)" sso="false" username="admin">
+        	<step classname="testcases.Search" name="Run Search">
+				<parameter name="DWonly" value="true" />
+				<parameter name="usersearch" value="*Rheba.Kennell*" />
+        	</step>
+        	<step classname="testcases.SendAuditMail" name="Send Audit Mail">
+            	<parameter name="quantity" value="2" />
+				<parameter name="usersearch" value="ORCHLAB\Rheba.Kennell" />
+				<parameter name="userpw" value="qa" />
+        	</step>
+    	</test>
+
+</root>

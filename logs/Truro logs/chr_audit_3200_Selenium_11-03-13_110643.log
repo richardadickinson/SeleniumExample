@@ -1,0 +1,347 @@
+11:06:43 Tests started
+11:06:43 iConsole Automation Package Version: 
+11:07:23 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:07:23 Platform: Win32
+11:07:28 Login successful as administrator
+11:07:29 iConsole Release: 14.5.3200.0
+11:07:29 Test Case 'Bulk audit all events at once' started.
+11:07:29     Test step Run Standard Search started
+11:07:30         INFO: Wait Element found: INPUT id=txtSubject
+11:07:31         INFO: Wait Element found: INPUT id=lstQU.0
+11:07:34         PASS: Standard search ran successfully (2 secs)
+11:07:34         Average search runtime = 2 secs (iterations=1)
+11:07:34     Test step Run Standard Search finished
+11:07:34     Test step Bulk audit all events started
+11:07:35         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:07:37         Bulk Auditing all events at once
+11:07:38             INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:07:46             PASS: Confirmed 'Check All' selected all rows successfully
+11:07:46             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:07:57             PASS: Bulk Audit operation completed successfully for 100 events
+11:07:57         Completed bulk auditing all events at once
+11:07:57         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:07:58     Test step Bulk audit all events finished
+11:08:01     Logout successful
+11:08:01 Test Case 'Bulk audit all events at once' completed execution (see Summary for individual test details)
+11:08:01  
+11:08:13 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:08:13 Platform: Win32
+11:08:18 Login successful as administrator
+11:08:18 iConsole Release: 14.5.3200.0
+11:08:18 Test Case 'Bulk audit, by page' started.
+11:08:18     Test step Run Standard Search started
+11:08:19         INFO: Wait Element found: INPUT id=txtSubject
+11:08:20         INFO: Wait Element found: INPUT id=lstQU.0
+11:08:23         PASS: Standard search ran successfully (2 secs)
+11:08:23         Average search runtime = 2 secs (iterations=1)
+11:08:23     Test step Run Standard Search finished
+11:08:23     Test step Bulk audit by page started
+11:08:24         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:08:27         Auditing events on page 1
+11:08:28             PASS: Confirmed 'Check All' selected all rows successfully
+11:08:28             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:08:39             PASS: Bulk Audit operation completed successfully for 25 events
+11:08:39         Completed auditing events on page 1
+11:08:39         Auditing events on page 2
+11:08:40             PASS: Confirmed 'Check All' selected all rows successfully
+11:08:40             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:08:51             PASS: Bulk Audit operation completed successfully for 25 events
+11:08:51         Completed auditing events on page 2
+11:08:51         Auditing events on page 3
+11:08:52             PASS: Confirmed 'Check All' selected all rows successfully
+11:08:52             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:09:03             PASS: Bulk Audit operation completed successfully for 25 events
+11:09:03         Completed auditing events on page 3
+11:09:03         Auditing events on page 4
+11:09:04             PASS: Confirmed 'Check All' selected all rows successfully
+11:09:04             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:09:15             PASS: Bulk Audit operation completed successfully for 25 events
+11:09:15         Completed auditing events on page 4
+11:09:16         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:09:19     Test step Bulk audit by page finished
+11:09:21     Logout successful
+11:09:21 Test Case 'Bulk audit, by page' completed execution (see Summary for individual test details)
+11:09:21  
+11:09:33 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:09:33 Platform: Win32
+11:09:38 Login successful as administrator
+11:09:38 iConsole Release: 14.5.3200.0
+11:09:38 Test Case 'Bulk audit, by event' started.
+11:09:38     Test step Run Standard Search started
+11:09:39         INFO: Wait Element found: INPUT id=txtSubject
+11:09:40         INFO: Wait Element found: INPUT id=lstQU.0
+11:09:43         PASS: Standard search ran successfully (2 secs)
+11:09:43         Average search runtime = 2 secs (iterations=1)
+11:09:43     Test step Run Standard Search finished
+11:09:43     Test step Bulk Audit 5 events per page started
+11:09:44         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:09:47         Auditing events on page 1
+11:09:51             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:10:01             PASS: Bulk Audit operation completed successfully for 5 events
+11:10:02         Completed auditing events on page 1
+11:10:02         Auditing events on page 2
+11:10:05             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:10:16             PASS: Bulk Audit operation completed successfully for 5 events
+11:10:16         Completed auditing events on page 2
+11:10:16         Auditing events on page 3
+11:10:20             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:10:30             PASS: Bulk Audit operation completed successfully for 5 events
+11:10:31         Completed auditing events on page 3
+11:10:31         Auditing events on page 4
+11:10:35             INFO: Wait Element found: DIV id=BulkAuditOperation
+11:10:45             PASS: Bulk Audit operation completed successfully for 5 events
+11:10:45         Completed auditing events on page 4
+11:10:46         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:10:49     Test step Bulk Audit 5 events per page finished
+11:10:51     Logout successful
+11:10:51 Test Case 'Bulk audit, by event' completed execution (see Summary for individual test details)
+11:10:51  
+11:11:03 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:11:03 Platform: Win32
+11:11:08 Login successful as Selenium Reviewer
+11:11:09 iConsole Release: 14.5.3200.0
+11:11:09 Test Case 'Single event audit (one-click buttons)' started.
+11:11:09     Test step Run Standard Search started
+11:11:10         INFO: Wait Element found: INPUT id=txtSubject
+11:11:11         INFO: Wait Element found: INPUT id=lstQU.0
+11:11:14         PASS: Standard search ran successfully (2 secs)
+11:11:14         Average search runtime = 2 secs (iterations=1)
+11:11:14     Test step Run Standard Search finished
+11:11:14     Test step Single event audit started
+11:11:15         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:11:17         Single event auditing (from QuickView pane) started
+11:11:20             INFO: Wait Element found: UL id=
+11:11:20             Auditing event id:0 (one-click button)
+11:11:23                 PASS: Audit status column text (Close) matches status of event id:0
+11:11:23             Auditing event id: 0 complete
+11:11:23             INFO: Wait Element found: UL id=
+11:11:24             Auditing event id:1 (one-click button)
+11:11:26                 PASS: Audit status column text (Close) matches status of event id:1
+11:11:26             Auditing event id: 1 complete
+11:11:26             INFO: Wait Element found: UL id=
+11:11:27             Auditing event id:2 (one-click button)
+11:11:29                 PASS: Audit status column text (Close) matches status of event id:2
+11:11:29             Auditing event id: 2 complete
+11:11:29         Single event auditing complete
+11:11:29         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:11:32     Test step Single event audit finished
+11:11:35     Logout successful
+11:11:35 Test Case 'Single event audit (one-click buttons)' completed execution (see Summary for individual test details)
+11:11:35  
+11:11:47 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:11:47 Platform: Win32
+11:11:52 Login successful as administrator
+11:11:52 iConsole Release: 14.5.3200.0
+11:11:52 Test Case 'Single event audit (one-click buttons) by page (admin logon)' started.
+11:11:52     Test step Run Standard Search started
+11:11:53         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:11:55         INFO: Wait Element found: BUTTON id=btn_EditSettings
+11:11:56         INFO: Wait Element found: A id=tab_3
+11:11:56         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:11:57         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:11:57         PASS: Element found: By.id: treeTitle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:11:59         INFO: Wait Element found: DIV id=Customize
+11:12:00         INFO: Wait Element found: INPUT id=$ROWLIMIT
+11:12:00         INFO: Wait Element found: H3 id=SaveSearch_desc
+11:12:03         INFO: Wait Element found: DIV id=RestrictResources
+11:12:06         Logout successful
+11:12:11         Login successful as administrator
+11:12:11         INFO: Wait Element found: A id=tab_audit
+11:12:13         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:12:13         PASS: page size successfully adjusted to 2
+11:12:13         PASS: successfully set new row limit in derived Std Search
+11:12:14         INFO: Wait Element found: INPUT id=txtSubject
+11:12:15         INFO: Wait Element found: INPUT id=lstQU.0
+11:12:17         PASS: Standard search ran successfully (1 secs)
+11:12:17         Average search runtime = 1 secs (iterations=1)
+11:12:17     Test step Run Standard Search finished
+11:12:17     Test step Admin One-click audit by page (with button check) started
+11:12:18         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:12:20         Verifying the correct audit buttons are displayed on the page
+11:12:21             INFO: Wait Element found: UL id=
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit01 is NOT displayed for bulk event audit when it is only enabled for single event auditing
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton01 is displayed for single event audit when it is only enabled for single event auditing
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit02 is displayed for bulk event audit when it is enabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton02 is displayed for single event audit when it is enabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit03 is displayed for bulk event audit when it is enabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton03 is displayed for single event audit when it is enabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit04 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton04 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit05 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton05 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit06 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton06 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit07 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton07 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit08 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton08 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit09 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton09 is NOT displayed for single event audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Results.ToolAudit10 is NOT displayed for bulk audit when it is disabled
+11:12:22             PASS: Audit button id=btn_Pane.AuditButton10 is NOT displayed for single event audit when it is disabled
+11:12:22         Completed verification of audit button display
+11:12:22         Auditing events on page 1
+11:12:22             Single event auditing (from QuickView pane) started
+11:12:22                 INFO: Wait Element found: UL id=
+11:12:23                 Auditing event id:0 (one-click button)
+11:12:25                     PASS: Audit status column text (Close) matches status of event id:0
+11:12:25                 Auditing event id: 0 complete
+11:12:25                 INFO: Wait Element found: UL id=
+11:12:26                 Auditing event id:1 (one-click button)
+11:12:28                     PASS: Audit status column text (Close) matches status of event id:1
+11:12:28                 Auditing event id: 1 complete
+11:12:28             Single event auditing complete
+11:12:29         Page 1 auditing complete
+11:12:29         Auditing events on page 2
+11:12:29             Single event auditing (from QuickView pane) started
+11:12:29                 INFO: Wait Element found: UL id=
+11:12:30                 Auditing event id:0 (one-click button)
+11:12:32                     PASS: Audit status column text (Close) matches status of event id:0
+11:12:32                 Auditing event id: 0 complete
+11:12:32             Single event auditing complete
+11:12:32         Page 2 auditing complete
+11:12:33         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:12:35     Test step Admin One-click audit by page (with button check) finished
+11:12:35     Test step Search cleanup started
+11:12:36         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:12:38         INFO: Wait Element found: BUTTON id=btn_EditSettings
+11:12:39         INFO: Wait Element found: A id=tab_3
+11:12:39         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:12:40         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:12:40         PASS: Element found: By.id: treeToggle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:12:41         PASS: Element found: By.id: btn_TreeAction.published.381fad0293ceaae8856c1de604d13c647613ee23
+11:12:42         INFO: Wait Element found: DIV id=Message
+11:12:42         PASS: Derived search deleted
+11:12:44         Logout successful
+11:12:49         Login successful as administrator
+11:12:49         INFO: Wait Element found: A id=tab_audit
+11:12:51         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:12:51         PASS: page size successfully adjusted to 25
+11:12:51     Test step Search cleanup finished
+11:12:53     Logout successful
+11:12:53 Test Case 'Single event audit (one-click buttons) by page (admin logon)' completed execution (see Summary for individual test details)
+11:12:53  
+11:13:05 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:13:05 Platform: Win32
+11:13:10 Login successful as Selenium Reviewer
+11:13:11 iConsole Release: 14.5.3200.0
+11:13:11 Test Case 'Single event audit (one-click buttons) by page (RLS logon)' started.
+11:13:11     Test step Run Standard Search started
+11:13:13         Logout successful
+11:13:17         Login successful as administrator
+11:13:18         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:13:20         INFO: Wait Element found: BUTTON id=btn_EditSettings
+11:13:20         INFO: Wait Element found: A id=tab_3
+11:13:20         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:13:22         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:13:22         PASS: Element found: By.id: treeTitle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:13:23         INFO: Wait Element found: DIV id=Customize
+11:13:25         INFO: Wait Element found: INPUT id=$ROWLIMIT
+11:13:25         INFO: Wait Element found: H3 id=SaveSearch_desc
+11:13:28         INFO: Wait Element found: DIV id=RestrictResources
+11:13:31         Logout successful
+11:13:36         Login successful as Selenium Reviewer
+11:13:36         INFO: Wait Element found: A id=tab_audit
+11:13:38         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:13:38         PASS: page size successfully adjusted to 2
+11:13:38         PASS: successfully set new row limit in derived Std Search
+11:13:39         INFO: Wait Element found: INPUT id=txtSubject
+11:13:40         INFO: Wait Element found: INPUT id=lstQU.0
+11:13:43         PASS: Standard search ran successfully (2 secs)
+11:13:43         Average search runtime = 2 secs (iterations=1)
+11:13:43     Test step Run Standard Search finished
+11:13:43     Test step RLS One-click audit by page started
+11:13:44         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:13:46         Auditing events on page 1
+11:13:46             Single event auditing (from QuickView pane) started
+11:13:47                 INFO: Wait Element found: UL id=
+11:13:47                 Auditing event id:0 (one-click button)
+11:13:49                     PASS: Audit status column text (Escalate) matches status of event id:0
+11:13:49                 Auditing event id: 0 complete
+11:13:49                 INFO: Wait Element found: UL id=
+11:13:51                 Auditing event id:1 (one-click button)
+11:13:52                     PASS: Audit status column text (Escalate) matches status of event id:1
+11:13:52                 Auditing event id: 1 complete
+11:13:52             Single event auditing complete
+11:13:53         Page 1 auditing complete
+11:13:53         Auditing events on page 2
+11:13:53             Single event auditing (from QuickView pane) started
+11:13:54                 INFO: Wait Element found: UL id=
+11:13:54                 Auditing event id:0 (one-click button)
+11:13:56                     PASS: Audit status column text (Escalate) matches status of event id:0
+11:13:56                 Auditing event id: 0 complete
+11:13:56             Single event auditing complete
+11:13:56         Page 2 auditing complete
+11:13:57         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:13:59     Test step RLS One-click audit by page finished
+11:13:59     Test step Search cleanup started
+11:14:01         Logout successful
+11:14:06         Login successful as administrator
+11:14:07         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:14:08         INFO: Wait Element found: BUTTON id=btn_EditSettings
+11:14:09         INFO: Wait Element found: A id=tab_3
+11:14:09         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:14:11         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:14:11         PASS: Element found: By.id: treeToggle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+11:14:11         PASS: Element found: By.id: btn_TreeAction.published.381fad0293ceaae8856c1de604d13c647613ee23
+11:14:12         INFO: Wait Element found: DIV id=Message
+11:14:12         PASS: Derived search deleted
+11:14:14         Logout successful
+11:14:19         Login successful as Selenium Reviewer
+11:14:19         INFO: Wait Element found: A id=tab_audit
+11:14:21         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+11:14:21         PASS: page size successfully adjusted to 25
+11:14:21     Test step Search cleanup finished
+11:14:23     Logout successful
+11:14:23 Test Case 'Single event audit (one-click buttons) by page (RLS logon)' completed execution (see Summary for individual test details)
+11:14:23  
+11:14:36 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+11:14:36 Platform: Win32
+11:14:41 Login successful as administrator
+11:14:41 iConsole Release: 14.5.3200.0
+11:14:41 Test Case 'Single event audit (New Issue button)' started.
+11:14:41     Test step Run Standard Search started
+11:14:42         INFO: Wait Element found: INPUT id=txtSubject
+11:14:43         INFO: Wait Element found: INPUT id=lstQU.0
+11:14:46         PASS: Standard search ran successfully (2 secs)
+11:14:46         Average search runtime = 2 secs (iterations=1)
+11:14:46     Test step Run Standard Search finished
+11:14:46     Test step Manual Audit started
+11:14:47         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:14:50         Single event auditing (from QuickView pane) started
+11:14:50             INFO: Wait Element found: UL id=
+11:14:51             Auditing event id:0 (New Issue dialog)
+11:14:52                 INFO: Wait Element found: DIV id=Issue
+11:14:52                 PASS: Option selected: 3 in mandfield1
+11:14:53                 PASS: the correct mandatory fields are set on the New Issue dialog
+11:14:53                 PASS: Option selected: 4 in mandfield2
+11:14:53                 PASS: the correct mandatory fields are set on the New Issue dialog
+11:14:53                 PASS: Audit Action value (Escalate to Compliance) matches the value selected in the New Issue dialog
+11:14:53                 PASS: Option selected: 0 in mandfield3
+11:14:53                 PASS: Audit resolution value (Non Issue) matches the resolution selected in New Issue dialog
+11:14:53                 INFO: Wait Element found: DIV id=ShuttlePicker
+11:14:53                 PASS: Option selected: Awaiting Response in selComment_picker
+11:14:54                 PASS: Audit comment value (Awaiting Response) matches value selected in the New Issue dialog
+11:14:56             Auditing event id: 0 complete
+11:14:56             INFO: Wait Element found: UL id=
+11:14:57             Auditing event id:1 (New Issue dialog)
+11:14:58                 INFO: Wait Element found: DIV id=Issue
+11:14:59                 PASS: Option selected: 3 in mandfield1
+11:14:59                 PASS: the correct mandatory fields are set on the New Issue dialog
+11:14:59                 PASS: Option selected: 4 in mandfield2
+11:14:59                 PASS: the correct mandatory fields are set on the New Issue dialog
+11:14:59                 PASS: Audit Action value (Escalate to Compliance) matches the value selected in the New Issue dialog
+11:14:59                 PASS: Option selected: 0 in mandfield3
+11:14:59                 PASS: Audit resolution value (Non Issue) matches the resolution selected in New Issue dialog
+11:15:00                 INFO: Wait Element found: DIV id=ShuttlePicker
+11:15:00                 PASS: Option selected: Awaiting Response in selComment_picker
+11:15:00                 PASS: Audit comment value (Awaiting Response) matches value selected in the New Issue dialog
+11:15:02             Auditing event id: 1 complete
+11:15:02         Single event auditing complete
+11:15:03         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+11:15:05     Test step Manual Audit finished
+11:15:08     Logout successful
+11:15:08 Test Case 'Single event audit (New Issue button)' completed execution (see Summary for individual test details)
+11:15:08  
+11:15:08 Tests finished
+11:15:08 Summary: Test cases: 7, Tests: 82, Fails: 0, Known Fails: 0

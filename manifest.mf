@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lib/mail-1.4.3.jar lib/wgnoracle.jar lib/selenium-server-standalone.jar lib/sqljdbc4.jar
+X-COMMENT: Main-Class will be added automatically by build
+

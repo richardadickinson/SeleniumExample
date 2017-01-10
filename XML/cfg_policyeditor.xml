@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--   
+    Document   : cfg_policyeditor.xml
+    Created on : 17 February 2012, 11:10
+    Author     : dicri02
+    Description: Tests the Policy Editor GUI and verifies policy pack defaults and save behaviour
+    Parameters :  The paths to the xml files that contain the policy class definitions, default parameters and common objects need to be provided.
+		  These can be located anywhere on the local machine:
+			<parameter name="commonObj" value="XML\FPP_CommonObj.xml" />   <-- full path or relative to the test suite jar file
+			<parameter name="polClass" value="XML\FPP_CorpRegComp.xml" />  <-- policy class to be verified
+-->
+
+
+<root>
+
+	<test name="Policy Editor - Standard FPP Policy Pack" sso="false" username="admin" >
+		<step classname="testcases.PolicyEditor" name="Global Options">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_GlobalOpts.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Corporate and Regulatory Compliance">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_CorpRegComp.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Customer/ Supplier Treatment">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_CustSupplier.xml" />
+		</step> 
+		<step classname="testcases.PolicyEditor" name="Employee Behaviour">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_EmplBehaviour.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Intellectual Property (IP)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_IntelProp.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Legal">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_Legal.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Non-Public Information (NPI)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_NPI.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Personal Health Information (PHI)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_PHI.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Personally Identifiable Information (PII)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_PII.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="Security General / Corporate Policy">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_DSGCPol.xml" />
+		</step>
+		<step classname="testcases.PolicyEditor" name="User Defined">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_UserDEF_Policy.xml" />
+		</step>
+	</test>
+	
+</root>

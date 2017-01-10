@@ -1,0 +1,131 @@
+15:04:33 Tests started
+15:04:33 iConsole Automation Package Version: 
+15:04:53 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0
+15:04:53 Platform: Win32
+15:04:59 Login successful as administrator
+15:05:00 iConsole Release: 14.5.3200.0
+15:05:00 Test Case 'Bulk audit all events at once' started.
+15:05:00     Test step Run Standard Search started
+15:05:01         INFO: Wait Element found: INPUT id=txtSubject
+15:05:02         INFO: Wait Element found: INPUT id=lstQU.0
+15:05:07         PASS: Standard search ran successfully (3 secs)
+15:05:07         Average search runtime = 3 secs (iterations=1)
+15:05:07     Test step Run Standard Search finished
+15:05:07     Test step Bulk audit all events started
+15:05:08         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:05:11         Bulk Auditing all events at once
+15:05:11             INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:05:17             PASS: Confirmed 'Check All' selected all rows successfully
+15:05:17             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:05:27             PASS: Bulk Audit operation completed successfully for 100 events
+15:05:27         Completed bulk auditing all events at once
+15:05:28         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:05:29     Test step Bulk audit all events finished
+15:05:31     Logout successful
+15:05:31 Test Case 'Bulk audit all events at once' completed execution (see Summary for individual test details)
+15:05:31  
+15:05:44 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0
+15:05:44 Platform: Win32
+15:05:50 Login successful as administrator
+15:05:50 iConsole Release: 14.5.3200.0
+15:05:51 Test Case 'Bulk audit, by page' started.
+15:05:51     Test step Run Standard Search started
+15:05:52         INFO: Wait Element found: INPUT id=txtSubject
+15:05:53         INFO: Wait Element found: INPUT id=lstQU.0
+15:05:58         PASS: Standard search ran successfully (3 secs)
+15:05:58         Average search runtime = 3 secs (iterations=1)
+15:05:58     Test step Run Standard Search finished
+15:05:58     Test step Bulk audit by page started
+15:05:59         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:06:02         Auditing events on page 1
+15:06:02             PASS: Confirmed 'Check All' selected all rows successfully
+15:06:02             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:06:13             PASS: Bulk Audit operation completed successfully for 25 events
+15:06:13         Completed auditing events on page 1
+15:06:13         Auditing events on page 2
+15:06:14             PASS: Confirmed 'Check All' selected all rows successfully
+15:06:14             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:06:24             PASS: Bulk Audit operation completed successfully for 25 events
+15:06:25         Completed auditing events on page 2
+15:06:25         Auditing events on page 3
+15:06:25             PASS: Confirmed 'Check All' selected all rows successfully
+15:06:26             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:06:36             PASS: Bulk Audit operation completed successfully for 25 events
+15:06:37         Completed auditing events on page 3
+15:06:37         Auditing events on page 4
+15:06:37             PASS: Confirmed 'Check All' selected all rows successfully
+15:06:37             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:06:48             PASS: Bulk Audit operation completed successfully for 25 events
+15:06:48         Completed auditing events on page 4
+15:06:49         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:06:52     Test step Bulk audit by page finished
+15:06:54     Logout successful
+15:06:54 Test Case 'Bulk audit, by page' completed execution (see Summary for individual test details)
+15:06:54  
+15:07:07 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0
+15:07:07 Platform: Win32
+15:07:13 Login successful as administrator
+15:07:13 iConsole Release: 14.5.3200.0
+15:07:13 Test Case 'Bulk audit, by event' started.
+15:07:13     Test step Run Standard Search started
+15:07:14         INFO: Wait Element found: INPUT id=txtSubject
+15:07:15         INFO: Wait Element found: INPUT id=lstQU.0
+15:07:20         PASS: Standard search ran successfully (3 secs)
+15:07:20         Average search runtime = 3 secs (iterations=1)
+15:07:20     Test step Run Standard Search finished
+15:07:20     Test step Bulk Audit 5 events per page started
+15:07:21         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:07:24         Auditing events on page 1
+15:07:27             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:07:38             PASS: Bulk Audit operation completed successfully for 5 events
+15:07:38         Completed auditing events on page 1
+15:07:38         Auditing events on page 2
+15:07:42             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:07:52             PASS: Bulk Audit operation completed successfully for 5 events
+15:07:53         Completed auditing events on page 2
+15:07:53         Auditing events on page 3
+15:07:57             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:08:07             PASS: Bulk Audit operation completed successfully for 5 events
+15:08:07         Completed auditing events on page 3
+15:08:07         Auditing events on page 4
+15:08:11             INFO: Wait Element found: DIV id=BulkAuditOperation
+15:08:21             PASS: Bulk Audit operation completed successfully for 5 events
+15:08:22         Completed auditing events on page 4
+15:08:22         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:08:25     Test step Bulk Audit 5 events per page finished
+15:08:27     Logout successful
+15:08:27 Test Case 'Bulk audit, by event' completed execution (see Summary for individual test details)
+15:08:27  
+15:08:40 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0
+15:08:40 Platform: Win32
+15:08:46 Login successful as Selenium Reviewer
+15:08:47 iConsole Release: 14.5.3200.0
+15:08:47 Test Case 'Single event audit (one-click buttons)' started.
+15:08:47     Test step Run Standard Search started
+15:08:48         INFO: Wait Element found: INPUT id=txtSubject
+15:08:49         INFO: Wait Element found: INPUT id=lstQU.0
+15:08:55         PASS: Standard search ran successfully (4 secs)
+15:08:55         Average search runtime = 4 secs (iterations=1)
+15:08:55     Test step Run Standard Search finished
+15:08:55     Test step Single event audit started
+15:08:56         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:08:57         Single event auditing (from QuickView pane) started
+15:08:58             INFO: Wait Element found: UL id=
+15:08:59             Auditing event id:0 (one-click button)
+15:09:01                 PASS: Audit status column text (Close) matches status of event id:0
+15:09:01             Auditing event id: 0 complete
+15:09:01             INFO: Wait Element found: UL id=
+15:09:02             Auditing event id:1 (one-click button)
+15:09:04                 PASS: Audit status column text (Close) matches status of event id:1
+15:09:04             Auditing event id: 1 complete
+15:09:04             INFO: Wait Element found: UL id=
+15:09:05             Auditing event id:2 (one-click button)
+15:09:07                 PASS: Audit status column text (Close) matches status of event id:2
+15:09:07             Auditing event id: 2 complete
+15:09:07         Single event auditing complete
+15:09:08         INFO: Wait Element found: INPUT id=RemoveAuditedEvents
+15:09:11     Test step Single event audit finished
+15:09:13     Logout successful
+15:09:13 Test Case 'Single event audit (one-click buttons)' completed execution (see Summary for individual test details)
+15:23:04 Tests finished
+15:23:04 Summary: Test cases: 4, Tests: xxx, Fails: 0, Known Fails: 0

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : cfg.xml
+    Created on : 30 January 2012, 14:17
+    Author     : dicri02
+    Description: General cfg file containing examples of all Test Cases
+    Parameters : 
+
+   	<test name="MyPrefs_rls" 
+		sso="false" 
+		username="Selenium Reviewer"        // primary login
+		password="qa" 				// primary login pw
+		rlsusername="Selenium Reviewer"     // secondary login
+		rlspassword="test"			// secondary login pw >
+
+	Audit test steps:
+       <step classname="testcases.Search" name="Run Standard Search">
+            <parameter name="searchtimeout" value="60"/>  timeout in seconds
+            <parameter name="back" value="true" />        true: go back to Searches list to run search or false: use the refresh button
+            <parameter name="iterations" value="1"/>      how many times to re-run the search
+        </step>
+        <step classname="testcases.Audit" name="Audit">
+            <parameter name="verify" value="false"/>		verify the audit button display against the DB configuration
+            <parameter name="bulk" value="true"/>		bulk or single audit
+            <parameter name="bulkaudittimeout" value="40"/> timeout in seconds for audit operation dialog to appear
+            <parameter name="quantity" value="5"/> 		how many results to audit: either a number of events, or 'all'
+            <parameter name="page" value="all"/> 		how many pages of results to audit: either a number of pages or 'all'
+            <parameter name="usenewissue" value="false"/> 	single audit using the New Issue dialog, if true 'auditbutton' is ignored
+            <parameter name="auditbutton" value="1"/> 	1, 2, 3, 4, 5 (Where 1 is the rubber stamp button)
+        </step>
+
+-->
+
+<root>
+
+<!--
+	<test name="Search Response Times" sso="false" username="rls1" >
+		<step classname="testcases.ResponseTimes" name="Search Response Times">
+			<parameter name="usermatch" value="match1" />
+		</step> 
+	</test>
+-->
+<!--
+	<test name="Search Response Times Stress Loop" sso="false" username="rls1" >
+		<step classname="testcases.ResponseTimes" name="Search Response Times">
+			<parameter name="usermatch" value="match1" />
+			<parameter name="stressLoop" value="500" />
+		</step> 
+	</test>	
+-->
+<!--
+	<test name="Global Prefs" sso="false" username="admin" >
+		<step classname="testcases.GPrefs" name="Global Preferences">			
+			<parameter name="dataStructure" value="XML\DataStructures\ResourcesForRoles.xml" />
+			<parameter name="localPrefsData" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test>
+-->
+<!--
+   	<test name="Local Prefs (rls)" sso="false" username="rls1">
+		<step classname="testcases.MyPrefs" name="Local Preferences" >
+			<parameter name="dataStructure" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test>
+
+	<test name="Local Prefs (admin)" sso="false" username="admin">
+		<step classname="testcases.MyPrefs" name="Local Preferences" >
+			<parameter name="dataStructure" value="XML\DataStructures\localPrefs.xml" />
+		</step>
+	</test> 
+-->
+<!--
+	<test name="Administration tab" sso="false" username="admin" rlsusername="rls1" >
+		<step classname="testcases.Admin_tab" name="Search Administration" >
+			<parameter name="searchExePath" value="Misc\test_Searches.exe" />
+			<parameter name="searchesPath" value="C:\Temp\test_Searches.xml" />
+			<parameter name="reportsPath" value="C:\Temp\test_Reports.xml" />
+		</step> 
+		<step classname="testcases.AdminDerivedSearches" name="Derived Searches" >
+		</step> 
+	</test>
+-->
+<!--
+	<test name="Column Selector" sso="false" username="admin" >
+		<step classname="testcases.Search" name="Run Search">
+			<parameter name="searchtimeout" value="60"/>
+			<parameter name="back" value="false" />
+		</step>
+		<step classname="testcases.ColumnSelector" name="Test Column Selector">
+			<parameter name="noColumns" value="You must select at least one visible column" />
+		</step>
+	</test>
+-->
+<!--
+	<test name="Bulk audit all events at once" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+		</step>
+		<step classname="testcases.Audit" name="Bulk audit all events">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="true"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="1" />
+		</step>
+	</test>
+
+	<test name="Bulk audit, by page" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+		</step>
+		<step classname="testcases.Audit" name="Bulk audit by page">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="true"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="1" />
+		</step>
+	</test>
+
+	<test name="Bulk audit, by event" sso="false" username="admin">
+      	<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Bulk Audit 5 events per page">
+            	<parameter name="verify" value="false"/>
+            	<parameter name="bulk" value="true"/>
+            	<parameter name="bulkaudittimeout" value="40"/>
+            	<parameter name="quantity" value="5"/>
+            	<parameter name="page" value="all"/>
+            	<parameter name="usenewissue" value="false"/>
+            	<parameter name="oneclickbutton" value="2"/>
+            	<parameter name="auditstatus" value="3"/>
+            	<parameter name="auditaction" value="4"/>
+            	<parameter name="auditresolution" value="0"/>
+            	<parameter name="auditcomment" value="0" />
+        	</step>
+    	</test>
+
+	<test name="Single event audit (one-click buttons)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Single event audit">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="3"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+       	</step>
+    </test>
+
+	<test name="Single event audit (one-click buttons) by page (admin logon)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="5" />
+		</step>
+        	<step classname="testcases.Audit" name="Admin One-click audit by page (with button check)">
+			<parameter name="verify" value="true"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>
+
+	
+	<test name="Single event audit (one-click buttons) by page (RLS logon)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="5" />
+		</step>
+        	<step classname="testcases.Audit" name="RLS One-click audit by page">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="all"/>
+			<parameter name="page" value="all"/>
+			<parameter name="usenewissue" value="false"/>
+			<parameter name="oneclickbutton" value="2"/>
+			<parameter name="auditstatus" value="2"/>
+			<parameter name="auditaction" value="3"/>
+			<parameter name="auditresolution" value="1"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>	
+
+	<test name="Single event audit (New Issue button)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Standard Search">
+			<parameter name="quarantine" value="false" />
+        	</step>
+        	<step classname="testcases.Audit" name="Manual Audit">
+			<parameter name="verify" value="false"/>
+			<parameter name="bulk" value="false"/>
+			<parameter name="bulkaudittimeout" value="40"/>
+			<parameter name="quantity" value="2"/>
+			<parameter name="page" value="0"/>
+			<parameter name="usenewissue" value="true"/>
+			<parameter name="oneclickbutton" value="1"/>
+			<parameter name="auditstatus" value="3"/>
+			<parameter name="auditaction" value="4"/>
+			<parameter name="auditresolution" value="0"/>
+			<parameter name="auditcomment" value="0" />
+        	</step>
+      </test>
+-->
+<!--
+	<test name="Search stress test" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Refresh Std Search">
+			<parameter name="back" value="false" />
+			<parameter name="iterations" value="25"/>
+		</step>
+	</test>
+-->
+
+	<test name="Quick View Panes (RLS)" sso="false" username="rls1">
+		<step classname="testcases.Search" name="Run Std Search">
+			<parameter name="back" value="true" />
+			<parameter name="iterations" value="3" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="3" />
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (Specified number of events)">
+			<parameter name="numevents" value="2"/>
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (All pages, cycle using Move Next Event button)">
+			<parameter name="usenexteventbutton" value="true"/>
+			<parameter name="closequickviewpanes" value="false"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (All pages, cycle using results table)">
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+		<step classname="testcases.Search" name="Search cleanup">
+			<parameter name="cleanup" value="true" />
+		</step> 
+	</test>
+
+	<test name="Quick View Panes (Admin)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Std Search">
+			<parameter name="back" value="false" />
+			<parameter name="iterations" value="1" />
+		</step>
+		<step classname="testcases.VerifyQuickViewPanes" name="Verify Quick View Panes (Specified number of events)">
+			<parameter name="numevents" value="2"/>
+			<parameter name="usenexteventbutton" value="false"/>
+			<parameter name="closequickviewpanes" value="true"/>
+			<parameter name="expandcollapse" value="true"/>
+		</step>
+	</test>
+
+<!--
+	<test name="Send Audit Email - Send 5 Mails" sso="false" username="rls1">
+       	<step classname="testcases.Search" name="Run Search">
+			<parameter name="DWonly" value="false" />
+       	</step>
+       	<step classname="testcases.SendAuditMail" name="Send Audit Mail">
+			<parameter name="quantity" value="5" />
+       	</step>
+    </test>
+
+	<test name="Verify Sent Audit Mail (from recipient Inbox)" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Search">
+			<parameter name="DWonly" value="true" />
+			<parameter name="searchuser" value="match2" />
+		</step>
+		<step classname="testcases.SendAuditMail" name="Send Audit Mail">
+			<parameter name="quantity" value="2" />
+			<parameter name="matchuser" value="pop3" />
+		</step>
+    </test>
+-->
+<!--
+   	<test name="Audit Options" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Std Search">
+			<parameter name="DWonly" value="true" />
+		</step>
+		<step classname="testcases.AuditOptions" name="Audit Option Configuration Tests">
+		</step>
+	</test> 
+-->
+<!--
+	<test name="Policy Editor - Standard FPP Policy Pack" sso="false" username="admin" >
+		<step classname="testcases.PolicyEditor" name="Global Options">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_GlobalOpts.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Corporate and Regulatory Compliance">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_CorpRegComp.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Customer/ Supplier Treatment">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_CustSupplier.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Employee Behaviour">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_EmplBehaviour.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Intellectual Property (IP)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_IntelProp.xml" />
+		</step>  -->
+	<!--	<step classname="testcases.PolicyEditor" name="Legal">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_Legal.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Non-Public Information (NPI)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_NPI.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Personal Health Information (PHI)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_PHI.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Personally Identifiable Information (PII)">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_PII.xml" />
+		</step> -->
+	<!--	<step classname="testcases.PolicyEditor" name="Security General / Corporate Policy">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_DSGCPol.xml" />
+		</step>	-->
+	<!--	<step classname="testcases.PolicyEditor" name="User DEF_ined">
+			<parameter name="commonObj" value="XML\DataStructures\FPP_CommonObj.xml" />
+			<parameter name="polClass" value="XML\DataStructures\FPP_UserDEF_Policy.xml" />
+		</step>
+	</test>
+-->
+<!--
+	<test name="Review Tab" sso="false" username="admin">
+		<step classname="testcases.ReviewTab" name="Review Tab">
+			<parameter name="dataStructure" value="XML\DataStructures\ReviewTabx.xml" />
+		</step>
+	</test>
+-->
+<!--
+	<test name="Home Page" sso="false" username="admin">
+		<step classname="testcases.HomePageWizard" name="Home Page Wizard">
+			<parameter name="dataStructure" value="XML\DataStructures\???.xml" />
+		</step>
+	</test>
+-->
+<!-- 
+  	<test name="Kill me" sso="false" username="admin">
+		<step classname="testcases.Search" name="Run Search">
+			<parameter name="iterations" value="how many?"/>
+			<parameter name="DWonly" value="die" />
+			<parameter name="pagesize" value="2" />
+			<parameter name="maxresults" value="3" />
+		</step>
+	</test>
+-->
+</root>

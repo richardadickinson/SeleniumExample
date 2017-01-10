@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : cfg_ResponseTimes.xml
+    Created on : 31 January 2011, 12:09
+    Author     : dicri02
+    Description: Run the standard search sequentially changing the parameters between runs. Record query response times in log.
+    		Test cases:
+            0: Search for All events, All dates
+            1: Search for All events, All dates for a user specified by Name Match
+            2: Search for All events, All dates for a user specified by Specific Match
+            3: All e-mails within 1 day range
+            4: All e-mails within 2 day range
+            5: All e-mails sent from a specified e-mail address within 1 day range
+            6: All e-mails sent from a specified e-mail address within 2 day range
+    Parameters:    	
+	<test name="Search Response Times" sso="false" username="smallManager">
+      	<step classname="testcases.ResponseTimes" name="Search Response Times">
+			<parameter name="usermatch" value="match1" />
+			<parameter name="stressLoop" value="3" />
+        </step>
+	</test>
+-->
+
+<root>
+
+	<test name="Search Response Times" sso="false" username="rls1" >
+      	<step classname="testcases.ResponseTimes" name="Search Response Times">
+			<parameter name="usermatch" value="match1" />
+			<parameter name="stressLoop" value="3" />
+	    </step> 
+    </test>
+
+</root>
