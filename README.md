@@ -1,5 +1,6 @@
 # SeleniumExample
 Example Selenium project in Java
+
 iConsole: Web-based console which provides search, reporting and audit review capabilities for captured Data Loss Prevention data.
 
 The iConsole Automated Test Suite is a Java project that uses the Selenium client libraries to execute tests against the iConsole 
