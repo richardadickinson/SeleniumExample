@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+
+    <PARAMS>
+	  
+	<!-- Values for the text / int value that is in input boxes by default-->
+	  
+	<!-- For Global Options -->
+	<DEF_1></DEF_1>
+	<DEF_2>John Doe</DEF_2>
+	<DEF_3>x1000</DEF_3>
+	<DEF_4>1</DEF_4>
+	<DEF_HIGHX>Highest</DEF_HIGHX>
+	<DEF_MON>Monitor</DEF_MON>
+	<DEF_REP>Report</DEF_REP>
+	<DEF_WARN>Warn</DEF_WARN>
+	<DEF_BLK>Block</DEF_BLK>
+	<DEF_DEL>Delete</DEF_DEL>
+	<DEF_STB>Replace with Stub File</DEF_STB>
+	<DEF_HIGH>High</DEF_HIGH>
+	<DEF_MED>Medium</DEF_MED>
+	<DEF_LOW>Low</DEF_LOW>
+	<DEF_NONE>None</DEF_NONE>
+	<DEF_ADVISE>Advise Encryption</DEF_ADVISE>
+	<DEF_PERS>Warn - With Personal Option</DEF_PERS>
+	<DEF_THRESHOLD1>5</DEF_THRESHOLD1>
+	<DEF_MINEMAILSIZE1>10</DEF_MINEMAILSIZE1>
+	<DEF_MINEMAILSIZE2>10240</DEF_MINEMAILSIZE2>
+	<DEF_MINEMAILSIZE3>10485760</DEF_MINEMAILSIZE3>
+	<DEF_PAGESIZE1>10</DEF_PAGESIZE1>
+	<DEF_SAMPLERATE1>1000</DEF_SAMPLERATE1>
+	<DEF_ATTACHNUM1>4</DEF_ATTACHNUM1>
+    <DEF_GK>Gatekeeper Address(es). These entries will prevent policy from triggering on any communication that includes one of these recipient(s).</DEF_GK>  
+	<DEF_EXADD>Excluded Addresses - enter addresses of recipients to be excluded from the application of this policy.</DEF_EXADD>
+	<DEF_INCADDR>Included Addresses - enter addresses of recipients to which policy should be applied.</DEF_INCADDR>
+	<DEF_INCFILES>Included File Names - enter additional file types to which policy should be applied using the format *.filetype.
+Multiple entries must be separated by a comma.</DEF_INCFILES>
+	
+    <!-- For Corporate and regulatory compliance -->
+    <DEF_8>This message or the associated attachment(s) you are attempting to send is in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_8>
+    <DEF_9>The file you are attempting to print, move or save has been found to be in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_9>
+    <DEF_10>0</DEF_10>
+    <DEF_11>Report</DEF_11>
+    <DEF_12>This file has been moved as it was found to be in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_12>
+    <DEF_13>This content or file you are attempting to submit is in possible violation of a Corporate and/or Regulatory compliance policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_13>
+    <DEF_13A>19</DEF_13A>
+    
+    <!-- For Customer/ supplier Treatment -->
+    <DEF_14>Corporate policies mandate that customers and/or suppliers be treated professionally and fairly at all times. This message or the associated attachment(s) you are attempting to send is in possible violation of  a Customer/Supplier Treatment policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_14>
+    <DEF_15>The file you are attempting to print, move or save has been found to be in possible violation of a Customer/Supplier Treatment policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_15>
+    <DEF_16>This file has been moved as it was found to be in possible violation of a Customer/Supplier Treatment policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_16>
+    <DEF_17>Corporate policies mandate that customers and/or suppliers be treated professionally and fairly at all times. This content or file you are attempting to submit is in possible violation of  a Customer/Supplier Treatment policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_17>
+
+    <!-- For Employee Behaviour -->
+    <DEF_18>Corporate policies mandate that employee conduct is professional and exemplary. This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate employee behavior policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_18>
+    <DEF_19>The file you are attempting to print, move or save has been found to be in possible violation of a corporate employee behavior policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_19>
+    <DEF_20>This file has been moved as it was found to be in possible violation of a corporate employee behavior policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_20>
+    <DEF_21>Corporate policies mandate that employee conduct is professional and exemplary. This content or file you are attempting to submit is in possible violation of a corporate employee behavior policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_21>
+
+    <!-- For intellectual property -->
+    <DEF_22>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_22>
+    <DEF_23>The file you are attempting to print, move or save has been found to be in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_23>
+    <DEF_24>This file has been moved as it was found to be in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_24>
+    <DEF_25>This content or file you are attempting to submit is in possible violation of a corporate intellectual property rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_25>  
+    
+    <!-- For Legal -->
+    <DEF_26>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate legal rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Confirm all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_26>
+    <DEF_27>The file you are attempting to print, move or save has been found to be in possible violation of a corporate legal rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_27>
+    <DEF_28>This file has been moved as it was found to be in possible violation of a corporate legal rights policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_28>
+    <DEF_29>This content or file you are attempting to submit is in possible violation of a corporate legal rights policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_29>
+
+    <!-- For Non-Public information (NPI) -->
+	<DEF_THRESH1>20</DEF_THRESH1>
+    <DEF_30>Corporate policy mandates that non public information (NPI) such as financial data, documents marked as "internal use only", pricing/sales information etc cannot be released outside of the firm. This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for this communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_30>
+    <DEF_31>The file you are attempting to print, move or save has been found to be in possible violation of "%triggername%" which is considered to be non public information and must be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_31>
+    <DEF_32>This file has been moved as it was found to be in possible violation of a corporate non-public information policy called "%triggername%" which is considered to be non public information and must be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_32>
+    <DEF_33>Corporate policy mandates that non public information (NPI) such as financial data, documents marked as "internal use only", pricing/sales information etc cannot be released outside of the firm. This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_33>
+
+    <!-- For Personal health info (PHI) -->
+    <DEF_34>Federal privacy standards require protection of personal health information such as patients' medical records, insurance and other health information provided to health plans, doctors, hospitals and other health care providers. This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for this communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_34>
+    <DEF_35>The file you are attempting to print, move or save has been found to be in possible violation of a personal health information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_35>
+    <DEF_36>This file has been moved as it was found to be in possible violation of a personal health information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_36>
+    <DEF_37>Federal privacy standards require protection of personal health information such as patients' medical records, insurance and other health information provided to health plans, doctors, hospitals and other health care providers. This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_37>
+
+    <!-- For Personnally identifiable info (PII) -->  	
+    <DEF_38>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%" which is considered personally identifiable information (PII) and can be used for identity theft, planning robberies, stalking etc.
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm all recipients are approved for communication. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_38>
+    <DEF_39>The file you are attempting to print, move or save has been found to be in possible violation of a personally identifiable information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_39>
+    <DEF_40>This file has been moved as it was found to be in possible violation of a personally identifiable information policy called "%triggername%" that is required to be protected at all times.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_40>
+    <DEF_41>This content or file you are attempting to submit is in possible violation of a policy called "%triggername%" which is considered personally identifiable information (PII) and can be used for identity theft, planning robberies, stalking etc.
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_41>
+
+    <!-- For Security General / Corporate Policy -->
+    <DEF_42>This message or the associated attachment(s) you are attempting to send is in possible violation of a corporate security policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_42>
+    <DEF_43>The file you are attempting to print, move or save has been found to be in possible violation of a corporate security policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_43>
+    <DEF_44>This file has been moved as it was found to be in possible violation of a corporate security policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_44>
+    <DEF_45>This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_45>
+    <DEF_46>The document you are attempting to print exceeds the page limit for large print jobs.  If this is necessary to print this many pages press continue to resume printing.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_46>
+
+    <!-- For User DEF_ined -->
+    <DEF_47>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_47>
+    <DEF_48>This message or the associated attachment(s) you are attempting to send is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before sending the message.
+2. Do not send message.
+3. Password Protect or use appropriate encryption policy.
+4. Confirm that all recipients are approved for this communication.
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_48>
+    <DEF_49>The file you are attempting to print, move or save has been found to be in possible violation of a policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_49>
+    <DEF_50>This file has been moved as it was found to be in possible violation of a policy called "%triggername%".
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_50>
+    <DEF_51>This content or file you are attempting to submit is in possible violation of a policy called "%triggername%".
+Possible recommended actions that can be taken to eliminate or mitigate risk:
+1. Remove words or phrases that you may consider being in violation of this policy before submitting the information.
+2. Do not submit this information.
+3. Use a more secure method to transmit this information. 
+Contact %NameOfSecurityOfficer%, security officer on %ExtensionOfSecurityOfficer% if you have questions regarding this message.</DEF_51>
+
+
+
+	<!-- Values for the text / int value that we want to insert into the input boxes-->
+	<INS_1>ANetworkPath</INS_1>
+	<INS_2>AnotherNetworkPath</INS_2>
+	<INS_3>YetAnotherNetworkPath</INS_3>
+	<INS_4>allie.feiler@orchlab.com</INS_4>
+	<INS_5>allyn.hulick@orchlab.com</INS_5>
+	<INS_6>cary.minok@orchlab.com</INS_6>
+	<INS_7>graham.puma@orchlab.com</INS_7>
+	<INS_8>sharon.sze@orchlab.com</INS_8>
+	<INS_9>Derek Jobsworth III</INS_9>
+	<INS_10>x12345</INS_10>
+	<INS_11>orchlab.com</INS_11>
+	<INS_12>this is a very bad thing to say indeed</INS_12>
+	<INS_13>nothing to see here</INS_13>
+	<INS_14>*.mp3</INS_14>
+	<INS_15>2000</INS_15>
+	<INS_16>10</INS_16>
+	  
+	<!-- Values for the navigation to the individual policy tabs -->
+	<TABID>tab_editPolicy</TABID>
+	<LINKID>LinkPolicyGroup0</LINKID>
+	<TREEID>treeToggle_</TREEID>
+	<RULES>Rules</RULES>
+	<NEXTPAGECHECK1>btn_Rules.Close</NEXTPAGECHECK1>
+	<EDITBUTTONID>btn_Edit_</EDITBUTTONID>
+	<TABID>tab_</TABID>
+
+	<!-- Values for input boxes--> <!-- Need to just DEF_ine each type eg text-->
+	<TEXT>text</TEXT>
+	<LIST>list</LIST>
+	<LISTITEM>listitem</LISTITEM>
+	<DATALOOKUP>datalookupitem</DATALOOKUP>
+	<OPTION>option</OPTION>
+
+	<!-- Values for check boxes-->
+	<CHECKBOX>treeChk</CHECKBOX>
+	<AMLCHECKBOX1>treeChk_1.0</AMLCHECKBOX1>
+	<AMLCHECKBOX2>treeChk_1.0.0</AMLCHECKBOX2>
+	<AMLCHECKBOX3>treeChk_1.0.1</AMLCHECKBOX3>
+	<AMLCHECKBOX4>treeChk_1.0.2</AMLCHECKBOX4>
+	<AMLCHECKBOX5>treeChk_1.0.3</AMLCHECKBOX5>
+    
+	<!-- error text for integer fields -->
+	<ERRORTEXT1>This setting must be a positive number. Note: the use of decimal places is not supported.</ERRORTEXT1>
+
+  </PARAMS>
+
+    <COMMON_OBJ>
+    
+    <!-- Common content tab -->
+	<COM NegInd="yes|no" PosInd="yes|no" ImdDisq="yes|no" Sens="yes|no" SensVal="{value}" Thresh="yes|no" ThreshVal="%DEF_4%|%DEF_THRESHOLD1%" >
+		<TAB clickid="%TABID%" label="Common Content">
+			<IF ImdDisq="yes" >
+				<TEXTBOX label="Immediate Disqualifier - enter words and phrases that if present, will prevent the policy from matching the section of the event in which they are found." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>
+			<IF PosInd="yes" >
+				<TEXTBOX label="Positive Indicators - enter names or numbers relating to accounts or individuals involved in possible anti-money laundering behavior that should trigger policy. You may also enter words or phrases being used in lieu of industry terms to mask the existence of such actions." clickid="%LIST%" default="%DEF_1%" testval="%INS_13%" />
+			</IF>
+			<IF NegInd="yes" > 
+				<TEXTBOX label="Negative Indicators - enter disclaimer text and other organization specific information as it appears in an event where it triggered policy incorrectly. Commas in disclaimers must be entered with a leading \." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%"/>
+			</IF>
+			<IF Thresh="yes">
+				<TEXTBOX label="Threshold Value - enter a number to override the default threshold value." clickid="%LIST%" default="$ThreshVal$" testval="%INS_15%" />
+			</IF>			
+			<IF Sens="yes" >
+				<SELECT  label="Sensitivity Setting - select a setting that determines the Sensitivity Setting of the policy." clickid="%TEXT%" default="$SensVal$" value="minscore(3)" testval="%DEF_LOW%" />
+			</IF>
+		</TAB>
+	</COM>
+	
+    <!-- Email tab -->
+	<EML defsev="{default severity}" defAct="{default action}" addr="text" incaddr="yes|no" extrecip="yes|no" excaddr="yes|no" message="{default_text}" excText="yes|no" PosInd="yes|no" MinEmailSize="yes|no" defMinEmailSize="%DEF_MINEMAILSIZE1%|%DEF_MINEMAILSIZE2%" sampl="yes|no" Attachnum="yes|no">		
+		<TAB clickid="%TABID%" label="E-mail">
+			<SELECT  label="Enter a severity that will be assigned to incidents violating this policy" clickid="%TEXT%" default="$defsev$" value="50" testval="%DEF_NONE%" />
+			<IF Action_Message="yes">
+				<SELECT  label="Apply the following action" clickid="%OPTION%" default="$defAct$" value="Monitor" testval="%DEF_ADVISE%" />
+				<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INS_12%" />
+			</IF>
+			<IF excaddr="yes">
+				<TEXTBOX label="$addr$" clickid="%LIST%" default="%DEF_1%" testval="%INS_13%" />
+			</IF>
+			<IF excText="yes">
+				<TEXTBOX label="Excluded Search Text - enter words or phrases that will prevent policy from being applied to any section of an e-mail if found in the subject." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>	
+			<HIDDEN desc="smartTagsMain" />
+			<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEF_1%" testval="%INS_12%" />
+			<IF incaddr="yes" >
+				<TEXTBOX label="$addr$" clickid="%LIST%" default="%DEF_1%" testval="%INS_7%" />
+			</IF>
+			<IF extrecip="yes" >
+				<HIDDEN desc="extRecipNumMain" />
+				<TEXTBOX label="Enter a numeric value into this field. Any message that has more external recipients than this value will trigger the policy." clickid="%DATALOOKUP%" default="%DEF_13A%" testval="%INS_16%" />
+			</IF>
+			<IF PosInd="yes">
+				<TEXTBOX label="Positive Indicators - enter fully qualified e-mail names or e-mail addresses of senior managers whose messages should not be forwarded." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>			
+			<IF MinEmailSize="yes">
+				<HIDDEN desc="MinEmailSizeMain" />
+				<TEXTBOX label="Minimum E-mail Size - enter numeric value as minimum e-mail size (in KB - kilobytes) required to trigger policy." clickid="%DATALOOKUP%" default="%defMinEmailSize%" testval="%INS_16%" />
+			</IF>
+			<IF sampl="yes">
+				<TEXTBOX label="Sampling Rate - enter a number that will determine at what rate this policy will fire." clickid="%LIST%" default="%DEF_SAMPLERATE1%" testval="%INS_16%" />
+			</IF>
+			<IF Attachnum="yes">
+				<HIDDEN desc="AttachNumMain" />
+				<TEXTBOX label="Enter a numeric value into this field. Any message that has more attachments than this value will trigger the policy." clickid="%DATALOOKUP%" default="%DEF_ATTACHNUM1%" testval="%INS_16%" />
+			</IF>
+		</TAB>
+	</EML> 
+    
+    <!-- Files in motion tab -->
+	<DIM>
+		<TAB clickid="%TABID%" label="Files in Motion" defsev="{default severity}" Action="yes|no" defAct="{default action}" message="{default_text}" defFileSize="%DEF_10%|%DEF_MINEMAILSIZE3%" FileSize="yes|no" PrintJob="yes|no" ExcFiles="yes|no" IncFiles="yes|no" >
+			<SELECT  label="Enter a severity that will be assigned to incidents violating this policy." clickid="%TEXT%" default="$defsev$" value="50" testval="%DEF_NONE%" />
+			<IF Action="yes">
+				<SELECT  label="Apply the following action." clickid="%OPTION%" default="$defAct$" value="" testval="%DEF_ADVISE%" />
+			</IF>
+			<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INS_12%" />
+			<IF ExcFiles="yes" >
+				<TEXTBOX label="Excluded File Names - enter file types to be excluded from policy using the format *.filetype. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>
+			<IF FileSize="yes">
+				<HIDDEN desc="minimumFileSizeMain" />		  
+				<INTEGERBOX label="Minimum File Size - enter a minimum file size (in bytes) needed to trigger policy." clickid="%DATALOOKUP%" dp="0" min="0" max="" default="$defFileSize$" testval="%INS_15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+			</IF>
+			<HIDDEN desc="smartTagsMain" />
+		    <TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEF_1%" testval="%INS_12%" />
+		    <IF PrintJob="yes" >
+				<HIDDEN desc="minimumPrintJobMain" />
+				<INTEGERBOX label="Print Job Size - enter numeric value as minimum number of pages that can be printed before triggering the warning." clickid="%DATALOOKUP%" dp="0" min="0" max="" default="%DEF_PAGESIZE1%" testval="%INS_15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+			</IF>
+			<IF IncFiles="yes">
+				<TEXTBOX label="Included File Names - enter additional file types to which policy should be applied using the format *.filetype." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>
+		</TAB>
+	</DIM>
+    
+    <!-- data at rest tab -->
+	<DAR>
+		<TAB clickid="%TABID%" label="Data at Rest" defsev="{default severity}" defAct="{default action}" ExcFiles="yes|no" IncFiles="yes|no" message="{default_text}" defFileSize="%DEF_10%|%DEF_MINEMAILSIZE3%">
+			<SELECT  label="Enter a severity that will be assigned to incidents violating this policy." clickid="%TEXT%" default="$defsev$" value="50" testval="%DEF_NONE%" />
+			<SELECT  label="Apply the following action." clickid="%OPTION%" default="$defAct$" value="" testval="%DEF_DEL%" />
+			<TEXTBOX label="Stub File Content - enter the text that the user will see when a 'Replace with Stub File' action is activated." clickid="%TEXT%" default="$message$" testval="%INS_12%" />
+			<IF ExcFiles="yes" >
+				<TEXTBOX label="Excluded File Names - enter file types to be excluded from policy using the format *.filetype. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>
+			<HIDDEN desc="minimumFileSizeMain" />
+			<INTEGERBOX label="Minimum File Size - enter a minimum file size (in bytes) needed to trigger policy." dp="0" min="0" max="" clickid="%DATALOOKUP%" default="$defFileSize$" testval="%INS_15%" errortext="%ERRORTEXT1%" maxerrortext="%ERRORTEXT1%" minerrortext="%ERRORTEXT1%" />
+			<HIDDEN desc="smartTagsMain" />
+			<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEF_1%" testval="%INS_12%" />
+			<IF IncFiles="yes">
+				<TEXTBOX label="Included File Names - enter additional file types to which policy should be applied using the format *.filetype." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			</IF>
+		</TAB>
+	</DAR>
+	
+    <!-- Web end point -->
+	<WEB>
+		<TAB clickid="%TABID%" label="Web - Endpoint" message="default_text" no4="yes|no" defsev="{default severity}" defAct="{default action}" >
+			<SELECT label="Enter a severity that will be assigned to incidents violating this policy" clickid="%TEXT%" default="$defsev$" value="50" testval="%DEF_NONE%" />
+			<SELECT label="Apply the following action" clickid="%OPTION%" default="$defAct$" value="" testval="%DEF_PERS%" />
+			<TEXTBOX label="Message To Users - enter the text that the user will see if an action that results in a notification is selected." clickid="%TEXT%" default="$message$" testval="%INS_12%" />
+			<TEXTBOX label="Excluded URLs - enter URLs of sites to be excluded from the application of this policy. Multiple entries must be separated by a comma." clickid="%LIST%" default="%DEF_1%" testval="%INS_12%" />
+			<HIDDEN desc="smartTagsMain" />
+			<TEXTBOX label="This field is used for information classification purposes. All events identified by this policy will be tagged using the text value entered." clickid="%LISTITEM%" default="%DEF_1%" testval="%INS_12%" />
+		</TAB>
+	</WEB>
+    
+  </COMMON_OBJ>
+
+</ICONSOLE>

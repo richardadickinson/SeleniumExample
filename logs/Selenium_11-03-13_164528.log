@@ -1,0 +1,203 @@
+16:45:28 Tests started
+16:45:28 iConsole Automation Package Version: 
+16:45:49 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+16:45:49 Platform: Win32
+16:45:55 Login successful as Selenium Reviewer
+16:45:55 iConsole Release: 14.5.3200.2
+16:45:55 Test Case 'Search stress test' started.
+16:45:55     Test step Refresh Std Search started
+16:45:58         PASS: Standard search ran successfully (2 secs)
+16:46:00         PASS: Standard search refreshed successfully (2 secs)
+16:46:03         PASS: Standard search refreshed successfully (2 secs)
+16:46:05         PASS: Standard search refreshed successfully (2 secs)
+16:46:07         PASS: Standard search refreshed successfully (2 secs)
+16:46:09         PASS: Standard search refreshed successfully (2 secs)
+16:46:12         PASS: Standard search refreshed successfully (2 secs)
+16:46:14         PASS: Standard search refreshed successfully (2 secs)
+16:46:16         PASS: Standard search refreshed successfully (2 secs)
+16:46:18         PASS: Standard search refreshed successfully (2 secs)
+16:46:21         PASS: Standard search refreshed successfully (2 secs)
+16:46:23         PASS: Standard search refreshed successfully (2 secs)
+16:46:25         PASS: Standard search refreshed successfully (2 secs)
+16:46:28         PASS: Standard search refreshed successfully (2 secs)
+16:46:29         PASS: Standard search refreshed successfully (1 secs)
+16:46:32         PASS: Standard search refreshed successfully (2 secs)
+16:46:34         PASS: Standard search refreshed successfully (2 secs)
+16:46:36         PASS: Standard search refreshed successfully (2 secs)
+16:46:38         PASS: Standard search refreshed successfully (2 secs)
+16:46:41         PASS: Standard search refreshed successfully (2 secs)
+16:46:43         PASS: Standard search refreshed successfully (2 secs)
+16:46:45         PASS: Standard search refreshed successfully (2 secs)
+16:46:47         PASS: Standard search refreshed successfully (2 secs)
+16:46:50         PASS: Standard search refreshed successfully (2 secs)
+16:46:52         PASS: Standard search refreshed successfully (2 secs)
+16:46:54         PASS: Standard search refreshed successfully (2 secs)
+16:46:54         Average search runtime = 1 secs (iterations=25)
+16:46:54     Test step Refresh Std Search finished
+16:46:57     Logout successful
+16:46:57 Test Case 'Search stress test' completed execution (see Summary for individual test details)
+16:46:57  
+16:47:09 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+16:47:09 Platform: Win32
+16:47:14 Login successful as Selenium Reviewer
+16:47:14 iConsole Release: 14.5.3200.2
+16:47:14 Test Case 'Quick View Panes (RLS)' started.
+16:47:14     Test step Run Std Search started
+16:47:16         Logout successful
+16:47:21         Login successful as administrator
+16:47:22         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+16:47:23         INFO: Wait Element found: BUTTON id=btn_EditSettings
+16:47:24         INFO: Wait Element found: A id=tab_3
+16:47:24         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+16:47:26         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+16:47:26         PASS: Element found: By.id: treeTitle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+16:47:27         INFO: Wait Element found: DIV id=Customize
+16:47:28         INFO: Wait Element found: INPUT id=$ROWLIMIT
+16:47:28         INFO: Wait Element found: H3 id=SaveSearch_desc
+16:47:31         INFO: Wait Element found: DIV id=RestrictResources
+16:47:35         Logout successful
+16:47:40         Login successful as Selenium Reviewer
+16:47:40         INFO: Wait Element found: A id=tab_audit
+16:47:42         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+16:47:42         PASS: page size successfully adjusted to 2
+16:47:42         PASS: successfully set new row limit in derived Std Search
+16:47:45         PASS: Standard search ran successfully (2 secs)
+16:47:47         PASS: Standard search ran successfully (2 secs)
+16:47:50         PASS: Standard search ran successfully (2 secs)
+16:47:50         Average search runtime = 2 secs (iterations=3)
+16:47:50     Test step Run Std Search finished
+16:47:50     Test step Verify Quick View Panes (Specified number of events) started
+16:47:50         Test step Verify Quick View Panes (Specified number of events) started
+16:47:50         Testing event result id:0
+16:47:50             INFO: Text found: TDG - reference ID 0:9
+16:47:51             INFO: Wait Element found: UL id=
+16:47:52             Test the Quick View button:
+16:47:52                 Confirm default view:
+16:47:52                     PASS: Event pane is visible
+16:47:52                     PASS: Audit pane is visible
+16:47:52                 Finished default view checks
+16:47:52                 First Quick View button click:
+16:47:52                     PASS: Event pane is visible
+16:47:52                     PASS: Audit pane is NOT visible
+16:47:52                 Finished first click checks
+16:47:52                 Second Quick View button click:
+16:47:53                     PASS: Event pane is NOT visible
+16:47:53                     PASS: Audit pane is visible
+16:47:53                 Finished second click checks
+16:47:53                 Third Quick View button click:
+16:47:54                     PASS: Event pane is visible
+16:47:54                     PASS: Audit pane is visible
+16:47:54                 Finished third click checks
+16:47:54             Finished Quick View button tests
+16:47:54             Click Print button:
+16:47:55                 PASS: Print view window has correct Title (TDG - reference ID 0_9)
+16:47:55                 Search text: CA DataMinder iConsole
+Email Summary
+No email body was captured for this event.
+Summary
+
+Incidents (0)
+Type Email
+Event ID 13682
+From TB\Shopwood (Sarah Hopwood)
+To TB\ritab (Rita Badheka); splant (Steve Plant); TB\joec (Joe Cloggs); pdean (Paul Dean)
+Redirected No
+Subject TDG - reference ID 0:9
+Status Message was sent
+Size 0 Bytes
+Security Neither Signed nor Encrypted
+Source Microsoft Outlook
+User Name TB\Shopwood (Sarah Hopwood)
+Machine DICRI02-TESTW7
+Created 3/5/2013 12:00:48 AM
+Message class IPM.Note
+Summary
+Audit Summary
+(No Issues)
+Issues
+3/11/2013 4:43:30 PM Selenium Reviewer (Automated test reviewer) | DICRI02-TESTW7 Viewed Event
+History (expected text: Event Summary)
+16:47:55                 FAIL: Correct section headings are NOT present on print view
+16:47:55             Finished Print button checks
+16:47:55             Click Context Search button:
+16:48:07                 PASS: Context Search window has correct Title (CA DataMinder iConsole - Context Search)
+16:48:07                 FAIL: Text not found for: By.xpath: //tr[contains(@class,'contextRoot')]/td[3]/span (The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}])
+16:48:07                 FAIL: The correct event ('TDG - reference ID 0:9') is NOT highlighted as the context root
+16:48:07                 PASS: The Logout link is hidden on the Context window
+16:48:07             Finished Context button checks
+16:48:07             Check the Event History button:
+16:48:08                 This event has no event history, creating some...
+16:48:08                 Utils.DoClick() caught NoSuchElementException for By.id: btn_Pane.ExpiryDate
+16:48:08 TestRunner.RunTests() - caught exception: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+org.openqa.selenium.NoSuchElementException: The element could not be found (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at common.Utils.DoClick(Utils.java:156)
+	at common.Utils.DoClick(Utils.java:144)
+	at testcases.VerifyQuickViewPanes.CheckPanes(VerifyQuickViewPanes.java:245)
+	at testcases.VerifyQuickViewPanes.ViewQuickViewPanes(VerifyQuickViewPanes.java:124)
+	at testcases.VerifyQuickViewPanes.Run(VerifyQuickViewPanes.java:109)
+	at testcases.WgnTestCase.Run(WgnTestCase.java:138)
+	at common.TestRunner.RunTests(TestRunner.java:282)
+	at webdriver.WebDriver.main(WebDriver.java:37)
+16:48:08 Starting cleanup...
+16:48:08     Failed to close window: ID does not correspond to an open view (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+16:48:10     Logout successful
+16:48:15     Login successful as administrator
+16:48:17     Local Preferences successfully reset
+16:48:18     Global Preferences reset failed: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+16:48:18     Element is not visible (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f3638762c7591cadb058b9648c94c26b
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+16:48:18 Cleanup finished
+16:48:18 Cleanup procedure failed.
+16:48:20 Logout successful
+16:48:20 Test Case 'Quick View Panes (RLS)' completed execution (see Summary for individual test details)
+16:48:20  
+16:48:20 Tests finished
+16:48:20 Summary: Test cases: 2, Tests: 51, Fails: 8, Known Fails: 0

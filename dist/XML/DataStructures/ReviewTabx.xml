@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+
+	<PARAMS>
+		<!-- tabs -->
+		<TAB1>tab_0</TAB1>
+		<TAB2>tab_1</TAB2>
+		<TAB3>tab_2</TAB3>
+		<TAB4>tab_3</TAB4>
+		<TAB5>tab_4</TAB5>
+		<!-- Edit & Run buttons -->
+		<RUN_STUB>treeTitle_Run.published.</RUN_STUB>
+		<CONTEXT_STUB>btn_Favorite.published.</CONTEXT_STUB>
+		<CONTEXT_EDIT>cxt_ActionEdit</CONTEXT_EDIT>
+		<EDIT_SAVE>btn_Customize.Save</EDIT_SAVE>
+		<EDIT_SAVE_RUN>btn_Customize.Save and Run</EDIT_SAVE_RUN>
+		<EDIT_RUN>btn_Customize.Run</EDIT_RUN>
+		<EDIT_CLOSE>btn_Customize.Close</EDIT_CLOSE>
+		<EDIT_HELP>btn_Customize.Help</EDIT_HELP>
+		<CAL>Calendar</CAL>
+		<CAL_CLOSE>btn_Calendar.Cancel</CAL_CLOSE>
+		<FILTER>Filter</FILTER>
+		<FILTER_CLOSE>btn_Filter.Clear Filter</FILTER_CLOSE>
+		<PICKER>Picker</PICKER>
+		<PICKER_CLOSE>btn_Picker.Cancel</PICKER_CLOSE>
+	
+		<!-- default values -->
+		<DAYS>Days</DAYS>
+		<WEEKS>Weeks</WEEKS>
+		<MONTHS>Months</MONTHS>
+		<THIS_MONTH>This Month</THIS_MONTH>
+		<ALL_DATES>All Dates</ALL_DATES>
+		<LCQ>Last Calendar Quarter</LCQ>
+		<EESCOPE>Internal and External</EESCOPE>
+		<EESHARED>Addressee 1 shared E-mails with Addressee 2</EESHARED>
+		<BBSHARED>Addressee 1 shared Bloombergs with Addressee 2</BBSHARED>
+		<WEBSCOPE>Intranet and Internet</WEBSCOPE>
+		<FILESCOPE>Workstation and Server</FILESCOPE>
+		<FILESCOPE2>Workstation Only</FILESCOPE2>
+		<AUDIT_ANY>[Any]</AUDIT_ANY>
+		<POLTYPE1>[All]</POLTYPE1>
+		<POLTYPE2>Capture</POLTYPE2>
+		<ACTIVE>Active</ACTIVE>
+		<LANG1>Generic (English)</LANG1>
+		<FREQ1>Frequency - Highest First</FREQ1>
+		<FREQ2>Frequency - Lowest First</FREQ2>
+		<BULK>Bulk Reviewed</BULK>
+		<ICF1>Extracted Word</ICF1>
+		<ICF2>Subject</ICF2>
+		<ICF3>Trigger</ICF3>
+		<ICF4>Classifier</ICF4>
+		<ISM1>-&gt; Sender</ISM1>
+		<ISM2>&lt;- Recipient</ISM2>
+		<POL>Policy</POL>
+		<CLASS>Class</CLASS>
+		<TREND1>Monthly</TREND1>
+		<TREND2>Weekly</TREND2>
+		<STATUS>Status</STATUS>
+		<RESN>Resolution</RESN>
+		<NONE>None</NONE>
+		<DASH1>Overview</DASH1>
+		<DASH2>Incidents</DASH2>
+
+		<!-- Tab labels -->
+		<TAB_LBL1>Basic Filters</TAB_LBL1>
+		<TAB_LBL2>Incidents</TAB_LBL2>
+		<TAB_LBL3>Identity</TAB_LBL3>
+		<TAB_LBL4>Audit</TAB_LBL4>
+		<TAB_LBL5>Settings</TAB_LBL5>
+		<TAB_LBL6>Reviewer</TAB_LBL6>
+		<TAB_LBL7>Event Date Range</TAB_LBL7>
+		<TAB_LBL8>Additional Search Criteria</TAB_LBL8>
+		<TAB_LBL9>Event Attributes</TAB_LBL9>
+		<TAB_LBL10>Audit State</TAB_LBL10>
+		<TAB_LBL11>Incident Frequency</TAB_LBL11>
+		<TAB_LBL12>Event Types</TAB_LBL12>
+		<TAB_LBL13>Policy or Class or Trigger</TAB_LBL13>
+		<TAB_LBL14>In Date Range</TAB_LBL14>
+		<TAB_LBL15>Dashboard Page Definition</TAB_LBL15>
+		<TAB_LBL16>Report Format</TAB_LBL16>
+		<TAB_LBL17>Search Filters</TAB_LBL17>
+
+		<!-- Subtab labels -->
+		<SUBTAB_LBL1>Cause</SUBTAB_LBL1>
+		<SUBTAB_LBL2>Outcome</SUBTAB_LBL2>
+		<SUBTAB_LBL3>Metadata</SUBTAB_LBL3>
+		<SUBTAB_LBL4>Event Date Range</SUBTAB_LBL4>
+		<SUBTAB_LBL5>Identity</SUBTAB_LBL5>
+		<SUBTAB_LBL6>Other Basic Criteria</SUBTAB_LBL6>
+		<SUBTAB_LBL7>Reviewer Attributes</SUBTAB_LBL7>
+		<SUBTAB_LBL8>Audit Attributes</SUBTAB_LBL8>
+		
+		<!-- error text for INTEGERBOX -->
+		<ERRORTEXT1>Number must be a positive integer</ERRORTEXT1>
+		<ERRORTEXT2>This field is outside the range of acceptable values, it should be between 0 and 100</ERRORTEXT2>
+		<ERRORTEXT3>This field is required</ERRORTEXT3>
+		<ERRORTEXT4>This field is outside the range of acceptable values, it should be between 1 and 100000</ERRORTEXT4>
+		<ERRORTEXT5>Maximum Results cannot be less than 1, resetting to 1000</ERRORTEXT5>
+		<ERRORTEXT6>Maximum Results cannot be more than 1000000000, resetting to 1000</ERRORTEXT6>
+		<ERRORTEXT7>This field is outside the range of acceptable values, it should be between 1 and 1000</ERRORTEXT7>
+		
+	</PARAMS>
+
+	<REVIEW clickid="tab_searches">
+	
+		<!-- search definitions -->
+		<SEARCHES clickid="tab_searches.Searches" >
+		
+		</SEARCHES>
+
+		<!-- reports definitions -->
+		<REPORTS clickid="tab_searches.Reports" >
+		
+			<REPORT label="Data at Rest Incidents by Policy and Action" hash="867925bc8dd7987319521fe1f4ded0d9ec0bf75d" runid="reportsParameterPanel" savehash="" >
+				<TAB clickid="%TAB1%" label="%TAB_LBL1%" >
+					<SUBTAB name="dates" clickid="DateSubs_desc_toggle" label="Event Date Range" expanded="yes" >
+						<COMMON type="DATE" period="__attr1dateRange" predef_val="%ALL_DATES%" spec_val="1" spec_period="%WEEKS%" />
+					</SUBTAB>
+					<SUBTAB name="identity" clickid="UserGroup_desc_toggle" label="Identity" expanded="yes" >
+						<COMMON type="USERGROUP" which="Group" value="2" incsubgroups="on" myeventsonly="no" />
+					</SUBTAB>
+				</TAB>
+				<TAB clickid="%TAB2%" label="%TAB_LBL8%" >
+					<COMMON type="POLCLASS" />
+				</TAB>
+				<TAB clickid="%TAB3%" label="%TAB_LBL5%" >
+					<COMMON type="REPORT_MAXRESULTS" value="1000" />
+					<!-- columns -->
+					<COLUMNS>
+						<CHECKBOX clickid="__chkOptColumnrollup_groupname" label="Group Name" default="on" />
+						<CHECKBOX clickid="__chkOptColumnEmployee" label="User" default="on" />
+						<CHECKBOX clickid="__chkOptColumnpolcls" label="Policy/Class Violation" default="on" />
+						<CHECKBOX clickid="__chkOptColumnviolations_total" label="Incidents" default="on" />
+						<CHECKBOX clickid="__chkOptColumnviolations_percent" label="Percent" default="on" />
+						<CHECKBOX clickid="__chkOptColumncapture_subtotal" label="No Action" default="on" />
+						<CHECKBOX clickid="__chkOptColumncopy_subtotal" label="Copied" default="on" />
+						<CHECKBOX clickid="__chkOptColumndelete_subtotal" label="Deleted" default="on" />
+						<CHECKBOX clickid="__chkOptColumnmove_subtotal" label="Moved" default="on" />
+						<CHECKBOX clickid="__chkOptColumnreplace_subtotal" label="Replaced" default="on" />
+						<CHECKBOX clickid="__chkOptColumncopy_replace_subtotal" label="Copied+Replaced" default="on" />
+						<CHECKBOX clickid="__chkOptColumncategorize_subtotal" label="Categorized" default="on" />
+					</COLUMNS>
+				</TAB>                              
+			</REPORT>	<!-- DaR IPA end -->
+		
+			<REPORT label="Incidents by Location (Data at Rest)" hash="5c5d79791321647ab267e0b45d8e22e5798ba938" runid="chkPolicy" savehash="" >
+				<TAB clickid="%TAB1%" label="%TAB_LBL1%" >
+					<SUBTAB name="date" clickid="DateSubs_desc_toggle" label="Event Date Range" expanded="yes" >
+						<COMMON type="DATE" period="__attr1dateRange" predef_val="%ALL_DATES%" spec_val="1" spec_period="%WEEKS%" />
+					</SUBTAB>
+					<SUBTAB name="identity" clickid="UserGroup_desc_toggle" label="Identity" expanded="yes" >
+						<COMMON type="USERGROUP" which="Group" value="2" incsubgroups="on" myeventsonly="no" />
+					</SUBTAB>
+				</TAB>
+				<TAB clickid="%TAB2%" label="%TAB_LBL8%" >
+					<COMMON type="POLCLASS" />
+					<TEXTBOX clickid="txtServerMatch" label="Server Match:" default="" testval="" />
+					<TEXTBOX clickid="txtLocationMatch" label="Location Match:" default="" testval="" />
+					<CHECKBOX clickid="lstEventMinorType.All" label="Event Types" default="on" />
+					<CHECKBOX clickid="lstEventMinorType.0" label="Files at rest on local or network volumes" default="on" />
+					<CHECKBOX clickid="lstEventMinorType.1" label="Files at rest in Microsoft Exchange public folders" default="on" />
+					<CHECKBOX clickid="lstEventMinorType.2" label="Files at rest in Microsoft Sharepoint folders" default="on" />
+					<SELECT clickid="lstEventAESMinorType" label="Scope:" default="%FILESCOPE%" value="0" testval="%FILESCOPE2%" />
+				</TAB>
+				<TAB clickid="%TAB3%" label="%TAB_LBL5%" >
+					<!-- <COMMON type="REPORT_MAXRESULTS" value="1000" /> -->
+					<INTEGERBOX clickid="ResultsRowLimit" label="Maximum Results:" dp="0" min="1" max="1000000000" default="1000" testval="666" 
+						errortext="%ERRORTEXT1%" noentryerrortext="%ERRORTEXT5%" minerrortext="%ERRORTEXT5%" maxerrortext="%ERRORTEXT6%" />
+					<!-- columns -->
+					<COLUMNS>
+						<CHECKBOX clickid="__chkOptColumnServer" label="Server" default="on" />
+						<CHECKBOX clickid="__chkOptColumnLocation" label="Location" default="on" />
+						<CHECKBOX clickid="__chkOptColumnPolCls" label="Policy" default="on" />
+						<CHECKBOX clickid="__chkOptColumnviolations_total" label="Incidents" default="on" />
+					</COLUMNS>
+				</TAB>	
+			</REPORT>
+
+			<REPORT label="Incidents by Policy and Channel Report" hash="75003d24a470f675bcad6c4bb83341af633c4d2a" runid="reportsParameterPanel" savehash="" >
+				<TAB clickid="%TAB1%" label="%TAB_LBL1%" >
+					<SUBTAB name="date" clickid="DateSubs_desc_toggle" label="%SUBTAB_LBL4%" expanded="yes" >
+						<COMMON type="DATE" period="__attr1dateRange" predef_val="%ALL_DATES%" spec_val="1" spec_period="%WEEKS%" />
+					</SUBTAB>
+					<SUBTAB name="identity" clickid="UserGroup_desc_toggle" label="%SUBTAB_LBL5%" expanded="yes" >
+						<COMMON type="USERGROUP" which="Group" value="2" incsubgroups="on" myeventsonly="no" />
+					</SUBTAB>
+					<SUBTAB name="other" clickid="Other_desc_toggle" label="%SUBTAB_LBL6%" expanded="yes" >
+						<COMMON type="POLCLASS" />
+					</SUBTAB>
+				</TAB>
+				<TAB clickid="%TAB2%" label="%TAB_LBL5%" >
+					<COMMON type="REPORT_MAXRESULTS" value="1000" />
+				</TAB>
+			</REPORT>
+
+			<REPORT label="Incidents by Policy and Time Period Report" hash="d6e84e5e10d3f5d41886db11830181a2fc549d33" runid="reportsParameterPanel" savehash="" >
+				<TAB clickid="%TAB1%" label="%TAB_LBL1%" >
+					<SUBTAB name="date" clickid="DateSubs_desc_toggle" label="%SUBTAB_LBL4%" expanded="yes" >
+						<COMMON type="DATE" period="__attr1dateRange" predef_val="%LCQ%" spec_val="6" spec_period="%MONTHS%" />
+						<SELECT clickid="lstTrend" label="Trend:" default="%TREND1%" value="2" testval="%TREND2%" />
+					</SUBTAB>
+					<SUBTAB name="identity" clickid="UserGroup_desc_toggle" label="%SUBTAB_LBL5%" expanded="yes" >
+						<COMMON type="USERGROUP" which="Group" value="2" incsubgroups="on" myeventsonly="no" />
+					</SUBTAB>
+					<SUBTAB name="other" clickid="Other_desc_toggle" label="%SUBTAB_LBL6%" expanded="yes" >
+						<COMMON type="POLCLASS" />
+					</SUBTAB>
+				</TAB>
+				<TAB clickid="%TAB2%" label="%TAB_LBL5%" >
+					<COMMON type="REPORT_MAXRESULTS" value="1000" />
+				</TAB>
+			</REPORT>
+
+			<REPORT label="Issues by Status or Resolution Report" hash="ff7fe751f5ff3098a2380c70b7db97a278603501" runid="reportsParameterPanel" savehash="" >
+				<TAB clickid="%TAB1%" label="%TAB_LBL1%" >
+					<SUBTAB name="date" clickid="DateSubs_desc_toggle" label="%SUBTAB_LBL4%" expanded="yes" >
+						<COMMON type="DATE" period="__attr1dateRange" predef_val="%ALL_DATES%" spec_val="1" spec_period="%WEEKS%" />
+					</SUBTAB>
+					<SUBTAB name="Identity" clickid="UserGroup_desc_toggle" label="%SUBTAB_LBL5%" expanded="yes" >
+						<CHECKBOX clickid="chkIncSubGrps" label="Include sub-groups" default="on" />
+						<TEXTBOX clickid="txtNameMatch" label="Name Match:" default="" testval="" />
+						<PICKER name="txtSpecificMatch" prefix="__attr1" label="Specific Match:" title="Search and Select Specific Match" />
+					</SUBTAB>
+					<SUBTAB name="other" clickid="Other_desc_toggle" label="%SUBTAB_LBL6%" expanded="yes" >
+						<SELECT clickid="lstAuditType" label="Status or Resolution:" default="%STATUS%" value="A1" testval="%RESN%" />
+					</SUBTAB>
+				</TAB>
+				<TAB clickid="%TAB2%" label="%TAB_LBL5%" >
+					<COMMON type="REPORT_MAXRESULTS" value="1000" />
+					<!-- columns -->
+					<COLUMNS>
+						<CHECKBOX clickid="__chkOptColumnROLLUP_GroupName" label="Group Name" default="on" />
+						<CHECKBOX clickid="__chkOptColumnEmployee" label="Employee" default="on" />
+						<CHECKBOX clickid="__chkOptColumnAuditValue" label="Status/Resolution" default="on" />
+						<CHECKBOX clickid="__chkOptColumnTotal" label="Issues" default="on" />
+					</COLUMNS>
+				</TAB>
+			</REPORT>
+		
+		</REPORTS>
+
+		<!-- dashboard definitions -->	
+		<DASHBOARDS clickid="tab_searches.Dashboard" >
+			
+		</DASHBOARDS>
+		
+	</REVIEW>
+
+	<!-- common object blocks -->	
+	<COMMON_OBJ>
+	
+		<DATE period="option clickid" predef_val="e.g. All Dates" spec_val="int" spec_period="e.g. Weeks" >
+			<RADIO clickid="__attr1dateRange" label="Event Date Range:" selected="$period$" testval="__attr1dateRange1" >
+				<OPTION clickid="__attr1dateRange" label="Specified Period" value="1" />
+				<OPTION clickid="__attr1dateRange1" label="Predefined Period" value="2" />
+			</RADIO>
+			<INTEGERBOX clickid="__attr2dateRange" label="Number of specified periods" dp="0" min="1" max="100000" default="$spec_val$" testval="" 
+					errortext="%ERRORTEXT1%" noentryerrortext="%ERRORTEXT3%" 
+					maxerrortext="%ERRORTEXT4%" minerrortext="%ERRORTEXT4%" />
+			<SELECT clickid="__attr3dateRange" label="Specified Period selector" default="$spec_period$" testval="" />
+			<SELECT clickid="__attr4dateRange" label="Predefined period selector" default="$predef_val$" testval="" />
+			<BUTTON clickid="btn___dateFromdateRangeFocus" label="Show Calendar for Start Date" testval="%CAL%" disabled="false" />
+			<BUTTON clickid="btn___dateTodateRangeFocus" label="Show Calendar for End Date" testval="%CAL%" disabled="false" />
+		</DATE>
+		
+		<EVT_GENERIC all="yes|no" >
+			<IF all="yes" >
+				<TEXTBOX clickid="txtSubject" label="" default="" testval="" />
+				<CHECKBOX clickid="chkSubject" label="Find Empty Title or Subject" default="off" />
+			</IF>
+			<RADIO clickid="choTypes0" label="Event filter" selected="choTypes0" testval="choTypes1" >
+				<OPTION clickid="choTypes0" label="All Event Types" value="0" />
+				<OPTION clickid="choTypes1" label="Filter by Type" value="1" />
+			</RADIO>
+		</EVT_GENERIC>
+		
+		<EVT_DIM>
+			<CHECKBOX clickid="lstDiM.All" label="Data in Motion" default="on" />
+			<CHECKBOX clickid="lstDiM.0" label="E-mail" default="on" />
+			<CHECKBOX clickid="lstDiM.1" label="Bloomberg" default="on" />
+			<CHECKBOX clickid="lstDiM.2" label="Instant Message" default="on" />
+			<CHECKBOX clickid="lstDiM.3" label="Network" default="on" />
+			<CHECKBOX clickid="lstDiM.4" label="Web" default="on" />
+		</EVT_DIM>
+		
+		<EVT_DAR all="yes|no" >
+			<CHECKBOX clickid="lstDaR.All" label="Data at Rest" default="on" />
+			<CHECKBOX clickid="lstDaR.0" label="Filesystem" default="on" />
+			<IF all="yes" >
+				<CHECKBOX clickid="lstDaR.1" label="Sharepoint" default="on" />
+				<CHECKBOX clickid="lstDaR.2" label="Exchange" default="on" />
+				<CHECKBOX clickid="lstDaR.3" label="Database" default="on" />
+			</IF>
+		</EVT_DAR>
+		
+		<EVT_DIU>
+			<CHECKBOX clickid="lstDiU.All" label="Data in Use" default="on" />
+			<CHECKBOX clickid="lstDiU.0" label="Save" default="on" />
+			<CHECKBOX clickid="lstDiU.1" label="Print" default="on" />
+			<CHECKBOX clickid="lstDiU.2" label="Application Monitor" default="on" />
+		</EVT_DIU>
+		
+		<PROPS_WEB>
+			<SUBTAB name="webprops" clickid="WebEvents_desc_toggle" label="Web Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtWESource" label="Client Machine:" default="" testval="" />
+				<TEXTBOX clickid="txtURL" label="URL:" default="" testval="" />
+				<SELECT clickid="lstWE" label="Scope:" default="%WEBSCOPE%" value="1" testval="" />
+			</SUBTAB>
+		</PROPS_WEB>
+		
+		<PROPS_FIL toggle="id" expanded="yes|no" >
+			<SUBTAB name="fileprops" clickid="$toggle$" label="File Event Properties" expanded="$expanded$" >
+				<TEXTBOX clickid="txtFEHost" label="Host:" default="" testval="" />
+				<TEXTBOX clickid="txtFEPath" label="Path::" default="" testval="" />
+				<TEXTBOX clickid="txtFEName" label="Name:" default="" testval="" />
+				<SELECT clickid="lstFECapture" label="Scope:" default="%FILESCOPE%" value="0" testval="" />
+			</SUBTAB>
+		</PROPS_FIL>
+
+		<PROPS_SAV>
+			<SUBTAB name="saveprops" clickid="SaveEvents_desc_toggle" label="Save Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtSEHost" label="Host:" default="" testval="" />
+				<TEXTBOX clickid="txtSEDest" label="Path:" default="" testval="" />
+				<TEXTBOX clickid="txtSEName" label="Name:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_SAV>
+
+		<PROPS_NET>
+			<SUBTAB name="netprops" clickid="NetEvents_desc_toggle" label="Network Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtNESource" label="Source:" default="" testval="" />
+				<TEXTBOX clickid="txtNEDest" label="Destination:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_NET>
+
+		<PROPS_PRN>
+			<SUBTAB name="printprops" clickid="PrintEvents_desc_toggle" label="Print Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtPrintServer" label="Print Server:" default="" testval="" />
+				<TEXTBOX clickid="txtPrintLocation" label="Printer Location:" default="" testval="" />
+				<TEXTBOX clickid="txtPrintPrinter" label="Printer Name:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_PRN>
+
+		<PROPS_APP>
+			<SUBTAB name="appmonprops" clickid="AppMonEvents_desc_toggle" label="Application Monitor Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtAMETitle" label="Application Title:" default="" testval="" />
+				<TEXTBOX clickid="txtAMEPath" label="Application Path:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_APP>
+
+		<PROPS_EML>
+			<SUBTAB name="emailprops" clickid="EmailEvents_desc_toggle" label="E-mail Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtEEAddress1" label="Addressee 1:" default="" testval="" />
+				<SELECT clickid="lstEEDir" label="Direction:" default="%EESHARED%" value="1" testval="" />
+				<TEXTBOX clickid="txtEEAddress2" label="Addressee 2:" default="" testval="" />
+				<SELECT clickid="lstEE" label="Scope:" default="%EESCOPE%" value="1" testval="" />
+				<TEXTBOX clickid="txtEESubject" label="Subject:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_EML>
+
+		<PROPS_BBG>
+			<SUBTAB name="bbgprops" clickid="BloombergEvents_desc_toggle" label="Bloomberg Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtBBAddress1" label="Addressee 1:" default="" testval="" />
+				<SELECT clickid="lstBBDir" label="Direction:" default="%BBSHARED%" value="1" testval="" />
+				<TEXTBOX clickid="txtBBAddress2" label="Addressee 2:" default="" testval="" />
+				<SELECT clickid="lstBB" label="Scope:" default="%EESCOPE%" value="1" testval="" />
+				<TEXTBOX clickid="txtBBSubject" label="Subject:" default="" testval="" />
+			</SUBTAB>
+		</PROPS_BBG>
+
+		<PROPS_IMG>
+			<SUBTAB name="improps" clickid="IMEvents_desc_toggle" label="Instant Message Event Properties" expanded="no" >
+				<TEXTBOX clickid="txtIMEAddress1" label="Conversation Participant 1:" default="" testval="" />
+				<TEXTBOX clickid="txtIMEAddress2" label="Conversation Participant 2:" default="" testval="" />
+				<SELECT clickid="lstIME" label="Scope:" default="%EESCOPE%" value="1" testval="" />
+				<TEXTBOX clickid="txtIMESubject" label="Subject:" default="" testval="" />
+				<CHECKBOX clickid="lstIMENetwork.All" label="Instant Message Network" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.0" label="AOL IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.1" label="Bloomberg" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.2" label="GoogleTalk" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.3" label="HubConnex" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.4" label="ICQ IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.5" label="IMTrader" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.6" label="Indii" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.7" label="Jabber" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.8" label="Microsoft Exchange IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.9" label="Mindalign" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.10" label="MS LCS IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.11" label="MSN IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.12" label="Reuters IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.13" label="SameTime" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.14" label="Webex" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.15" label="Yahoo! IM" default="on" />
+				<CHECKBOX clickid="lstIMENetwork.16" label="YahooEE IM" default="on" />
+			</SUBTAB>
+		</PROPS_IMG>	
+
+		<POLICY trigger="yes|no">
+			<PICKER name="lstPolicyClass" prefix="__attr1" label="Policy Name:" title="Search and Select Policy Name" />
+			<IF trigger="yes">
+				<PICKER name="txtTrigger" prefix="" label="Trigger Name:" title="Search and Select Trigger Name" />
+			</IF>
+		</POLICY>
+		
+		<POLCLASS>
+			<SELECT clickid="lstPC" label="Report By:" default="%POL%" value="1" testval="%CLASS%" />
+			<PICKER name="lstPolCls" prefix="__attr1" label="Policy or Class:" title="Select Policies or Class to search for" />
+		</POLCLASS>
+		
+		<SEVERITY>
+			<CHECKBOX clickid="lstSeverity.All" label="Severity" default="on" />
+			<CHECKBOX clickid="lstSeverity.0" label="Severity Not Set" default="on" />
+			<CHECKBOX clickid="lstSeverity.1" label="Severity Low" default="on" />
+			<CHECKBOX clickid="lstSeverity.2" label="Severity Medium" default="on" />
+			<CHECKBOX clickid="lstSeverity.3" label="Severity High" default="on" />
+		</SEVERITY>
+		
+		<CLASSIFIER>
+			<CHECKBOX clickid="chkClassification" label="Classification" default="off" />
+			<TEXTBOX clickid="txtSmartTagValue" label="Classification SmartTag Value:" default="" testval="" />
+		</CLASSIFIER>
+		
+		<ACTIONS blocked="yes|no" inform="yes|no" encrypt="yes|no" >
+			<CHECKBOX clickid="chkHW" label="Heeded Warning" default="off" />
+			<IF blocked="yes" >
+				<CHECKBOX clickid="chkBL" label="Blocked" default="off" />
+			</IF>
+			<CHECKBOX clickid="chkWD" label="Disregarded Warning" default="off" />
+			<IF inform="yes" >
+				<CHECKBOX clickid="chkInform" label="Informed" default="off" />
+			</IF>
+			<IF encrypt="yes" >
+				<CHECKBOX clickid="chkEN" label="Encryption Performed" default="off" />
+				<CHECKBOX clickid="chkES" label="Encryption Warning Canceled" default="off" />
+				<CHECKBOX clickid="chkED" label="Encryption Warning Disregarded" default="off" />
+			</IF>
+		</ACTIONS>
+		
+		<QUARANTINE>
+			<CHECKBOX clickid="lstQU.All" label="Quarantine" default="off" />
+			<CHECKBOX clickid="lstQU.0" label="In Quarantine" default="off" />
+			<CHECKBOX clickid="lstQU.1" label="Released" default="off" />
+			<CHECKBOX clickid="lstQU.2" label="Rejected" default="off" />
+		</QUARANTINE>
+		
+		<USERGROUP which="user|group" value="1|2" incsubgroups="on|off" myeventsonly="yes|no" >
+			<SELECT clickid="lstUG" label="User or Group" default="$which$" value="$value$" testval="" />
+			<CHECKBOX clickid="chkIncSubGrps" label="Include sub-groups" default="$incsubgroups$" />
+			<IF myeventsonly="yes" >
+				<CHECKBOX clickid="chkME" label="My Events Only" default="off" />
+			</IF>
+			<TEXTBOX clickid="txtNameMatch" label="Name Match:" default="" testval="" />
+			<PICKER name="txtSpecificMatch" prefix="__attr1" label="Specific Match:" title="Search and Select Specific Match" />
+		</USERGROUP>
+		
+		<AUDIT auditor="yes|no" bulklist="yes|no" multi="yes|no" >
+			<CHECKBOX clickid="chkUE" label="Unreviewed Events" default="on" />
+			<CHECKBOX clickid="chkRE" label="Reviewed Events" default="on" />
+			<IF bulklist="yes" >
+				<SELECT clickid="lstBRE" label="Bulk Reviewed" default="%POLTYPE1%" value="0" testval="%BULK%" />
+			</IF>
+			<IF bulklist="no" >
+				<CHECKBOX clickid="chkBRE" label="Bulk Reviewed Events Only" default="off" />
+			</IF>
+			<IF multi="no" >
+				<SELECT clickid="lstAS1" label="Audit Status" default="%AUDIT_ANY%" value="0" testval="" />
+				<SELECT clickid="lstAS2" label="Action" default="%AUDIT_ANY%" value="0" testval="" />
+				<SELECT clickid="lstAS3" label="Resolution" default="%AUDIT_ANY%" value="0" testval="" />
+			</IF>
+			<IF auditor="yes" >
+				<TEXTBOX clickid="txtAuditor" label="Auditor:" default="" testval="" />
+				<TEXTBOX clickid="txtAuditComment" label="Comment:" default="" testval="" />
+			</IF>
+		</AUDIT>
+		
+		<ASMULTI name="name">
+			<MULTI clickid="$name$_available" label="Available Items" default="" options="$name$" />
+			<BUTTON clickid="btn_$name$.Action.0" label="Add All" testval="" disabled="true" />
+			<BUTTON clickid="btn_$name$.Action.1" label="Add Selected" testval="" disabled="true" />
+			<BUTTON clickid="btn_$name$.Action.2" label="Remove Selected" testval="" disabled="true" />
+			<BUTTON clickid="btn_$name$.Action.3" label="Remove All" testval="" disabled="false" />
+			<MULTI clickid="$name$" label="Selected Items" default="" options="[none]" />
+		</ASMULTI>
+		
+		<MAXRESULTS value="value" >
+			<INTEGERBOX clickid="$ROWLIMIT" label="Maximum Results:" dp="0" min="1" max="1000000" default="$value$" testval="666" 
+				errortext="%ERRORTEXT1%" noentryerrortext="%ERRORTEXT3%" maxerrortext="%ERRORTEXT7%" minerrortext="%ERRORTEXT7%" />
+		</MAXRESULTS>
+
+		<REPORT_MAXRESULTS value="value" >
+			<INTEGERBOX clickid="$ROWLIMIT" label="Maximum Results:" dp="0" min="1" max="1000000000" default="$value$" testval="666" 
+				errortext="%ERRORTEXT1%" noentryerrortext="%ERRORTEXT5%" maxerrortext="%ERRORTEXT6%" minerrortext="%ERRORTEXT5%" />
+		</REPORT_MAXRESULTS>
+		
+		<SORTORDER>
+			<MULTI clickid="__lstSortColumn_available" label="Available Columns" default="" options="COLUMNS" />
+			<BUTTON clickid="btn___lstSortColumn.Copy.0" label="Asc" testval="" disabled="true" />
+			<BUTTON clickid="btn___lstSortColumn.Copy.1" label="Desc" testval="" disabled="true" />
+			<MULTI clickid="__lstSortColumn" label="Selected Columns" default="" options="[none]" />
+			<BUTTON clickid="btn___lstSortColumn.Order.0" label="Move Up" testval="" disabled="true" />
+			<BUTTON clickid="btn___lstSortColumn.Order.1" label="Move Down" testval="" disabled="true" />
+			<BUTTON clickid="btn___lstSortColumn.Order.2" label="Remove" testval="" disabled="true" />
+		</SORTORDER>
+		
+		<SEARCH_SETTINGS sampling="yes|no" queryorder="yes|no" >
+			<IF queryorder="yes" >
+				<RADIO clickid="choSO0" selected="choSO0" label="Query Sort Order:" testval="choSO1" >
+					<OPTION clickid="choSO0" label="Unsorted" value="0" />
+					<OPTION clickid="choSO1" label="Most Recent First" value="1" />
+					<OPTION clickid="choSO2" label="Oldest First" value="2" />
+				</RADIO>
+			</IF>
+			<IF sampling="yes" >
+				<SUBTAB name="sampling" clickid="Sampling_desc_toggle" label="Sampling" expanded="no" >
+					<SELECT clickid="lstSR" label="Sampling Rate:" default="Return All Results" value="0" testval="" />
+				</SUBTAB>
+			</IF>
+		</SEARCH_SETTINGS>
+		
+		<SEARCH_COLUMNS audit="on|off" action="on|off" policy="on|off" recips="on|off" sev="on|off" subject="label" sender="label" recipsl="label" >
+			<COLUMNS>
+				<CHECKBOX clickid="__chkOptColumnevent_type" label="Event Type" default="on" />
+				<CHECKBOX clickid="__chkOptColumnseverity" label="Severity" default="$sev$" />
+				<CHECKBOX clickid="__chkOptColumnsubject" label="$subject$" default="on" />
+				<CHECKBOX clickid="__chkOptColumncapturets" label="Timestamp" default="on" />
+				<CHECKBOX clickid="__chkOptColumnsender" label="$sender$" default="on" />
+				<CHECKBOX clickid="__chkOptColumnrecipients" label="$recipsl$" default="$recips$" />
+				<CHECKBOX clickid="__chkOptColumnaction" label="Action" default="$action$" />
+				<CHECKBOX clickid="__chkOptColumnpolicy" label="Policy" default="$policy$" />
+				<CHECKBOX clickid="__chkOptColumnaudit" label="Audit Status" default="$audit$" />
+			</COLUMNS>
+		</SEARCH_COLUMNS>
+		
+	</COMMON_OBJ>
+
+	<PICKER_OBJ name="e.g. txtTrigger" prefix="e.g. __attr1" label="text" title="text" >
+		<TEXTBOX clickid="$prefix$$name$" label="$label$" default="" testval="" />
+		<BUTTON clickid="btn$name$" label="$title$" testval="%PICKER%" disabled="false" />
+		<BUTTON clickid="btn2$name$" label="Clear" testval="val=$prefix$$name$" disabled="false" />
+		<POPUP clickid="btn$name$" id="%PICKER%">
+			<TEXTBOX clickid="txtSearchText" label="Search Text" default="" testval="" />
+			<BUTTON clickid="btn_Picker.Search" label="Search" testval="" disabled="false" />
+			<BUTTON clickid="btn_$prefix$$name$.FilterResults" label="Filter Results" testval="%FILTER%" disabled="false" />
+			<IF noresults="no" >
+				<BUTTON clickid="btn_$prefix$$name$.Nav.FirstPage" label="First Page" testval="" disabled="false" />
+				<BUTTON clickid="btn_$prefix$$name$.Nav.PreviousPage" label="Previous Page" testval="" disabled="false" />
+				<SELECT clickid="lst_Nav.Page" label="Navigator selector" default="navPattern" value="1" testval="navPattern" />
+				<BUTTON clickid="btn_$prefix$$name$.Nav.NextPage" label="Next Page" testval="" disabled="false" />
+				<BUTTON clickid="btn_$prefix$$name$.Nav.LastPage" label="Last Page" testval="" disabled="false" />
+			<!-- the following controls aren't guaranteed to appear in this layout depending on the number of results in the picker
+			     need to work out how best to handle
+				<BUTTON clickid="btn_$prefix$$name$.Nav.ShowAll" label="Show All" testval="" disabled="false" />
+				<CONTEXT clickid="toolbar_rightDD" >
+					<OPTION clickid="cxt_ctxt_Nav.LastPage" label="Last Page" />
+					<OPTION clickid="cxt_ctxt_Nav.ShowAll" label="Show All" />
+				</CONTEXT>
+			-->
+				<CHECKBOX clickid="chk_Results.All" label="Select all rows for bulk action" default="off" />
+				<TABLE clickid="divResultsTable" name="results" col1="checkbox" prefix="chk_Results." col2="text" col3="text" />
+			</IF>
+			<BUTTON clickid="btn_$prefix$$name$.Action.0" label="Add Selected" testval="" disabled="false" />
+			<BUTTON clickid="btn_$prefix$$name$.Action.1" label="Remove" testval="" disabled="false" />
+			<MULTI clickid="$name$Items" label="Selected Items" default="" options="[none]" />
+			<BUTTON clickid="btn_Picker.OK" label="OK" testval="" disabled="false" />
+			<BUTTON clickid="btn_Picker.Cancel" label="Cancel" testval="" disabled="false" />
+		</POPUP>
+	</PICKER_OBJ>
+	
+</ICONSOLE>
+
+<!-- building blocks
+<MULTI clickid="" label="" default="" options="$ref" />
+<SELECT clickid="" label="" default="" value="" testval="" />
+<TEXTBOX clickid="" label="" default="" testval="" />
+<INTEGERBOX clickid="" label="" dp="0" min="0" max="" default="" testval="" errortext="" maxerrortext="" minerrortext="" noentryerrortext="" />
+<CHECKBOX clickid="" label="" default="" />
+<RADIO clickid="" label="" selected="0" label="" testval="" >
+	<OPTION clickid="" label="" value="0" />
+	<OPTION clickid="" label="" value="1" />
+</RADIO>
+<BUTTON clickid="" label="" testval="" disabled="false" />
+<TAB clickid="" label="" />
+<SUBTAB name="" clickid="" label="" expanded="no" >
+</SUBTAB>
+<CONTEXT clickid="" >
+	<OPTION clickid="" label="" />
+	<OPTION clickid="" label="" />
+</CONTEXT>
+<TABLE clickid="" name="" prefix="" col1="" col2="" col3="" />
+-->

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ICONSOLE>
+<PARAMS>
+	<!-- GUI ids -->
+	<TAB_MANAGE_DD>tab_manageDD</TAB_MANAGE_DD>
+    <CXT_ROLES>cxt_Role Assignments</CXT_ROLES>
+	<BTN_EDITSETTINGS>btn_EditSettings</BTN_EDITSETTINGS>
+	<DLG_EDITRES>EditResources</DLG_EDITRES>
+	<TXT_PAGESIZE>SearchResultsPageSize</TXT_PAGESIZE>
+	<CHK_ALLOWDEF>AllowPortletDefinition</CHK_ALLOWDEF>
+	<BTN_EDITPORTTYPE>btn_EditPortletTypes</BTN_EDITPORTTYPE>
+	<TREE_TYPES>treeChk_ResourceFolderTypes of portlet that can be created</TREE_TYPES>
+	<BTN_EDITSEARCHES>btn_EditSearches</BTN_EDITSEARCHES>
+	<TREE_SEARCHES>treeChk_ResourceFolder.Searches</TREE_SEARCHES>
+	<TREE_DASHB>treeChk_ResourceFolder.Dashboard</TREE_DASHB>
+	<TREE_REPORTS>treeChk_ResourceFolder.Reports</TREE_REPORTS>
+	<BTN_EDITPORTLETS>btn_EditPortlets</BTN_EDITPORTLETS>
+	<TREE_PORTLETS>treeChk_ResourceFolderPortlets that are ready to be used on the Home Page</TREE_PORTLETS>
+	
+</PARAMS>
+
+<PREFS clickid="tab_manage" checkid="tab_manage.resources" >
+
+	<!-- Settings that control the behaviour of the iConsole -->
+	<DIALOG clickid="btn_EditSettings" label="Settings that control the behaviour of the iConsole" checkid="%DLG_EDITRES%" >
+		<TAB clickid="tab_0" label="Audit">
+			<SELECT clickid="DisplayAuditHistory" label="Event History Display" default="Show Names" value="1" testval="Collapsed" />
+			<CHECKBOX clickid="DisplayAuditHistory_enforced" label="Enforced" default="off" />				
+			<SELECT clickid="DisplayIncidents" label="Incidents Display" default="Show Names" value="1" testval="Collapsed" />
+			<CHECKBOX clickid="DisplayIncidents_enforced" label="Enforced" default="off" />				
+			<SELECT clickid="DisplayIssues" label="Issues Display" default="Show Names" value="1" testval="Collapsed" />
+			<CHECKBOX clickid="DisplayIssues_enforced" label="Enforced" default="off" />								
+			<CHECKBOX clickid="MoveAfterAuditEvent" label="Move To Next Event After Auditing" default="on" />
+			<CHECKBOX clickid="MoveAfterAuditEvent_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="RemoveAuditedEvents" label="Remove Events After Auditing" default="on" />
+			<CHECKBOX clickid="RemoveAuditedEvents_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="QuickViewScroll" label="Scroll Past Headers in E-Mail Pane" default="on" />
+			<CHECKBOX clickid="QuickViewScroll_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="ShowAuditHistory" label="Show Event History" default="on" />				
+			<CHECKBOX clickid="ShowAuditHistory_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="ShowIncidents" label="Show Incidents" default="on" />
+			<CHECKBOX clickid="ShowIncidents_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="ShowIssues" label="Show Issues" default="on" />
+			<CHECKBOX clickid="ShowIssues_enforced" label="Enforced" default="off" />
+		</TAB>
+		<TAB clickid="tab_1" label="Home Page">
+			<CHECKBOX clickid="AllowPortletAutoRefresh" label="Allow Portlet AutoRefresh" default="on" />
+			<CHECKBOX clickid="%CHK_ALLOWDEF%" label="Allow Portlet Creation" default="off" />
+			<CHECKBOX clickid="ShowHomePage" label="Show Home Page" default="on" />
+			<CHECKBOX clickid="ShowHomePage_enforced" label="Enforced" default="off" />
+			<SELECT clickid="lstLayout" label="The Home Page layout that will be used initially" default="System Default" value="0" testval="System Default" />
+		</TAB>
+		<TAB clickid="tab_2" label="Printing">
+			<CHECKBOX clickid="PrintAuditSummary" label="Print Audit Summary" default="on" />
+			<CHECKBOX clickid="PrintAuditSummary_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="PrintMailSummary" label="Print Content" default="on" />
+			<CHECKBOX clickid="PrintMailSummary_enforced" label="Enforced" default="off" />				
+			<CHECKBOX clickid="PrintEventSummary" label="Print Event Summary" default="on" />
+			<CHECKBOX clickid="PrintEventSummary_enforced" label="Enforced" default="off" />							
+		</TAB>
+		<TAB clickid="tab_3" label="Search">
+			<SELECT clickid="ContentProxy" label="Content Server" default="[None Available]" value="[None Available]" testval="[None Available]" />
+			<CHECKBOX clickid="ContentProxy_enforced" label="Enforced" default="off" />
+			<CHECKBOX clickid="MultiLineRow" label="Multi-line Row" default="on" />
+			<CHECKBOX clickid="MultiLineRow_enforced" label="Enforced" default="off" />				
+			<INTEGERBOX clickid="%TXT_PAGESIZE%" label="Search Results Page Size" dp="0:3" min="1" max="999" default="25" testval="17" errortext="Number must be a positive integer" maxerrortext="" minerrortext="" noentryerrortext="This field is required" />
+			<CHECKBOX clickid="SearchResultsPageSize_enforced" label="Enforced" default="off" />								
+			<CHECKBOX clickid="ShowViewedRows" label="Show results in bold until viewed" default="on" />
+			<CHECKBOX clickid="ShowViewedRows_enforced" label="Enforced" default="off" />				
+		</TAB>
+	</DIALOG>
+	
+	<!-- Types of portlet that can be created; only appears when AllowPortletDefinition is 'true' -->
+	<DIALOG clickid="%BTN_EDITPORTTYPE%" label="Types of portlet that can be created" checkid="%DLG_EDITRES%" >
+		<CHECKGRP clickid="%TREE_TYPES%" label="Types of portlet that can be created" default="on" >
+			<CHECKBOX clickid="treeChk_admin" label="Admin" default="on" />
+		<!--	<CHECKBOX clickid="treeChk_cabi" label="BOE Report" default="on" /> -->
+			<CHECKBOX clickid="treeChk_clock" label="Clock" default="on" />
+			<CHECKBOX clickid="treeChk_flex" label="Dashboard Chart" default="on" />
+			<CHECKBOX clickid="treeChk_external" label="External" default="on" />
+			<CHECKBOX clickid="treeChk_list" label="Favorites" default="on" />
+			<CHECKBOX clickid="treeChk_report" label="iConsole Report" default="on" />
+			<CHECKBOX clickid="treeChk_search" label="iConsole Search" default="on" />
+			<CHECKBOX clickid="treeChk_message" label="Message" default="on" />
+			<CHECKBOX clickid="treeChk_rss" label="RSS feed" default="on" />
+		</CHECKGRP>
+	</DIALOG> 
+	
+	<!-- Portlets that can be used on the Home Page -->
+	<DIALOG clickid="btn_EditPortlets" label="Portlets that can be used on the Home Page" checkid="%DLG_EDITRES%" >
+		<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home Page" label="Portlets that are ready to be used on the Home Page" default="on" >
+			<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home PageAdmin" label="Admin" default="on" >
+				<CHECKBOX clickid="treeChk_#ReviewerAdmin" label="Administration Tasks" default="on" />
+			</CHECKGRP>
+			<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home PageDashboard Chart" label="Dashboard Chart" default="on" >
+				<CHECKBOX clickid="treeChk_#ReviewerTrend" label="Incident Trend By Policy" default="on" />
+			</CHECKGRP>
+			<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home PageFavorites" label="Favorites" default="on" >
+				<CHECKBOX clickid="treeChk_#ReviewerFavorites" label="Favorite Searches and Reports" default="on" />
+			</CHECKGRP>
+			<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home PageiConsole Search" label="iConsole Search" default="on" >
+				<CHECKBOX clickid="treeChk_#ReviewerIncidents" label="Recent Incidents" default="on" />
+			</CHECKGRP>
+			<CHECKGRP clickid="treeChk_ResourceFolderPortlets that are ready to be used on the Home PageMessage" label="Message" default="on" >
+				<CHECKBOX clickid="treeChk_#ReviewerMessage" label="Home Page Overview" default="on" />
+			</CHECKGRP>
+		</CHECKGRP>
+	</DIALOG>
+
+	<!-- Searches and Reports that can be run -->
+	<DIALOG clickid="%BTN_EDITSEARCHES%" label="Searches and Reports that can be run" checkid="treeTitle_ResourceFolder.Searches" >
+		<TAB clickid="tab_0" label="Searches" checkid="%TREE_SEARCHES%" >
+			<CHECKGRP clickid="%TREE_SEARCHES%" label="Searches" default="on" >
+				<CHECKBOX clickid="treeChk_Search.published.£StdSrchHash£" label="£StdSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£QuarantineHash£" label="£QuarantineHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£diuSrchHash£" label="£diuSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£dimSrchHash£" label="£dimSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£darSrchHash£" label="£darSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£contSrchHash£" label="£contSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£expSrchHash£" label="£expSrchHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£RIncSrch£" label="£RIncSrch_desc£" default="on" />
+			</CHECKGRP>
+		</TAB>
+		<TAB clickid="tab_1" label="Dashboard" checkid="%TREE_DASHB%" >
+			<CHECKGRP clickid="%TREE_DASHB%" label="Dashboard" default="on" >
+				<CHECKBOX clickid="treeChk_Search.published.£IncDBHash£" label="£IncDBHash£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.f37fb9b0e5090c27e9854e1e7dffd526c546c4e4" label="Event Summary" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.62b82d37d78a4a2b89cd2fd8bccc0441c6b3c578" label="Incident Trend By Impact" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.9a97730406bce2fd19a51b3099df972f0db34419" label="Incident Trend By Policy" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.24e1605afab81c117bc89d8b2cf5763f043a1150" label="Incidents By Channel" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.479cca40be99a352d518b28f61717cf886cf71ba" label="Incidents By Policy" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.284741005e7c30b63bbbdc33b477879529bf8f31" label="Incidents By Policy Class" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.c4af93764f4836dd97f8a72ddc02b11bd8502fa7" label="Incidents By Source" default="on" />
+				<CHECKBOX clickid="treeChk_Search.system.71decd5f7dbd2137d945c622751e04224730bf33" label="Overall Risk" default="on" />
+			</CHECKGRP>
+		</TAB>
+		<TAB clickid="tab_2" label="Reports" checkid="%TREE_REPORTS%" >
+			<CHECKGRP clickid="%TREE_REPORTS%" label="Reports" default="on" >
+				<CHECKBOX clickid="treeChk_Search.published.£CAHash£" label="£CAHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£IPAHash£" label="£IPAHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£DIHash£" label="£DIHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£ENRHash£" label="£ENRHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£ICFHash£" label="£ICFHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£IRPHash£" label="£IRPHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£ISHash£" label="£ISHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£IbLHash£" label="£IbLHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£IPCHash£" label="£IPCHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£IPTHash£" label="£IPTHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£ISRHash£" label="£ISRHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£POSHash£" label="£POSHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£RepOffHash£" label="£RepOffHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£RevActHash£" label="£RevActHash_desc£" default="on" />
+				<CHECKBOX clickid="treeChk_Search.published.£RevLatHash£" label="£RevLatHash_desc£" default="on" />
+			</CHECKGRP>
+		</TAB>
+	</DIALOG>
+		
+</PREFS>
+</ICONSOLE>
+
+<!-- building blocks
+<MULTI clickid="" label="" default="" options="$ref" />
+<SELECT clickid="" label="" default="" value="" testval="" />
+<TEXTBOX clickid="" label="" default="" testval="" />
+<INTEGERBOX clickid="" label="" dp="0" min="0" max="" default="" testval="" errortext="" maxerrortext="" minerrortext="" noentryerrortext="" />
+<CHECKBOX clickid="" label="" default="" />
+<RADIO clickid="" label="" selected="0" label="" testval="" >
+	<OPTION clickid="" label="" value="0" />
+	<OPTION clickid="" label="" value="1" />
+</RADIO>
+<BUTTON clickid="" label="" testval="" disabled="false" />
+<TAB clickid="" label="" />
+<SUBTAB name="" clickid="" label="" expanded="no" >
+</SUBTAB>
+<CONTEXT clickid="" >
+	<OPTION clickid="" label="" />
+	<OPTION clickid="" label="" />
+</CONTEXT>
+<TABLE clickid="" name="" prefix="" col1="" col2="" col3="" />
+-->

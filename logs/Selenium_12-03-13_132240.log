@@ -1,0 +1,162 @@
+13:22:40 Tests started
+13:22:40 iConsole Automation Package Version: 
+13:23:02 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+13:23:02 Platform: Win32
+13:23:08 Login successful as Selenium Reviewer
+13:23:08 iConsole Release: 14.5.3200.2
+13:23:08 Test Case 'Quick View Panes (RLS)' started.
+13:23:08     Test step Run Std Search started
+13:23:10         Logout successful
+13:23:15         Login successful as administrator
+13:23:15         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:23:17         INFO: Wait Element found: BUTTON id=btn_EditSettings
+13:23:18         INFO: Wait Element found: A id=tab_3
+13:23:18         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+13:23:19         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:23:19         PASS: Element found: By.id: treeTitle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:23:21         INFO: Wait Element found: DIV id=Customize
+13:23:22         INFO: Wait Element found: INPUT id=$ROWLIMIT
+13:23:22         INFO: Wait Element found: H3 id=SaveSearch_desc
+13:23:25         INFO: Wait Element found: DIV id=RestrictResources
+13:23:29         Logout successful
+13:23:34         Login successful as Selenium Reviewer
+13:23:34         INFO: Wait Element found: A id=tab_audit
+13:23:36         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+13:23:36         PASS: page size successfully adjusted to 2
+13:23:36         PASS: successfully set new row limit in derived Std Search
+13:23:39         PASS: Standard search ran successfully (2 secs)
+13:23:41         PASS: Standard search ran successfully (2 secs)
+13:23:44         PASS: Standard search ran successfully (2 secs)
+13:23:44         Average search runtime = 2 secs (iterations=3)
+13:23:44     Test step Run Std Search finished
+13:23:44     Test step Verify Quick View Panes (Specified number of events) started
+13:23:44         Test step Verify Quick View Panes (Specified number of events) started
+13:23:44         Testing event result id:0
+13:23:44             INFO: Text found: TDG - reference ID 9:0
+13:23:45             INFO: Wait Element found: UL id=
+13:23:46             Test the Quick View button:
+13:23:46                 Confirm default view:
+13:23:46                     PASS: Event pane is visible
+13:23:46                     PASS: Audit pane is visible
+13:23:46                 Finished default view checks
+13:23:46                 First Quick View button click:
+13:23:46                     PASS: Event pane is visible
+13:23:46                     PASS: Audit pane is NOT visible
+13:23:46                 Finished first click checks
+13:23:46                 Second Quick View button click:
+13:23:47                     PASS: Event pane is NOT visible
+13:23:47                     PASS: Audit pane is visible
+13:23:47                 Finished second click checks
+13:23:47                 Third Quick View button click:
+13:23:48                     PASS: Event pane is visible
+13:23:48                     PASS: Audit pane is visible
+13:23:48                 Finished third click checks
+13:23:48             Finished Quick View button tests
+13:23:48             Click Print button:
+13:23:49                 PASS: Print view window has correct Title (TDG - reference ID 9_0)
+13:23:49                 Search text: CA DataMinder iConsole
+Email Summary
+No email body was captured for this event.
+Summary
+Message triggered policy with no action taken
+Severity: Severity Low
+ESA, none
+Severity: Severity Low
+Policy: Internal IT Support Documents (Non-Public Information)
+Definition: support
+Match: support
+Action Performed: Yes
+Incidents (1)
+Type Email
+Event ID 18455
+From eweisner (Ed Weisner)
+To sbull (Steve Bull); TB\RobinP (Robin Peeler)
+Redirected No
+Subject TDG - reference ID 9:0
+Status Message triggered policy with no action taken
+Severity 50
+Size 0 Bytes
+Security Neither Signed nor Encrypted
+Source Microsoft Exchange Server
+User Name eweisner (Ed Weisner)
+Machine DICRI02-TESTW7
+Created 3/6/2013 12:00:17 AM
+Message class IPM.Note
+Summary
+Audit Summary
+(No Issues)
+Issues
+3/12/2013 1:19:20 PM Selenium Reviewer (Automated test reviewer) | DICRI02-TESTW7 Viewed Event
+History (expected text: Expiry Date)
+13:23:49                 FAIL: Correct section headings are NOT present on print view
+13:23:49             Finished Print button checks
+13:23:49             Click Context Search button:
+13:23:55                 PASS: Context Search window has correct Title (CA DataMinder iConsole - Context Search)
+13:23:55                 PASS: Correct event ('TDG - reference ID 9:0') is highlighted as the context root
+13:23:55                 PASS: The Logout link is hidden on the Context window
+13:23:55             Finished Context button checks
+13:23:55             Check the Event History button:
+13:23:56                 FAIL: the Event History window failed to open
+13:23:56             Finished Event History button checks
+13:23:56 TestRunner.RunTests() - caught exception: Element is not clickable at point (512, 402). Other element would receive the click: <div class="scrollDiv" tabindex="0" style="height: 343px;">...</div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: e4db23f7dbd7fbbc88a63edbb4931b1c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+org.openqa.selenium.WebDriverException: Element is not clickable at point (512, 402). Other element would receive the click: <div class="scrollDiv" tabindex="0" style="height: 343px;">...</div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: e4db23f7dbd7fbbc88a63edbb4931b1c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at common.Utils.Click(Utils.java:104)
+	at testcases.VerifyQuickViewPanes.ExpandCollapseQuickView(VerifyQuickViewPanes.java:296)
+	at testcases.VerifyQuickViewPanes.ViewQuickViewPanes(VerifyQuickViewPanes.java:128)
+	at testcases.VerifyQuickViewPanes.Run(VerifyQuickViewPanes.java:109)
+	at testcases.WgnTestCase.Run(WgnTestCase.java:138)
+	at common.TestRunner.RunTests(TestRunner.java:282)
+	at webdriver.WebDriver.main(WebDriver.java:37)
+13:23:56 Starting cleanup...
+13:23:56     Failed to close window: ID does not correspond to an open view (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: e4db23f7dbd7fbbc88a63edbb4931b1c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+13:23:58     Logout successful
+13:24:03     Login successful as administrator
+13:24:05     Local Preferences successfully reset
+13:24:06     Global Preferences reset failed: Element must be displayed to click (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: e4db23f7dbd7fbbc88a63edbb4931b1c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+13:24:06     Element is not visible (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: e4db23f7dbd7fbbc88a63edbb4931b1c
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+13:24:06 Cleanup finished
+13:24:06 Cleanup procedure failed.
+13:24:08 Logout successful
+13:24:08 Test Case 'Quick View Panes (RLS)' completed execution (see Summary for individual test details)
+13:24:08  
+13:24:08 Tests finished
+13:24:08 Summary: Test cases: 1, Tests: 25, Fails: 7, Known Fails: 0

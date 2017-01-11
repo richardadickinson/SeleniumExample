@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : gbl.xml
+    Created on : 07 December 2010, 15:55
+    Author     : dicri02
+    Description: Purpose of the document is to provide a list of hash values for the OOTB searches and reports
+	  	     and all text values that are required in the test scripts that will need translating should the test suite
+	  	     be run on a localized iConsole.
+		     The contents of this file are loaded into a hashmap by the test suite on startup.
+    Parameters:  all parameters are name/value pairs and may be defined like below:
+        <global name="default">
+           <parameter name="ISRHash" value="ff7fe751f5ff3098a2380c70b7db97a278603501" />
+           ...
+        </global>
+
+-->
+
+<root>
+    
+	<global name="default">
+	<!--	<parameter name="" 	value="" 		desc="" /> -->
+	
+	<!-- ids of elements commonly used to load into every testCase -->
+		<parameter name="DLG_PROGRESS" 			value="progressContent" desc="Progress dialog" />
+		<parameter name="TAB_HOMEPAGE" 			value="tab_homepage" 	desc="Home Page tab" />
+		<parameter name="HOME_CUST_DESC" 		value="HomePageCustomize_desc" 	desc="Home Page Customize" />
+		<parameter name="TAB_REVIEW" 			value="tab_searches" 	desc="Review tab" />
+		<parameter name="TAB_REVIEW_SEARCHES" 	value="tab_searches.Searches" 	desc="Searches subtab of Review tab" />
+		<parameter name="TAB_REVIEW_REPORTS" 	value="tab_searches.Reports" 	desc="Reports subtab of Review tab" />
+		<parameter name="TAB_REVIEW_DASHBOARD" 	value="tab_searches.Dashboard" 	desc="Dashboard subtab of Review tab" />
+		<parameter name="TAB_DASHBOARD" 		value="tab_dashboard" 	desc="Incident Dashboard tab" />
+		<parameter name="TAB_ADMIN" 			value="tab_manage" 		desc="Administration tab" />
+		<parameter name="TAB_ADMIN_SEARCHES"	value="tab_manage.searches" 	desc="Searches subtab of Administration tab" />
+		<parameter name="TAB_ADMIN_RESOURCES"	value="tab_manage.resources" 	desc="Resources subtab of Administration tab" />
+		<parameter name="DLG_MESSAGE" 			value="Message" 		desc="Message dialog" />
+		<parameter name="BTN_MESSAGE_YES" 		value="btn_Message.Yes" 	desc="Message dialog Yes button" />
+		<parameter name="BTN_MESSAGE_NO" 		value="btn_Message.No" 	desc="Message dialog No button" />
+		<parameter name="BTN_MESSAGE_CLOSE"		value="btn_Message.Close"	desc="Message dialog Close button" />
+		<parameter name="BTN_MESSAGE_OK"		value="btn_Message.OK"	desc="Message dialog OK button" />
+		<parameter name="BTN_MESSAGE_CANCEL"	value="btn_Message.CANCEL"	desc="Message dialog Cancel button" />
+		<parameter name="HOME_PORTAL" 			value="myPortal" 		desc="Home Page Portal" />
+		<parameter name="BTN_LOGIN" 			value="btnLogin" 		desc="Login button" />
+		<parameter name="LOGIN_ERROR" 			value="lblErrorMessage" desc="Login Error Message" />
+		<parameter name="LOGIN_USERNAME" 		value="username" 		desc="Username Login field" />
+		<parameter name="LOGIN_PASSWORD" 		value="password" 		desc="Password Login field" />		
+		<parameter name="BTN_FAV" 				value="btn_Favorite.published." desc="Favorite button" />
+		<parameter name="LNK_LOGOFF" 			value="lnk_logoff" 		desc="Log Out link" />
+		<parameter name="LOGIN_BRAND" 			value="loginBrand" 		desc="Login Brand image" />
+		<parameter name="LNK_ABOUT" 			value="lnk_about" 		desc="About link" />
+		<parameter name="BTN_ABOUT_CLOSE" 		value="btn_About.Close" desc="About dialog Close button" />
+		<parameter name="DLG_ABOUT" 			value="About" 			desc="About dialog" />
+		<parameter name="XPATH_ABOUT" 			value="//div[@id='About']/div[2]/div/div/div[2]/div[2]/div/div/p" 	desc="XPATH to iConsole version" />
+		<parameter name="LST_CATS" 				value="lstCategories" 		desc="Admin pages Category selector" />
+		<parameter name="DLG_PREFS" 			value="Prefs" 				desc="Settings dialog" />
+		<parameter name="BTN_PREFS_CANCEL" 		value="btn_Prefs.Cancel" 	desc="Settings Cancel button" />
+		<parameter name="BTN_PREFS_OK" 			value="btn_Prefs.OK" 		desc="Settings OK button" />
+		<parameter name="BTN_PREFS_RESET" 		value="btn_Prefs.Reset" 	desc="Settings Reset button" />
+		<parameter name="LNK_PREFS" 			value="lnk_profile" 		desc="Link to Settings dialog" />
+		<parameter name="CHK_PREF_MOVE" 		value="MoveAfterAuditEvent" desc="Move-After-Audit-Event Preference" />
+		<parameter name="CHK_PREF_REMOVE" 		value="RemoveAuditedEvents" desc="Remove Audited Events preference" />
+		<parameter name="DLG_CUSTOMIZE" 		value="Customize" 			desc="Edit Properties dialog" />
+		<parameter name="BTN_CUST_SAVE" 		value="btn_Customize.Save" 	desc="Edit Properties Save button" />
+		<parameter name="BTN_CUST_HELP" 		value="btn_Customize.Help" 	desc="Edit Properties Help button" />
+		<parameter name="BTN_CUST_CLOSE" 		value="btn_Customize.Close" desc="Edit Properties Close button" />
+		<parameter name="DLG_SAVESEARCH"	 	value="SaveSearch" 			desc="Save Search dialog" />
+		<parameter name="BTN_SAVESEARCH_OK" 	value="btn_SaveSearch.OK" 	desc="Save Search OK button" />
+		<parameter name="TTL_RUN_PUBL" 			value="treeTitle_Run.published." 	desc="Search list Run prefix" />
+		<parameter name="BTN_ACTION_PUBL" 		value="btn_TreeAction.published." 	desc="Action button prefix (published)" />
+		<parameter name="TTL_SEARCH_PUBL" 		value="treeTitle_Search.published." desc="Admin Tree Title prefix (published)" />
+		<parameter name="TOG_FOLDER_PUBL" 		value="treeToggle_Folder.published." desc="Admin Tree folder prefix (published)" />
+		<parameter name="CHK_SEARCH_PUBL" 		value="treeChk_Search.published." 	desc="Admin Tree checkbox prefix (published)" />
+		<parameter name="CHK_FOLDER_PUBL" 		value="treeChk_Folder.published." desc="Admin tree folder prefix (published)" />
+		<parameter name="BTN_ACTION_UNPUBL" 	value="btn_TreeAction.unpublished." desc="Action button prefix (unpublished)" />
+		<parameter name="CHK_SEARCH_UNPUBL" 	value="treeChk_Search.unpublished." desc="Admin Tree checkbox prefix (unpublished)" />
+		<parameter name="TTL_SEARCH_UNPUBL" 	value="treeTitle_Search.unpublished."	desc="Admin Tree Title prefix (unpublished)" />
+		<parameter name="DLG_RESTRICT" 			value="RestrictResources" 			desc="Restrict Resources dialog" />
+		<parameter name="BTN_RESTRICT_OK" 		value="btn_RestrictResources.OK" 	desc="Restrict Resources OK button" />
+		<parameter name="CXT_ACTION_UNINST" 	value="cxt_ActionUninstall" 		desc="Context menu uninstall option" />
+		<parameter name="BTN_ADMIN_BULK" 		value="btn_AdminSearches.AdminSearchesBulkActions" 		desc="Admin Bulk Actions menu button" />
+		<parameter name="CXT_BULK_UNINST" 		value="cxt_AdminSearches.AdminSearchesBulkActions.ActionUninstall" 	desc="Context menu Bulk Uninstall" />
+		<parameter name="CXT_BULK_PUBL" 		value="cxt_AdminSearches.AdminSearchesBulkActions.ActionPublish" 	desc="Context menu Bulk Publish" />
+		<parameter name="CXT_BULK_UNPUBL" 		value="cxt_AdminSearches.AdminSearchesBulkActions.ActionUnpublish" desc="Context menu Bulk UnPublish" />
+		<parameter name="BTN_ADMIN_INSTALL" 	value="btn_AdminSearches.Install" 		desc="Admin Search Install button" />
+		<parameter name="DLG_PICKER" 			value="Picker" 						desc="Picker dialog" />
+		<parameter name="BTN_PICKER_CANCEL" 	value="btn_Picker.Cancel" 			desc="Picker Cancel button" />
+		<parameter name="DLG_EDITRES" 			value="EditResources"		 		desc="Edit Resources dialog" />
+		<parameter name="BTN_EDITRES_RESET" 	value="btn_EditResources.Reset" 	desc="Edit Resources dialog Reset button" />
+		<parameter name="BTN_EDITRES_OK" 		value="btn_EditResources.OK" 		desc="Edit Resources dialog OK button" />
+		<parameter name="BTN_EDITRES_CANCEL" 	value="btn_EditResources.Cancel" 	desc="Edit Resources dialog Cancel button" />
+		<parameter name="BTN_EDITRES_XCLOSE" 	value="btn_EditResources.smlClose" 	desc="Edit Resources dialog 'x' button" />
+		<parameter name="BTN_EDIT_SETTINGS" 	value="btn_EditSettings" 			desc="Edit Settings button" />
+		<parameter name="TBL_RESULTS"			value="divResultsTable"				desc="Search Results Table" />
+
+	<!-- Search & report Hash values -->
+		<parameter name="CAHash" 		value="a781f89911a4c790c7695d31b6c72edfe44164d6" desc="Compliance Audit Report" />
+		<parameter name="IPAHash" 		value="867925bc8dd7987319521fe1f4ded0d9ec0bf75d" desc="Data at Rest Incidents by Policy and Action" />
+		<parameter name="DIHash" 		value="921c72a9dd01e110bb86095af402dd0f9328e475" desc="Detailed Issue Report" />
+		<parameter name="ENRHash" 		value="4fb120ddb92e08880d0d69fae26d542874e1e058" desc="Employees Not Reviewed Report" />
+		<parameter name="ICFHash" 		value="74bedfbce85f0e74ed088a991195ebfae80c7b2d" desc="Incident Cause Frequency Report" />
+		<parameter name="IRPHash" 		value="33554d6bdd8902fccff3822eb988ea878d5edd77" desc="Incident Rate by Policy Report" />
+		<parameter name="ISHash" 		value="7caa4a0264aa5f830b5458c17028b4b3c88b5dcd" desc="Incident Summary Report" />
+		<parameter name="IbLHash" 		value="5c5d79791321647ab267e0b45d8e22e5798ba938" desc="Incidents by Location (Data at Rest)" />
+		<parameter name="IPCHash" 		value="75003d24a470f675bcad6c4bb83341af633c4d2a" desc="Incidents by Policy and Channel Report" />
+		<parameter name="IPTHash" 		value="d6e84e5e10d3f5d41886db11830181a2fc549d33" desc="Incidents by Policy and Time Period Report" />
+		<parameter name="ISRHash" 		value="ff7fe751f5ff3098a2380c70b7db97a278603501" desc="Issues by Status or Resolution Report" />
+		<parameter name="POSHash" 		value="73fdb8cd84f7eb4a12c00ce7f38ee291d27d1a0b" desc="Proof of Supervision Report" />
+		<parameter name="RepOffHash" 		value="9a44b7fbe37149ae96b45b75a1c0ade746aab185" desc="Repeat Offender Report" />
+		<parameter name="RevActHash" 		value="55c3bdaa0a1d32f4daaefa86e08e87cd48d43d2b" desc="Reviewer Activity Report" />
+		<parameter name="RevLatHash"		value="9cd58586c4e0c98fe78e08323c8020ddf9a920b7" desc="Review Latency Report" />
+		<parameter name="ReportsNode" 		value="cf0d848da72b0acba4ac07452a94dd408cee173a" desc="" />
+		<parameter name="SmartTagHash" 		value="c865b07297543a90c35f05ae5741352c46c428b8" desc="Smart Tag Picker" />
+		<parameter name="IncDBHash" 		value="88b420c626527cab9fb66bdc6f37e5db897e9ca0" desc="Incident Dashboard" />
+		<parameter name="StdSrchHash" 		value="881c93d5d34f58f4e37932867a9ae29fda3ab670" desc="Standard Search" />
+		<parameter name="QuarantineHash"        value="46ce790f3973320732aed2e06a2c08e89df4b20d" desc="Quarantine Search" />
+		<parameter name="diuSrchHash"		value="d76c0e54ece4befde947e03bfe37adb4fd51d31b" desc="Data in Use Standard Search" />
+		<parameter name="dimSrchHash"		value="52a18fd6fdd77e7cc489db1899ba9cd315d45fc4" desc="Data in Motion Standard Search" />
+		<parameter name="darSrchHash"		value="5753b2a5afcf3a12bca1423bda1731a78ac7a8c5" desc="Data at Rest Standard Search" />
+		<parameter name="contSrchHash"		value="cf1f895bd5faf6ddc34497b173412433ca8e3d00" desc="Content Search" />
+		<parameter name="expSrchHash"		value="d840939e4c6fa583ba63281937997d441ce6ce37" desc="Express Search" />
+		<parameter name="RIncSrch"			value="b6c9e487a9068615c9f026bdc369dc60382e9ab3" desc="Recent Incidents" />
+		<parameter name="myDerivedSrchHash"     value="381fad0293ceaae8856c1de604d13c647613ee23" desc="Derived Search" />
+		<parameter name="BBGExpHash" 		value="e9a04ec40259ac1b4b4c43e775906b9803f8eff3" desc="" />
+		<parameter name="BBGStdSrchHash" 	value="b267734367f98f39344b108020cf1fce9f727047" desc="" />
+		<parameter name="AuditStatusHash" 	value="b5bd4f3190ebac287a981a09794e7c4112b7d5fc" desc="" />
+		<parameter name="DetailedAlertHash"     value="3506213618d2bb428d1ae434f973b809996f7f0c" desc="" />
+
+	<!-- Other Hash values -->
+		<parameter name="email" 	value = "3783acbe120a032f532ea5c3d7e2f9ab3ca3a023" desc="" />
+
+	<!-- Text column names (for localisation) -->
+		<parameter name="colSeverity" 	value="Severity" 			desc="" />
+		<parameter name="colPolicy" 	value="Policy" 				desc="" />
+		<parameter name="colAction" 	value="Action" 				desc="" />
+		<parameter name="colEvType" 	value="Event Type" 			desc="" />
+		<parameter name="colSubject" 	value="Subject/Filename" 		desc="" />
+		<parameter name="colSubject2"	value="Subject"				desc="" />
+		<parameter name="colSource"	value="Source"				desc="" />
+		<parameter name="colDest"	value="Destination"			desc="" />
+		<parameter name="colTimestamp" 	value="Timestamp" 			desc="" />
+		<parameter name="colFrom" 	value="From/User/Host" 			desc="" />
+		<parameter name="colRecip" 	value="Recipients/Participants/URL/Path" desc="" />
+		<parameter name="colAuditStatus" value="Audit Status" 			desc="" />
+		<parameter name="colAsc" 	value="(Asc)" 				desc="" />
+		<parameter name="colDesc" 	value="(Desc)" 				desc="" />
+		<parameter name="colAttach" 	value="Attachment" 			desc="" />
+		<parameter name="colRelevance" 	value="Relevance"			desc="" />
+	
+	<!-- Text Window Titles (for localisation) -->
+		<parameter name="winBasic"	value="CA DataMinder iConsole"				desc="" />
+		<parameter name="winReview" 	value="CA DataMinder iConsole - Review" 		desc="" />
+		<parameter name="winPolicy" 	value="CA DataMinder iConsole - Policy" 		desc="" />
+		<parameter name="winAdmin" 	value="CA DataMinder iConsole - Administer Searches"	desc="" />
+		<parameter name="winDashboard" 	value="CA DataMinder iConsole - Incident Dashboard" 	desc="" />
+		<parameter name="winStdSrch" 	value="CA DataMinder iConsole - Standard Search" 	desc="" />
+		<parameter name="winHome" 	value="CA DataMinder iConsole - Home"		 	desc="" />
+		<parameter name="winSmartTag"	value="CA DataMinder iConsole - Smart Tag Picker"	desc="" />
+		<parameter name="winContext"    value="CA DataMinder iConsole - Context Search"	desc="" />
+		<parameter name="winPolChild"   value="CA DataMinder iConsole - Standard Policy Pack"	desc="" />
+		<parameter name="winDrvSrch"    value="CA DataMinder iConsole - Derived search test"   desc="" />
+	
+	<!-- Text Search & report names (for localisation) -->
+		<parameter name="StdSrchName" 	value="Standard Search" 			desc="" />
+		<parameter name="repISRName" 	value="Issues by Status or Resolution Report" 	desc="" />
+		<parameter name="drvSrchName"	value="Derived search test"                     desc="" />
+		<parameter name="drvSrchDesc" 	value="Derived search test - All Dates and fixed subject line" desc="" />
+
+	<!-- Text Policy names (for localisation) -->
+		<parameter name="pol"		value="Policy"					desc="" />
+		<parameter name="polInappLang" 	value="Inappropriate, Offensive and Sexual Language" desc="" />
+		<parameter name="polSocNetwk" 	value="Social Networking" 			desc="" />
+		<parameter name="polOffRelRom" 	value="Office Relationships: Romantic" 		desc="" />
+
+
+	<!-- Date/Time text parameters (for localization) -->
+		<parameter name="days" 		value="Days" 		desc="" />
+		<parameter name="weeks" 	value="Weeks" 		desc="" />		
+		<parameter name="months" 	value="Months" 		desc="" />
+		<parameter name="alldates" 	value="All Dates" 	desc="" />		
+		<parameter name="today" 	value="Today" 		desc="" />
+		<parameter name="thismonth"	value="This Month"	desc="" />
+		<parameter name="lcq"		value="Last Calendar Quarter"	desc="" />
+		<parameter name="monthly"	value="Monthly"		desc="" />		
+
+	<!-- Audit text parameters (for localisation) -->
+		<parameter name="asany"		value="[Any]"			desc="" />
+		<parameter name="asanynon"	value="[Any Non-Default State]"	desc="" />
+		<parameter name="asunset"	value="[Reset to &lt;None&gt;]"	desc="" />
+		<parameter name="AuditAction"   value="No Action Taken"         desc="" />
+		<parameter name="AuditResolution" value="User Education"        desc="" />
+		<parameter name="RequiredField" value="Required"               	desc="" />
+		<parameter name="as1Close" 	value="Close"        		desc="" />
+		<parameter name="as1Escalate"	value="Escalate" 		desc="" />
+		<parameter name="as2Escalate"	value="Escalate to Management" 	desc="" />
+		<parameter name="as1Pending"	value="Pending" 		desc="" />
+		<parameter name="AuditSkipped"	value="Skipped"			desc="" />
+		<parameter name="AuditSkippedText" value="Unable to apply changes as no matching issue was found" desc="" />
+		<parameter name="isComplete"	value="Complete"          desc="" />		
+		
+	<!-- Audit Mail parameters (for localisation) -->
+		<parameter name="txtEmail"	value="E-mail"					desc="" />
+		<parameter name="failMailSend"	value="The email could not be sent" 		desc="" />
+		<parameter name="passMailSend"	value="The email has been sent successfully." 	desc="" />
+		<parameter name="sentmailtext" 	value="Mailed Event" 				desc="" />
+		<parameter name="sentmailerror" value="*** AN ERROR OCCURRED WHILST SENDING AUDIT EMAIL ***" desc="" />
+		
+	<!-- Miscellaneous text parameters (for localisation) -->
+		<parameter name="noResults" 	value="No Results" 				desc="" />
+		<parameter name="none"		value="None"					desc="" />
+		<parameter name="successInstall" value="was successfully installed" 		desc="" />
+		<parameter name="successPublish" value="Successfully published Proof of Supervision Report." desc="" />
+		<parameter name="successPublish2" value="Successfully published 2 searches/reports." desc="" />
+		<parameter name="successUnpublish" value="Successfully unpublished Proof of Supervision Report." desc="" />
+		<parameter name="successUnpublish2" value="Successfully unpublished 2 searches/reports." desc="" />
+		<parameter name="eeshared" 	value="Addressee 1 shared E-mails with Addressee 2" desc="" />
+		<parameter name="eeto" 		value="Addressee 1 sent E-mails to Addressee 2" desc="" />
+		<parameter name="eescope1"	value="Internal and External"			desc="" />
+		<parameter name="bbshared" 	value="Addressee 1 shared Bloombergs with Addressee 2" desc="" />
+		<parameter name="user"		value="User"					desc="" />
+		<parameter name="group"		value="Group"					desc="" />
+		<parameter name="webscope1"	value="Intranet and Internet"			desc="" />
+		<parameter name="filescope1"	value="Workstation and Server"			desc="" />
+		<parameter name="status"	value="Status"					desc="" />
+		<parameter name="resolution"	value="Resolution"				desc="" />
+		<parameter name="eventhistory"	value="Event History"				desc="" />
+		<parameter name="expiryDateSet" value="Changed 'Do Not Delete' to TRUE" 	desc="" />
+		<parameter name="language"      value="Generic (English)"               	desc="" />
+		<parameter name="eventInfo"	value="Event Information"			desc="" />
+
+		
+	</global>
+
+</root>

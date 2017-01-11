@@ -1,0 +1,56 @@
+13:28:46 Tests started
+13:28:46 iConsole Automation Package Version: 
+13:29:03 Browser: Netscape Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.160 Safari/537.22
+13:29:03 Platform: Win32
+13:29:09 Login successful as Selenium Reviewer
+13:29:09 iConsole Release: 14.5.3200.2
+13:29:09 Test Case 'Quick View Panes (RLS)' started.
+13:29:09     Test step Run Std Search started
+13:29:11         Logout successful
+13:29:16         Login successful as administrator
+13:29:17         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:29:18         INFO: Wait Element found: BUTTON id=btn_EditSettings
+13:29:19         INFO: Wait Element found: A id=tab_3
+13:29:19         INFO: Wait Element found: INPUT id=SearchResultsPageSize
+13:29:21         INFO: Wait Element found: A id=treeTitle_Search.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:29:21         PASS: Element found: By.id: treeTitle_Folder.published.00f3eae2f761aee17dae8c3e7666fa9b2e8b4a85
+13:29:22         INFO: Wait Element found: DIV id=Customize
+13:29:23         INFO: Wait Element found: INPUT id=$ROWLIMIT
+13:29:23         INFO: Wait Element found: H3 id=SaveSearch_desc
+13:29:30         FAIL: expected result not achieved by click, wait element not found: By.id: RestrictResources
+13:29:30         INFO: Timed out after 5 seconds waiting for common.Utils$1@4a1c228c
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Driver info: driver.version: WebDriver
+13:29:30 TestRunner.RunTests() - caught exception: Element is not clickable at point (661.5, 22.5). Other element would receive the click: <div class="pageFill pageMask"></div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f6067cc66b3dd990fad5aa06fcc35fe3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+org.openqa.selenium.WebDriverException: Element is not clickable at point (661.5, 22.5). Other element would receive the click: <div class="pageFill pageMask"></div> (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56 milliseconds
+Build info: version: '2.31.0', revision: '1bd294d', time: '2013-02-27 20:52:59'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_01'
+Session ID: f6067cc66b3dd990fad5aa06fcc35fe3
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, chrome.chromedriverVersion=26.0.1383.0, acceptSslCerts=false, javascriptEnabled=true, browserName=chrome, rotatable=false, locationContextEnabled=false, version=25.0.1364.160, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at common.Utils.Click(Utils.java:104)
+	at common.Utils.Logoff(Utils.java:431)
+	at testcases.Search.setupTest(Search.java:221)
+	at testcases.Search.Run(Search.java:58)
+	at testcases.WgnTestCase.Run(WgnTestCase.java:138)
+	at common.TestRunner.RunTests(TestRunner.java:282)
+	at webdriver.WebDriver.main(WebDriver.java:37)
+13:29:30 Starting cleanup...
+13:29:30     A Message dialog was open
